@@ -1,180 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
 
-    <link rel="icon" type="image/png" href="img/etelogo.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widht=device=widht, initial-scale=1.0" />
 
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="widht=device=widht, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="id=edge" />
-    <link rel="stylesheet" href="style.css" />
+  <title>ETE Edson Mororó Moura</title>
+  <link rel="icon" type="image/png" href="img/etelogo.png">
 
-    <title>ETE Edson Mororó Moura</title>  
+  <link href="./scss/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-  <body>
+<body>
+  <header class="header">
+    <img class="etelogo" src="img/etelogo.png">
+    <p class="titulo">Edson Mororó Moura</p>
 
-    
-<!--<header class="header">
-      
+    <input type="checkbox" id="chk">
 
-        
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-      <nav>
-        <ul class="menu"> 
-          <ul><li><a href="#sitedaete">Home</a></li></ul> <!--âncora-->
-          <!--<ul><li><a href="#sobreee">Sobre</a></li></ul> <!--âncora-->
-          <!--<ul><li><a href="#contatooo">Contato</a></li></ul> <!--âncora-->
-        <!--</ul>
-      </nav>
-    </header>-->
+    <ul class="menu">
 
-      
+      <a href="#sitedaete">Home</a>
+      <a href="#sobreee">Sobre</a>
+      <a href="#contatooo">Contato</a>
 
-
-
-    <div class="header1">
-<img class="etelogo" src="img/etelogo.png">
-      <p class="noomee">Edson Mororó Moura</p>
-
-      <input type="checkbox" id="chk">
-
-      <label for="chk" class="show-menu-btn">
-        
-        <i class="fas fa-bars"></i>
-
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
       </label>
+    </ul>
+  </header> <!-- HEADER -->
 
-      <ul class="menu">
-
-        <a href="#sitedaete">Home</a>
-        <a href="#sobreee">Sobre</a>
-        <a href="#contatooo">Contato</a>
-
-        <label for="chk" class="hide-menu-btn">
-        
-          <i class="fas fa-times"></i>
-
-        </label>
-        
-      </ul>
-      
-    </div> <!--final do header1-->
-
-
-
-
-    <section class="main">
+  <main>
+    <section class="introuducao">
       <div class="center">
         <div class="main_cta">
-          <a name="sitedaete"> <!--âncora-->
+          <a name="sitedaete">
             <img class="rexiteg" width="300px" src="img/colocaessadaqui.png">
-            
-        </a>
-          
-        </div><!--main-cta-->
+          </a>
+        </div>
+        <!--main-cta-->
 
         <div class="diferenciais">
           <div class="diferencial-single">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div><i class="fas fa-mouse-pointer"></i>
-</div>
+            <div><i class="fas fa-mouse-pointer"></i>
+            </div>
             <h2>Processo Seletivo</h2>
             <p>Ingresso no Médio Integrado, Subsequente e EAD.</p> <br>
             <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div><!--diferencial-single-->
+          </div>
+          <!--diferencial-single-->
 
           <div class="diferencial-single">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div><i class="fas fa-mouse-pointer"></i></div>
+            <div><i class="fas fa-mouse-pointer"></i></div>
             <h2>Siepe</h2>
             <p>Sistema de Informações da Educação de Pernambuco.</p><br>
             <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div><!--diferencial-single-->
+          </div>
+          <!--diferencial-single-->
 
           <div class="diferencial-single">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div><i class="fas fa-mouse-pointer"></i></div>
+            <div><i class="fas fa-mouse-pointer"></i></div>
             <h2>Secretaria de Educação - PE</h2>
             <p>Acesso ao site com informações atualizadas.</p>
             <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div><!--diferencial-single-->
+          </div>
+          <!--diferencial-single-->
 
           <div class="diferencial-single">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div><i class="fas fa-mouse-pointer"></i></div>
+            <div><i class="fas fa-mouse-pointer"></i></div>
             <h2>Estrutura Física</h2>
             <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p><br>
-            <a href="index02.html"><button class="clique-aqui2">Clique aqui</button></a>
-          </div><!--diferencial-single-->
-        </div><!--diferenciais-->
-
-        <style>         /* efeito houver */
-.diferencial-single{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.diferencial-single:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.1);
-}
-</style>
- 
-      </div><!--center-->
-    </section><!--main-->
-    <a name="sobreee"> <!--âncora-->
-     <div class="sobreee"><p>jkvjbvjbdvj</p> </div>
+            <a href="estrutura.html"><button class="clique-aqui">Clique aqui</button></a>
+          </div>
+          <!--diferencial-single-->
+        </div>
+        <!--diferenciais-->
+      </div>
+      <!--center-->
+    </section>
+    <!--main-->
+    <a name="sobreee">
+      <!--âncora-->
+      <div class="sobreee">
+        <p>jkvjbvjbdvj</p>
+      </div>
     </a>
     <section class="sobre">
       <div class="center">
-        <div class="chamada-sobre"> 
-          
+        <div class="chamada-sobre">
+
           <h2 class="sobre111">Sobre a ETEEMM</h2>
-       
+
           <p>Venha fazer parte desta história de sucesso!</p>
-        </div><!--chamada-sobre-->
+        </div>
+        <!--chamada-sobre-->
         <div class="conteudo-sobre">
           <p>A Escola Técnica Estadual Edson Mororó Moura - ETEEMM foi criada
-através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01
-de abril de 2016.
-O nome da escola foi dado em homenagem ao empreendedor Edson
-Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande
-relevância econômica e social no Município, além de destaque Nacional e
-Internacional.
+            através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01
+            de abril de 2016.
+            O nome da escola foi dado em homenagem ao empreendedor Edson
+            Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande
+            relevância econômica e social no Município, além de destaque Nacional e
+            Internacional.
 
-           <br/> <br><br>
-           <span><i class="fas fa-check-double"></i> Médio Integrado: Administração e Desenvolvimento de Sistemas<br/></span>
-           <span><i class="fas fa-check-double"></i> Subsequente: Administração, Química e Redes de Computadores<br/></span>
-           <span><i class="fas fa-check-double"></i> EAD: Cursos Técnicos em Administração, Biblioteconomia, Design de Interiores, Design Gráfico, Informática, Logística, Multimídia, Recursos Humanos, Secretaria Escolar, Segurança do Trabalho, Tradução e Interpretação em Libras<br/></span>
-         </p>
+            <br><br><br>
+            <span><i class="fas fa-check-double"></i> Médio Integrado: Administração e Desenvolvimento de Sistemas<br /></span>
+            <span><i class="fas fa-check-double"></i> Subsequente: Administração, Química e Redes de Computadores<br /></span>
+            <span><i class="fas fa-check-double"></i> EAD: Cursos Técnicos em Administração, Biblioteconomia, Design de Interiores, Design Gráfico, Informática, Logística, Multimídia, Recursos Humanos, Secretaria Escolar, Segurança do Trabalho, Tradução e Interpretação em Libras<br /></span>
+          </p>
           <p>A ETEEMM tem como Visão ser referência em Educação Profissional e
-Integral, em Belo Jardim e região, ressaltando os princípios éticos e o pleno
-exercício da cidadania, assim como a Missão de desenvolver competências,
-habilidades, atitudes e valores dos nossos estudantes para que tenham um
-futuro profissional e acadêmico promissor enaltecendo os seguintes valores:
-ética, disciplina, inovação, integração, justiça, respeito e empatia.
-Os cursos ofertados pela ETEEMM são na modalidade Médio Integrado,
-Subsequente e EAD.</p>
-        </div><!--conteudo-sobre-->
-      </div><!--center-->
-    </section><!--sobre-->
+            Integral, em Belo Jardim e região, ressaltando os princípios éticos e o pleno
+            exercício da cidadania, assim como a Missão de desenvolver competências,
+            habilidades, atitudes e valores dos nossos estudantes para que tenham um
+            futuro profissional e acadêmico promissor enaltecendo os seguintes valores:
+            ética, disciplina, inovação, integração, justiça, respeito e empatia.
+            Os cursos ofertados pela ETEEMM são na modalidade Médio Integrado,
+            Subsequente e EAD.</p>
+        </div>
+        <!--conteudo-sobre-->
+      </div>
+      <!--center-->
+    </section>
+    <!--sobre-->
 
-
-    <section class="conquistas">        <!--Área das conquistas parte 1-->
+    <section class="conquistas">
+      <!--Área das conquistas parte 1-->
       <div class="center">
         <div class="conquista-single">
           <h2>+200</h2>
           <p>Estudantes aprovados em Universidades Públicas</p>
-        </div><!--conquista-single-->
+        </div>
+        <!--conquista-single-->
         <div class="conquista-single">
           <h2>980</h2>
           <p>Redação ENEM 2020</p>
-        </div>       
+        </div>
         <div class="conquista-single">
           <h2>IDEB 5,90</h2>
           <p>IDEPE 6,08</p>
@@ -183,386 +151,287 @@ Subsequente e EAD.</p>
           <h2>Esporte</h2>
           <p>Campeão Municipal, Regional e Pernambucano</p>
         </div>
-      </div><!--center-->
-    </section><!--conquistas--> <br><br>
+      </div>
+      <!--center-->
+    </section>
+    <!--conquistas--> <br><br>
 
-
-
-    <!--<div class="tempora">
-      <h2>Resultado:</h2>
-      <a class="resul" href="#" target="_blank">Clique aqui!</a>
-    </div>-->
-    
-
-
-    <section class="sobre-empreendedor">
+    <section class="professores">
       <div class="center">
-        <img class="sobre-empreendedor-img" src="img/canalprof.jpg">
-        <div class="sobre-empreendedor-content">
+        <img class="professores-img" src="img/canalprof.jpg">
+        <div class="professores-content">
           <h2>Canal no YouTube de Educadores ETEEMM</h2>
           <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p> <br>
 
-          <a class="canalpro" href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank"><p>Profª. Ma. Michele Noberta (Matemática)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank"><p>Profª. Elaisa Souza (Inglês)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank"><p>Prof. Eduardo Max (Biologia)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank"><p>Prof. Me. Marcos Vier (Matemática)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank"><p>Profª. Iaponira Campos (Química)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank"><p>Prof. Erandi Oliveira (Matemática)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank"><p>Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</p></a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank"><p>Prof. Paulo Jacinto (Administração)</p></a>
-          
-        </div><!--sobre-empreendedor-content-->
-      </div><!--center-->   
-    </section><!--sobre-empreendedor-->
+          <a class="canalpro" href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">
+            <p>Profª. Ma. Michele Noberta (Matemática)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">
+            <p>Profª. Elaisa Souza (Inglês)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank">
+            <p>Prof. Eduardo Max (Biologia)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank">
+            <p>Prof. Me. Marcos Vier (Matemática)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank">
+            <p>Profª. Iaponira Campos (Química)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank">
+            <p>Prof. Erandi Oliveira (Matemática)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank">
+            <p>Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</p>
+          </a>
+          <a class="canalpro" href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank">
+            <p>Prof. Paulo Jacinto (Administração)</p>
+          </a>
 
-    <style>
-.sobre-empreendedor-img{
-    transition: all 0.5s;
-    cursor: pointer;
-}
+        </div>
+        <!--sobre-empreendedor-content-->
+      </div>
+      <!--center-->
+    </section>
+    <!--sobre-empreendedor-->
 
-.sobre-empreendedor-img:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-</style>
-
-
-    <section class="depoimentos">                                   <!--DEPOIMENTOS-->
+    <section class="depoimentos">
+      <!--DEPOIMENTOS-->
       <div class="center">
         <div class="depoimentos-chamada">
-        <h2>Depoimentos</h2>
-        <p>O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
-      </div><!--depoimentos-chamada-->
-
-
+          <h2>Depoimentos</h2>
+          <p>O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
+        </div>
+        <!--depoimentos-chamada-->
       </div>
-    </section><!--depoimentos-->
+    </section>
+    <!--depoimentos-->
 
     <div class="slideshow-container">
-            
-            <div class="mySlides fade">
-                
-                <div class="numbertext"></div>
-                <img src="img/nade.jpg" style="width=100%">
-                
-                <div class="text"></div>
-                
-            </div>  <!--final do mySlides fade-->
-            
-            <div class="mySlides fade">
-                
-                <div class="numbertext"></div>
-                <img src="img/eduarslide.jpg" style="width=100%">
-                
-                <div class="text"></div>
-                
-            </div>  <!--final do mySlides fade-->
-            
-            <div class="mySlides fade">
-                
-                <div class="numbertext"></div>
-                <img src="img/barbasalide.jpg" style="width=100%">
-                
-                <div class="text"></div>
-                
-            </div>  <!--final do mySlides fade-->
-            
-            <div class="mySlides fade">
-                
-                <div class="numbertext"></div>
-                <img src="img/anaslide.jpg" style="width=100%">
-                
-                <div class="text"></div>
-                
-            </div>  <!--final do mySlides fade-->
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!--isso "&#10094" é o ícone da seta-->
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!--isso "&#10094" é o ícone da seta-->
-            
-        </div>  <!--final do slideshow-container-->
-        <br>
-        
-        <div style="text-align: center">
-            
-            <span class="dot" onclick="currentSlides(1)"></span>
-            <span class="dot" onclick="currentSlides(2)"></span>
-            <span class="dot" onclick="currentSlides(3)"></span>
-            <span class="dot" onclick="currentSlides(4)"></span>
-            
-        </div>  <!--final do text-align: center-->
-        
-        
-        
-        
-        <script>
-            
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for ( i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-            
-            // slide automatico
-            
-            /*var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 9000);   // tempo do slide                   
-            }*/
-            
-        </script>     <br><br>
 
+      <div class="mySlides fade">
 
+        <div class="numbertext"></div>
+        <img src="img/nade.jpg">
 
+        <div class="text"></div>
 
+      </div>
+      <!--final do mySlides fade-->
 
+      <div class="mySlides fade">
 
+        <div class="numbertext"></div>
+        <img src="img/eduarslide.jpg">
 
-        
+        <div class="text"></div>
 
+      </div>
+      <!--final do mySlides fade-->
 
+      <div class="mySlides fade">
 
+        <div class="numbertext"></div>
+        <img src="img/barbasalide.jpg">
 
-    <section class="portfolio">                                     <!--PORTIFOLIO-->
+        <div class="text"></div>
+
+      </div>
+      <!--final do mySlides fade-->
+
+      <div class="mySlides fade">
+
+        <div class="numbertext"></div>
+        <img src="img/anaslide.jpg">
+
+        <div class="text"></div>
+
+      </div>
+      <!--final do mySlides fade-->
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <!--isso "&#10094" é o ícone da seta-->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!--isso "&#10094" é o ícone da seta-->
+
+    </div>
+    <!--final do slideshow-container-->
+    <br>
+
+    <div style="text-align: center">
+
+      <span class="dot" onclick="currentSlides(1)"></span>
+      <span class="dot" onclick="currentSlides(2)"></span>
+      <span class="dot" onclick="currentSlides(3)"></span>
+      <span class="dot" onclick="currentSlides(4)"></span>
+
+    </div>
+    <!--final do text-align: center-->
+
+    <script>
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlides(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+    </script> <br><br>
+
+    <section class="portfolio">
+      <!--PORTIFOLIO-->
       <div class="center">
         <div class="portfolio-aqui">
           <h2>Portfolio</h2>
-          <div class="constru"><h2>(em construção...)</h2></div>
+          <div class="constru">
+            <h2>(em construção...)</h2>
+          </div>
           <p>A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
-           <div>
-           </div> 
-            <!--<img class="portfolio-aqui-img" src="img/cafe.jpg">-->
-        </div><!--portfolio-aqui-->          
-      </div><!--center-->
-    </section><!--portfolio-->
+          <div>
+          </div>
+        </div>
+        <!--portfolio-aqui-->
+      </div>
+      <!--center-->
+    </section>
+    <!--portfolio-->
 
 
     <section class="flex">
-      <div class="img01">
-      <a href="" target="_blank">
-        <img src="img/primeira.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/primeira.jpg">
+        </a>
         <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
       </div>
-      <div class="img02">
-      <a href="" target="_blank">
-        <img src="img/projetos.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/projetos.jpg">
+        </a>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </div>
-      <div class="img03">
-      <a href="" target="_blank">
-        <img src="img/esporte.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/esporte.jpg">
+        </a>
         <p>Competições esportivas ETEEMM</p>
       </div>
       <div class="img04">
-      <a href="" target="_blank">
-        <img src="img/gremio.jpg">
-      </a>
+        <a href="" target="_blank">
+          <img src="img/gremio.jpg">
+        </a>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </div>
-      <div class="img05">
-      <a href="" target="_blank">
-        <img src="img/sarau.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/sarau.jpg">
+        </a>
         <p>Sarau Literomusical ETEEMM</p>
       </div>
-      <div class="img06">
-      <a href="" target="_blank">
-        <img src="img/feras.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/feras.jpg">
+        </a>
         <p>Feras ETEEMM</p>
       </div>
-      <div class="img07">
-      <a href="" target="_blank">
-        <img src="img/conquistas.jpg">
-      </a>
+      <div class="img">
+        <a href="" target="_blank">
+          <img src="img/conquistas.jpg">
+        </a>
         <p>Galeria de conquistas</p>
       </div>
-    </section><!--flex-->
-
-    <style>
-.img01{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img01:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img02{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img02:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img03{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img03:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img04{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img04:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img05{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img05:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img06{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img06:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
-.img07{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.img07:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-</style> 
-
-    
-
-                                                           <!--Final do Site Rodapé-->
+    </section>
+    <!--flex-->
 
 
-<a name="contatooo">
-  <div class="sobreee">
-    <p>jkvjbvjbdvj</p> 
-    <p>jkvjbvjbdvj</p>
-  </div>
-</a>  <!--âncora-->
+    <a name="contatooo">
+      <div class="sobreee">
+        <p>jkvjbvjbdvj</p>
+        <p>jkvjbvjbdvj</p>
+      </div>
+    </a>
+    <!--âncora-->
 
+    <div class="row">
+      <!--CONTATO-->
 
-<div class="row">        <!--CONTATO-->
+      <h2>Contato</h2>
 
-    <h2>Contato</h2>
+      <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+        <input type="hidden" name="accessKey" value="0ff031ca-9a6e-450d-9764-80a94d3078ea">
+        <input type="hidden" name="redirectTo" value="https://eteedsonmororomoura.com.br/">
 
-  <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
-    <input type="hidden" name="accessKey" value="0ff031ca-9a6e-450d-9764-80a94d3078ea">
-    <input type="hidden" name="redirectTo" value="https://eteedsonmororomoura.com.br/">
+        <label class="nome" for="inputNome">Primeiro nome:</label>
+        <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+        <span></span>
 
-    <label class="nome" for="inputNome">Primeiro nome:</label>
-    <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
-    <span></span>
+        <label class="email" for="inputEmail">Email:</label>
+        <input type="text" id="inputEmail" name="email" required maxlength="50">
+        <span></span>
 
-    <label class="email" for="inputEmail">Email:</label>
-    <input type="text" id="inputEmail" name="email" required maxlength="50">
-    <span></span>
+        <label class="menssa" for="textAreaMenssagem">Mensagem:</label>
+        <textarea name="message" id="textAreaMenssagem" required maxlength="100"></textarea>
+        <span></span>
 
-    <label class="menssa" for="textAreaMenssagem">Mensagem:</label>
-    <textarea name="message" id="textAreaMenssagem" required maxlength="100"></textarea>
-    <span></span>
+        <button class="env">Enviar mensagem</button>
 
-    <button class="env">Enviar mensagem</button>
-    
-  </form>
-  
-</div> <!--final do row-->
+      </form>
 
+    </div>
+    <!--final do row-->
+  </main>
 
+  <footer class="footer-wrapper main-footer">
+    <div class="footer-content">
 
-        
- 
-    <footer class="footer-wrapper main-footer">
-      <div class="footer-content">
+      <div class="great-place-column"></div>
 
-                <div class="great-place-column"></div>
+      <div class="menus-column">
+        <div class="menu-footer-container">
+          <p class="menu-footer-title">Cantatos</p>
 
-        <div class="menus-column">
-          <div class="menu-footer-container">
-            <p class="menu-footer-title">Cantatos</p>
+          <div class="menu-footer-content">
+            <!-- USUÁRIO DESLOGADO -->
+            <div class="footer-tech-container">
 
-            <div class="menu-footer-content">
-              <!-- USUÁRIO DESLOGADO -->
-                                                      
-                          
-                            
-                                            <div class="footer-tech-container">
-                            
-                            </a>
-                            <div class="footer-tech-content">
-                                <div class="sub-columns">
-                                    <div class="sub-item1">
+              </a>
+              <div class="footer-tech-content">
+                <div class="sub-columns">
+                  <div class="sub-item1">
                     <h3>Redes Sociais</h3> <br>
                   </div>
-                                  <div class="sub-item1">
-                    <a  href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">
-protagonistas_eteemm<br/></a>
+                  <div class="sub-item1">
+                    <a href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">
+                      protagonistas_eteemm<br /></a>
                   </div>
                   <div class="sub-item1">
-                    <a  href="https://www.instagram.com/protagonmidiatico_/" target="_blank">
-protagonmidiatico_<br/></a>
+                    <a href="https://www.instagram.com/protagonmidiatico_/" target="_blank">
+                      protagonmidiatico_<br /></a>
                   </div>
                   <div class="sub-item1">
-                    <a  href="https://www.instagram.com/gremioete/" target="_blank">
-gremioete<br/></a>
+                    <a href="https://www.instagram.com/gremioete/" target="_blank">
+                      gremioete<br /></a>
                   </div>
                   <div class="sub-item">
                     <a title="Java" href="//www.devmedia.com.br/guias/java"></a>
@@ -570,461 +439,42 @@ gremioete<br/></a>
                   <div class="sub-item">
                     <a title="Delphi" href="//www.devmedia.com.br/guias/delphi"></a>
                   </div> <br>
-                                </div>
+                </div>
+              </div>
+              <!--final do footer-tech-content-->
+
+              <div class="footer-info-social">
+                <div class="footer-social-container">
+
+                  <a href="https://www.facebook.com/EscolaTecnica.EMM" target="_blank" rel="noopener noreferrer" class="footer-icons">
+                    <svg class="icon-facebook">
+                      <path d="M18.6,15h-2.4v8.4h-3.5V15H11v-3h1.7v-1.9c-0.1-1.8,1.2-3.4,3-3.5c0.2,0,3.1,0,3.1,0v2.9H17 c-0.4,0-0.7,0.3-0.7,0.7l0,1.8H19L18.6,15z" />
+                    </svg>
+                  </a>
+
+                  <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank" rel="noopener noreferrer" class="footer-icons">
+                    <svg class="icon-instagram">
+                      <path d="M19.9,5H10c-2.8,0-5,2.2-5,5v10c0,2.8,2.2,5,5,5H20c2.8,0,5-2.2,5-5V10C24.9,7.2,22.7,5,19.9,5 z M22.7,20c0,1.6-1.3,2.9-2.9,2.9l0,0H9.9C8.3,22.9,7,21.6,7,20V10C7,8.4,8.3,7.1,10,7.1l0,0h9.9c1.6,0,2.9,1.3,2.9,2.9v0L22.7,20z" />
+                      <circle cx="20.3" cy="9.7" r="1.2" />
+                      <path d="M14.9,9.7c-2.9,0-5.3,2.4-5.3,5.3s2.4,5.3,5.3,5.3c2.9,0,5.3-2.4,5.3-5.3S17.8,9.7,14.9,9.7z M14.9,18 c-1.7,0-3-1.4-3-3s1.4-3,3-3c1.7,0,3,1.4,3,3S16.6,18,14.9,18z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC3vq4moLhseuegyZQx1zB9Q" target="_blank" rel="noopener noreferrer" class="footer-icons">
+                    <svg class="icon-youtube">
+                      <path d="M25.3,9.9C25,8.8,24.1,8,23,7.8c-2.7-0.2-5.3-0.3-8-0.3c-2.7-0.1-5.3,0-8,0.3 C5.9,8,5,8.8,4.7,9.9c-0.3,1.7-0.5,3.4-0.4,5.1c-0.1,1.7,0.1,3.4,0.4,5.1C5,21.2,5.9,22,7,22.2c2.7,0.2,5.3,0.3,8,0.3 c2.7,0.1,5.3,0,8-0.3c1.1-0.1,2.1-1,2.3-2.1c0.3-1.7,0.5-3.4,0.4-5.1C25.8,13.3,25.6,11.6,25.3,9.9z M12.2,18.3v-7.1 c2.3,1.2,4.5,2.4,6.8,3.5C16.7,16,14.5,17.1,12.2,18.3z" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="prolearn">
+                  <a href="https://www.instagram.com/prolearncode/" target="_blank">
+                    <p>By: ProLearn Code</p>
+                  </a>
+                </div>
+                <!--final do prolearn-->
+              </div>
+            </div>
+  </footer>
+</body>
 
-                                
-
-                            
-                                    </div> <!--final do footer-tech-content-->
-
-
-
-                
-                <div class="footer-info-social">  
-                    <div class="footer-social-container">
-                        
-                        <a href="https://www.facebook.com/EscolaTecnica.EMM" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                            <svg class="icon-facebook">
-                                <path d="M18.6,15h-2.4v8.4h-3.5V15H11v-3h1.7v-1.9c-0.1-1.8,1.2-3.4,3-3.5c0.2,0,3.1,0,3.1,0v2.9H17 c-0.4,0-0.7,0.3-0.7,0.7l0,1.8H19L18.6,15z"/>
-                            </svg>
-                        </a>
-                        
-                       
-                        <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                            <svg class="icon-instagram">
-                                <path d="M19.9,5H10c-2.8,0-5,2.2-5,5v10c0,2.8,2.2,5,5,5H20c2.8,0,5-2.2,5-5V10C24.9,7.2,22.7,5,19.9,5 z M22.7,20c0,1.6-1.3,2.9-2.9,2.9l0,0H9.9C8.3,22.9,7,21.6,7,20V10C7,8.4,8.3,7.1,10,7.1l0,0h9.9c1.6,0,2.9,1.3,2.9,2.9v0L22.7,20z"
-                                    />
-                                <circle cx="20.3" cy="9.7" r="1.2"/>
-                                <path d="M14.9,9.7c-2.9,0-5.3,2.4-5.3,5.3s2.4,5.3,5.3,5.3c2.9,0,5.3-2.4,5.3-5.3S17.8,9.7,14.9,9.7z M14.9,18 c-1.7,0-3-1.4-3-3s1.4-3,3-3c1.7,0,3,1.4,3,3S16.6,18,14.9,18z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UC3vq4moLhseuegyZQx1zB9Q" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                            <svg class="icon-youtube">
-                                <path d="M25.3,9.9C25,8.8,24.1,8,23,7.8c-2.7-0.2-5.3-0.3-8-0.3c-2.7-0.1-5.3,0-8,0.3 C5.9,8,5,8.8,4.7,9.9c-0.3,1.7-0.5,3.4-0.4,5.1c-0.1,1.7,0.1,3.4,0.4,5.1C5,21.2,5.9,22,7,22.2c2.7,0.2,5.3,0.3,8,0.3 c2.7,0.1,5.3,0,8-0.3c1.1-0.1,2.1-1,2.3-2.1c0.3-1.7,0.5-3.4,0.4-5.1C25.8,13.3,25.6,11.6,25.3,9.9z M12.2,18.3v-7.1 c2.3,1.2,4.5,2.4,6.8,3.5C16.7,16,14.5,17.1,12.2,18.3z"/>
-                            </svg>
-                        </a>  
-
-                              
-
-                    </div>
-
-                    <div class="prolearn">
-
-
-                      <a href="https://www.instagram.com/prolearncode/" target="_blank"><p>By: ProLearn Code</p></a>
-
-                    </div>  <!--final do prolearn-->
-
-                 
-                </div> 
-
-
-        
-
-      </div>
-
-
-      
-
-    </footer>
-
-
-
-
-
-    <style>
-
-  
-
-      .footer-copyright {
-        color: black;
-      }
-
-      .footer-wrapper {
-        width: 100%;
-        padding: 30px 20px;
-        background:  #4169E1;
-        box-sizing: border-box;
-      }
-      .footer-wrapper * {
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-      }
-      .footer-content {
-        width: 100%;
-        /* max-width: 320px; */
-        margin: 0 auto;
-      }
-      .footer-logo-container {
-        width: 100%;
-      }
-      .footer-logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .footer-logo svg {
-        width: 143px;
-        height: 33px;
-      }
-      .footer-logo svg path {
-        fill: #8795A2;
-      }
-     
-      .porta80 {
-        font-size: 11px;
-        font-weight: 300;
-        color: #8795A2;
-        text-align: center;
-        text-decoration: none;
-      }
-      .contact-container {
-        width: 100%;
-        max-width: 250px;
-        margin: 20px auto 0 auto;
-        text-align: center;
-      }
-      .contact-container label {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 600;
-        border-radius: 5px;
-        background: #0AC5D4;
-        box-shadow: 12px 15px 20px rgba(17, 136, 233, 0.05);
-      }
-      .contact-container label span {
-        width: 100%;
-        display: block;
-        margin-top: 10px;
-        font-size: 16px;
-      }
-      
-      .porta80-desktop-container {
-        display: none;
-      }
-      .menu-footer-container {
-        width: 100%;
-        margin: 25px 0;
-      }
-      .menu-footer-title {
-        display: none;
-      }
-      .menu-item {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      .menu-item:last-child {
-        margin-bottom: 0;
-      }
-      .menu-item a,
-      .sub-item a {
-        display: inline-block;
-        color: #fff;
-        font-size: 13px;
-        font-weight: 400;
-        text-decoration: none;
-        
-      }
-      .menu-item a:hover,
-      .sub-item a:hover {
-        color: #373737;
-        transform: scale(1.04);
-      }
-
-      .sub-item2 {
-        margin-right: 10px;
-      }
-
-      .sub-item1 {
-        margin-right: 10px;
-      }
-
-      .footer-tech-container {
-        display: none;
-      }
-      .footer-address-container {
-        width: 100%;
-        margin: 20px 0;
-        padding: 10px 0;
-        text-align: center;
-        border-top: 1px solid #ECECEC;
-        border-bottom: 1px solid #ECECEC;
-      }
-      .footer-address-container p {
-        margin: 0;
-        padding: 0 10px;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-      }
-      .footer-social-container {
-        width: 150%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-      }
-      .footer-icons {
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-      }
-      .footer-icons svg {
-        width: 30px;
-        height: 30px;
-      }
-      .footer-icons svg path {
-        fill: #fff;
-      }
-   
-      @media screen and (min-width: 760px) {
-        .footer-content {
-          max-width: 680px;
-        }
-        .footer-address-container {
-          max-width: 320px;
-          margin: 20px auto;
-        }
-        .footer-social-container {
-          max-width: 320px;
-          margin: 0 auto;
-            justify-content: center;
-        }
-        .menu-footer-container {
-          margin: 40px 0;
-
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-        .menu-footer-content {
-          width: 100%;
-          display: flex;
-          justify-content: flex-start;
-        }
-        .menu-item {
-          width: auto;
-          margin-bottom: 0;
-                }
-                .menu-group:first-child {
-                    margin-right: 50px;
-                }
-      }
-
-      @media screen and (min-width: 1024px) {
-        .footer-wrapper {
-          padding: 30px 60px 40px 60px;
-        }
-        .footer-content {
-          max-width: unset;
-          margin: 0;
-
-          display: flex;
-          justify-content: flex-start;
-          flex-wrap: wrap;
-        }
-        .info-column {
-          width: 25%;
-          max-width: 250px;
-        }
-        .footer-logo-container {
-          width: 100%;
-        }
-        .porta80-desktop-container {
-          display: block;
-          text-align: center;
-        }
-        .menus-column {
-          /*width: 65%;*/
-          display: flex;
-          justify-content: space-around;
-                    flex-wrap: wrap;
-                    flex: 1 1 auto;
-        }
-        .menu-footer-container {
-          width: 100%;
-            padding-left: 230px;
-            display: block;
-          display: block;
-        }
-        .menu-footer-content {
-          flex-wrap: wrap;
-        }
-        .footer-tech-container {
-          width: 60%;
-          display: block;
-        }
-        .footer-tech-content {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: nowrap;
-        }
-        .sub-columns {
-          width: 100%;
-        }
-
-       
-
-
-       
-         
-            @media screen and (max-width: 1054px)
-            {
-                .menu-group:first-child{
-                    margin-right: 0;
-                    margin-top: 0;
-                }
-                
-                .menu-group{
-                    margin-top: 20px;
-                    width: 100%;
-                }
-            }
-            @media screen and (max-width: 1440px)
-            {
-              .menu-footer-container {
-          padding-left: 60px;
-              }
-            }
-            @media screen and (max-width: 1023px)
-            {
-                .great-place-column{
-                    width: auto;
-                    margin-top: 15px;
-                }
-
-                .menu-footer-content{
-                    flex-wrap: wrap;
-                }
-
-                .menu-group{
-                    margin-top: 0;
-                }
-
-                .menu-item{
-                    margin-top: 10px;
-                    margin-bottom: 0;
-                }
-
-                .footer-info-social{
-                    width: auto;
-                }
-
-                .porta80-mobile-container{
-                    margin-top: 15px;
-                }
-
-                .badges-gptw a img{
-                    max-width: 140px;
-                }
-
-                .footer-wrapper{
-                    padding: 0 20px 60px 20px !important;
-                }
-
-        .menu-footer-container {
-      padding-left: initial;
-    }
-            }
-
-            @media screen and (max-width: 400px)
-            {
-                .footer-info-social{
-                    margin: 0 auto;
-                    width: 280px;
-                }
-
-                .badges-gptw a img{
-                    max-width: 125px;
-                }
-            }
-
-            .dashboard-container{
-                padding: 0px 5px 25px 5px !important;
-            }
-        </style>
-        
-        
-                    <style>
-                .menu-group{
-                    width: 100%;
-                    margin-top: 20px;
-                }
-
-                .menu-group:first-child{
-                    margin-top: 0;
-                }
-
-                .menu-footer-container{
-                    width: 40%;
-                }
-                
-                .footer-tech-container{ 
-                    width: 60%;
-                }
-
-                .menus-column{
-                    padding: 0 15px;
-                }
-
-                .dashboard-container{
-                    padding: 0px 5px 50px 5px !important;
-                }
-
-                
-                @media screen and (max-width: 1023px)
-                {
-                    .great-place-column{
-                        width: auto;
-                    }
-
-                    .footer-tech-container, .menu-footer-container{
-                        width: 100%;
-                    }
-
-                    .menu-footer-container{
-                        margin: 30px 0 40px 0;
-                    }
-
-                    .menu-group{
-                        margin: 0;
-                    }
-
-                    .menu-item{
-                        margin-top: 15px;
-                    }
-
-                    .footer-info-social{
-                        width: auto;
-                    }
-
-                    .badges-gptw a img{
-                        max-width: 140px;
-                    }
-
-                    .footer-tech-container {
-                        display: flex;
-                        justify-content: center;
-                        margin: 15px 0 50px;
-                        flex-wrap: wrap;
-                    }
-
-                 
-            </style>
-          
-
-
-
-
-
-  </body>
 </html>

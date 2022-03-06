@@ -1,31 +1,21 @@
-*{
-
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;;
-
-}
-
-.noomee{
+.noomee {
   color: white;
   font-family: Times new roman;
   font-size: 2.2rem;
 }
 
-.center{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: flex;
-    flex-wrap: wrap;
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .clique-aqui {
   border-radius: 10px;
   color: white;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   width: 100px;
   cursor: pointer;
   height: 40px;
@@ -34,23 +24,24 @@
 .clique-aqui1 {
   border-radius: 10px;
   color: white;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   width: 100px;
   cursor: pointer;
-
 }
 
 .clique-aqui2 {
   border-radius: 10px;
   color: white;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   width: 100px;
   cursor: pointer;
-  height:40px;
-
+  height: 40px;
 }
 
-body, ul, li, p{
+body,
+ul,
+li,
+p {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -58,12 +49,12 @@ body, ul, li, p{
   font-family: Arial;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-.header{
+.header {
   position: fixed;
   left: 0;
   top: 0;
@@ -76,40 +67,38 @@ a{
   padding: 1px;
 }
 
-
-.etelogo{
+.etelogo {
   margin-left: 5%;
   width: 12%;
   display: flex;
   grid-gap: 10px;
 }
 
-.menu{
+.menu {
   display: flex;
   margin-right: 4 0px;
 }
 
-.menu li{
+.menu li {
   margin-left: 10px;
 }
 
-.menu li a{
+.menu li a {
   display: block;
   padding: 10px;
 }
 
-.nadaaver h2{
+.nadaaver h2 {
   color: #fff;
-  opacity : 0.0;
+  opacity: 0;
 }
 
 /*
 Section Main
 */
 
-section.main{
-  background-image: url('img/essadaqui.png');
-  
+section.main {
+  background-image: url("img/essadaqui.png");
 
   padding: 80px 0;
   background-position: center;
@@ -118,42 +107,39 @@ section.main{
   background-attachment: fixed;
 }
 
-.main_cta{
+.main_cta {
   padding: 17px;
   width: 100%;
   margin: 60px 0;
   text-align: center;
 }
 
+/* final do site Rodapé*/
 
-
-                               /* final do site Rodapé*/
-
-
-.container-fluid{
-    width: 100%;
-    padding: 10px;
-    padding-right: 15px;
-    padding-left: 600px;
-    margin: 15px 0;
+.container-fluid {
+  width: 100%;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 600px;
+  margin: 15px 0;
 }
 
 .page-footer {
-    background: #4169E1;
-    color: #fff;
+  background: #4169e1;
+  color: #fff;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-user agent stylesheet
-div {
-    display: block;
+user agent stylesheet div {
+  display: block;
 }
 
-
-.col{
+.col {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -170,46 +156,46 @@ div {
   margin-left: 6.5px;
 }
 
-.list-inline-item{
+.list-inline-item {
   padding: 10px;
 }
 
-.hr{
+.hr {
   max-width: 250px;
 }
 
-.footer-copyright{
+.footer-copyright {
   padding: 10px;
   margin-left: 3.5%;
 }
 
-
 .nav {
   padding: 5px;
-}.container-fluid{
-    width: 100%;
-    padding: 10px;
-    padding-right: 15px;
-    padding-left: 600px;
-    margin: 15px 0;
+}
+.container-fluid {
+  width: 100%;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 600px;
+  margin: 15px 0;
 }
 
 .page-footer {
-    background: #4169E1;
-    color: #fff;
+  background: #4169e1;
+  color: #fff;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-user agent stylesheet
-div {
-    display: block;
+user agent stylesheet div {
+  display: block;
 }
 
-
-.col{
+.col {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -226,70 +212,38 @@ div {
   margin-left: 6.5px;
 }
 
-.list-inline-item{
+.list-inline-item {
   padding: 10px;
 }
 
-.hr{
+.hr {
   max-width: 250px;
 }
 
-.footer-copyright{
+.footer-copyright {
   padding: 10px;
   margin-left: 3.5%;
 }
-
 
 .nav {
   padding: 5px;
 }
 
-
-@media (max-width: 999px){
-
-  .nadaaver  {
+@media (max-width: 999px) {
+  .nadaaver {
     color: #fff;
-    opacity: 0.0;
+    opacity: 0;
   }
-
 }
 
-
-@media screen and (max-width: 768px){
-  .diferencial-single{
+@media screen and (max-width: 768px) {
+  .diferencial-single {
     width: 100%;
     margin-bottom: 20px;
   }
 
-
-  .conteudo-sobre p{width: 100%; margin:20px 20px;}
+  .conteudo-sobre p {
+    width: 100%;
+    margin: 20px 20px;
+  }
 }
-
-  /*.menu{
-    display: none;
-  }*/
-
-
-.logo{
-  width: 20%;
-}
-
-.menu-mobile{
-  width: 80%;
-  text-align: right;
-  display: block;
-}
-
-.menu-mobile i{
-  cursor: pointer;
-  font-size: 23px;
-  margin-top: 8px;
-}
-
-
-
-
-
-
-
-
