@@ -1,0 +1,33 @@
+{
+  "name": "vendor_name/site-ete",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Guilherme Santos",
+      "email": "guiisanttos510@gmail.com",
+      "role": "developer"
+    },
+    {
+      "name": "Vinicius C. Santos",
+      "email": "viniciuscsantosoficial@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "Source/"
+    },
+    "files": [
+      "Source/Config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/router": "1.0.0",
+    "league/plates": "3.3.0"
+  }
+}
