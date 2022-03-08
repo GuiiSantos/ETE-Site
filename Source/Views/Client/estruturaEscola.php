@@ -6,9 +6,9 @@
   <meta name="viewport" content="widht=device=widht, initial-scale=1.0" />
 
   <title>ETE Edson Mororó Moura</title>
-  <link rel="icon" type="image/png" href="img/etelogo.png">
+  <link rel="icon" type="image/png" href="<?=CONF_URL_PATH ?>/img/etelogo.png">
 
-  <link href="./scss/style.css" rel="stylesheet" />
+  <link href="<?=CONF_URL_PATH ?>/scss/style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <img class="etelogo" src="img/etelogo.png">
+    <img class="etelogo" src="<?=CONF_URL_PATH ?>/img/etelogo.png">
     <p class="titulo">Edson Mororó Moura</p>
 
     <input type="checkbox" id="chk">
@@ -26,7 +26,7 @@
     </label>
 
     <ul class="menu">
-      <a href="index.html">Voltar</a>
+      <a href="/">Voltar</a>
 
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
@@ -38,43 +38,43 @@
 
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete01.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete01.jpg">
       </a>
       <p>Hall de entrada</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete02.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete02.jpg">
       </a>
       <p>Sala de aula</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete03.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete03.jpg">
       </a>
       <p>Pátio</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete04.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete04.jpg">
       </a>
       <p>Acesso às salas de aulas</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete05.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete05.jpg">
       </a>
       <p>Pátio</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete06.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete06.jpg">
       </a>
       <p>Estacionamento</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete07.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete07.jpg">
       </a>
       <p>Estacionamento</p>
     </div>
@@ -90,43 +90,43 @@
   <section class="flex">
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/foto.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/foto.jpg">
       </a>
       <p>Pátio</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete09.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete09.jpg">
       </a>
       <p>Auditório</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete10.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete10.jpg">
       </a>
       <p>Auditório</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/ete08.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/ete08.jpg">
       </a>
       <p>Laboratório de Informática</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/fisica.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/fisica.jpg">
       </a>
       <p>Laboratório da Física</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/matematica.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/matematica.jpg">
       </a>
       <p>Laboratório de Matemática</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/quimica.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/quimica.jpg">
       </a>
       <p>Laboratório de Química</p>
     </div>
@@ -136,13 +136,13 @@
   <section class="flex">
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/biologia.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/biologia.jpg">
       </a>
       <p>Laboratório de Biologia</p>
     </div>
     <div class="img">
       <a href="#" target="_blank">
-        <img src="img/biblioteca.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/biblioteca.jpg">
       </a>
       <p>Biblioteca</p>
     </div>

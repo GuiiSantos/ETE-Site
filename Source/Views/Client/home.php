@@ -8,7 +8,7 @@
   <title>ETE Edson Mororó Moura</title>
   <link rel="icon" type="image/png" href="img/etelogo.png">
 
-  <link href="./scss/style.css" rel="stylesheet" />
+  <link href="<?=CONF_URL_PATH ?>/scss/style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -17,7 +17,7 @@
 
 <body>
   <header class="header">
-    <img class="etelogo" src="img/etelogo.png">
+    <img class="etelogo" src="<?=CONF_URL_PATH ?>/img/etelogo.png">
     <p class="titulo">Edson Mororó Moura</p>
 
     <input type="checkbox" id="chk">
@@ -43,7 +43,7 @@
       <div class="center">
         <div class="main_cta">
           <a name="sitedaete">
-            <img class="rexiteg" width="300px" src="img/colocaessadaqui.png">
+            <img class="rexiteg" width="300px" src="<?=CONF_URL_PATH ?>/img/colocaessadaqui.png">
           </a>
         </div>
         <!--main-cta-->
@@ -78,7 +78,7 @@
             <div><i class="fas fa-mouse-pointer"></i></div>
             <h2>Estrutura Física</h2>
             <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p><br>
-            <a href="estrutura.html"><button class="clique-aqui">Clique aqui</button></a>
+            <a href="/estrutura"><button class="clique-aqui">Clique aqui</button></a>
           </div>
           <!--diferencial-single-->
         </div>
@@ -158,7 +158,7 @@
 
     <section class="professores">
       <div class="center">
-        <img class="professores-img" src="img/canalprof.jpg">
+        <img class="professores-img" src="<?=CONF_URL_PATH ?>/img/canalprof.jpg">
         <div class="professores-content">
           <h2>Canal no YouTube de Educadores ETEEMM</h2>
           <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p> <br>
@@ -212,7 +212,7 @@
       <div class="mySlides fade">
 
         <div class="numbertext"></div>
-        <img src="img/nade.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/nade.jpg">
 
         <div class="text"></div>
 
@@ -222,7 +222,7 @@
       <div class="mySlides fade">
 
         <div class="numbertext"></div>
-        <img src="img/eduarslide.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/eduarslide.jpg">
 
         <div class="text"></div>
 
@@ -232,7 +232,7 @@
       <div class="mySlides fade">
 
         <div class="numbertext"></div>
-        <img src="img/barbasalide.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/barbasalide.jpg">
 
         <div class="text"></div>
 
@@ -242,7 +242,7 @@
       <div class="mySlides fade">
 
         <div class="numbertext"></div>
-        <img src="img/anaslide.jpg">
+        <img src="<?=CONF_URL_PATH ?>/img/anaslide.jpg">
 
         <div class="text"></div>
 
@@ -321,43 +321,43 @@
     <section class="flex">
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/primeira.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/primeira.jpg">
         </a>
         <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
       </div>
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/projetos.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/projetos.jpg">
         </a>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </div>
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/esporte.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/esporte.jpg">
         </a>
         <p>Competições esportivas ETEEMM</p>
       </div>
       <div class="img04">
         <a href="" target="_blank">
-          <img src="img/gremio.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/gremio.jpg">
         </a>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </div>
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/sarau.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/sarau.jpg">
         </a>
         <p>Sarau Literomusical ETEEMM</p>
       </div>
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/feras.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/feras.jpg">
         </a>
         <p>Feras ETEEMM</p>
       </div>
       <div class="img">
         <a href="" target="_blank">
-          <img src="img/conquistas.jpg">
+          <img src="<?=CONF_URL_PATH ?>/img/conquistas.jpg">
         </a>
         <p>Galeria de conquistas</p>
       </div>
