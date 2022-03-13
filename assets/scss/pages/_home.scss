@@ -426,8 +426,8 @@ img {
 }
 
 .img:hover {
-  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
-  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
 // FOOTER
@@ -513,7 +513,7 @@ img {
 }
 
 @media (max-width: 700px) {
-  .titulo {
+  .title {
     font-size: 120%;
     margin-top: 4%;
     margin-bottom: 4%;

@@ -17,25 +17,29 @@
 
 <body>
   <header class="header">
-    <img class="etelogo" src="<?=CONF_URL_PATH ?>/img/etelogo.png">
-    <p class="titulo">Edson Mororó Moura</p>
+    <div class="container">
+      <img class="etelogo" src="<?=CONF_URL_PATH ?>/img/etelogo.png" alt="logo">
 
-    <input type="checkbox" id="chk">
+      <p class="title">Edson Mororó Moura</p>
 
-    <label for="chk" class="show-menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
+      <input type="checkbox" id="chk">
 
-    <ul class="menu">
-
-      <a href="#sitedaete">Home</a>
-      <a href="#sobreee">Sobre</a>
-      <a href="#contatooo">Contato</a>
-
-      <label for="chk" class="hide-menu-btn">
-        <i class="fas fa-times"></i>
+      <label for="chk" class="btn-menu">
+        <i class="fas fa-bars"></i>
       </label>
-    </ul>
+
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#sitedaete">Home</a></li>
+          <li><a href="#sobreee">Sobre</a></li>
+          <li><a href="#contatooo">Contato</a></li>
+
+          <label for="chk" class="btn-menu hide">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+      </nav>
+    </div>
   </header> <!-- HEADER -->
 
   <main>

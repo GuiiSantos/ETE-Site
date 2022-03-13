@@ -1,13 +1,25 @@
-## Come usar o SCSS
+## Conteúdos
 
-### Após ter instalado o sass no [SITE OFICIAL](https://sass-lang.com/), você poderá ultilizar este comando no terminal (na raiz do projeto)
+- [Como iniciar o Composer](#como-iniciar-o-composer)
+- [Como compilar o CSS com o SASS](#como-compilar-o-css-com-o-sass)
 
-`sass -w scss/style.scss:scss/style.css --style compressed --no-source-map`
 
-### para compilar todo o scss no arquivo scss/style.css
+## Como iniciar o Composer
+
+- Instale o Composer no [SITE OFICIAL](https://getcomposer.org/)
+- Utilize o comando `composer update` na raiz do projeto
+- E voilà, será criada a pasta vendor com todas as dependências, e seu PHP estará funcionando
+
+## Como compilar o CSS com o SASS
+
+- Instale o SASS no [SITE OFICIAL](https://sass-lang.com/)
+- Utilize o comando `sass -w assets/scss/style.scss:assets/scss/style.css --style compressed --no-source-map` na raiz do projeto
+- E voilà, você estara compilando o seu pré-processador css (SASS)
+
+#### Explicação do comando
 
 1. `sass` : Nome do comando
 2. `-w` : Serve para manter o scss sendo compilado
-3. `scss/style.scss:scss/style.css` : Caminho dos arquivos
+3. `assets/scss/style.scss:assets/scss/style.css` : Caminho dos arquivos
 4. `--style compressed` : Serve para minificar o css
 5. `--no-source-map` : Serve para impedir criação do arquivo style.map.css

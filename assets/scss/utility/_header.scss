@@ -1,102 +1,109 @@
 .header {
+  height: 80px;
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
   background: #1d1e20;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+  padding: 0 40px;
 
-.etelogo {
-  margin-left: 5%;
-  width: 12%;
-  display: flex;
-  grid-gap: 10%;
-}
-
-.titulo {
-  color: white;
-  font-size: 2.2rem;
-}
-
-.menu {
-  float: right;
-  line-height: 100px;
-}
-
-.menu a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0 10px;
-  transition: 0.4s;
-}
-
-.show-menu-btn,
-.hide-menu-btn {
-  transition: 0.4s;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  color: #fff;
-}
-
-.show-menu-btn {
-  float: right;
-  margin-bottom: 0.7%;
-  margin-right: 9%;
-}
-
-.show-menu-btn i {
-  float: right;
-}
-
-.menu a:hover,
-.show-menu-btn:hover,
-.hide-menu-btn:hover {
-  color: #3498db;
-}
-
-#chk {
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-}
-
-@media screen and (max-width: 800px) {
-  .show-menu-btn,
-  .hide-menu-btn {
-    display: block;
-  }
-
-  .menu {
-    position: fixed;
+  .container {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    background: #333;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-  }
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
+    .title {
+      color: white;
+      font-size: 2rem;
+    }
 
-  .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
+    .etelogo {
+      width: 125px;
+    }
 
-  #chk:checked ~ .menu {
-    right: 0;
+    nav {
+      .menu {
+        display: flex;
+
+        li {
+          a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: color 0.4s;
+
+            &:hover {
+              color: #3498db;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-menu {
+      display: none;
+      cursor: pointer;
+      font-size: 30px;
+      color: #fff;
+      transition: color 0.4s;
+
+      &:hover {
+        color: #3498db;
+      }
+    }
+
+    #chk {
+      display: none;
+    }
+
+    @media (max-width: 800px) {
+      .title {
+        display: none;
+      }
+
+      nav {
+        position: absolute;
+
+        .menu {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: -100%;
+          flex-direction: column;
+          background: #333;
+          text-align: center;
+          padding: 80px 0;
+          line-height: normal;
+          transition: right 0.7s;
+
+          li {
+            a {
+              display: block;
+              padding: 20px;
+            }
+          }
+        }
+      }
+
+      .btn-menu {
+        display: block;
+      }
+
+      .btn-menu.hide {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+
+      #chk:checked ~ nav .menu {
+        right: 0;
+      }
+    }
   }
 }
