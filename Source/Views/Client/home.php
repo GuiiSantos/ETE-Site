@@ -42,55 +42,43 @@
     </div>
   </header> <!-- HEADER -->
 
-  <main>
-    <section class="introuducao">
-      <div class="center">
-        <div class="main_cta">
-          <a name="sitedaete">
-            <img class="rexiteg" width="300px" src="<?=CONF_URL_PATH ?>/img/colocaessadaqui.png">
-          </a>
-        </div>
-        <!--main-cta-->
+  <main class="main">
+    <section class="introduction">
+      <div class="container">
+        <img class="call-to-action" width="" src="<?=CONF_URL_PATH ?>/img/colocaessadaqui.png">
 
-        <div class="diferenciais">
-          <div class="diferencial-single">
-            <div><i class="fas fa-mouse-pointer"></i>
-            </div>
-            <h2>Processo Seletivo</h2>
-            <p>Ingresso no Médio Integrado, Subsequente e EAD.</p> <br>
-            <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div>
-          <!--diferencial-single-->
+        <ul class="differentials">
+            <li class="differentials-item">
+                <div><i class="fas fa-mouse-pointer"></i></div>
+                <h2>Processo Seletivo</h2>
+                <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
+                <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+            </li>
 
-          <div class="diferencial-single">
-            <div><i class="fas fa-mouse-pointer"></i></div>
-            <h2>Siepe</h2>
-            <p>Sistema de Informações da Educação de Pernambuco.</p><br>
-            <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div>
-          <!--diferencial-single-->
+            <li class="differentials-item">
+                <div><i class="fas fa-mouse-pointer"></i></div>
+                <h2>Siepe</h2>
+                <p>Sistema de Informações da Educação de Pernambuco.</p>
+                <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+            </li>
 
-          <div class="diferencial-single">
-            <div><i class="fas fa-mouse-pointer"></i></div>
-            <h2>Secretaria de Educação - PE</h2>
-            <p>Acesso ao site com informações atualizadas.</p>
-            <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="clique-aqui">Clique aqui</button></a>
-          </div>
-          <!--diferencial-single-->
+            <li class="differentials-item">
+                <div><i class="fas fa-mouse-pointer"></i></div>
+                <h2>Secretaria de Educação - PE</h2>
+                <p>Acesso ao site com informações atualizadas.</p>
+                <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+            </li>
 
-          <div class="diferencial-single">
-            <div><i class="fas fa-mouse-pointer"></i></div>
-            <h2>Estrutura Física</h2>
-            <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p><br>
-            <a href="/estrutura"><button class="clique-aqui">Clique aqui</button></a>
-          </div>
-          <!--diferencial-single-->
-        </div>
-        <!--diferenciais-->
+            <li class="differentials-item">
+                <div><i class="fas fa-mouse-pointer"></i></div>
+                <h2>Estrutura Física</h2>
+                <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p>
+                <a href="/estrutura"><button class="btn-click-here">Clique aqui</button></a>
+            </li>
+        </ul>
       </div>
-      <!--center-->
     </section>
-    <!--main-->
+
     <a name="sobreee">
       <!--âncora-->
       <div class="sobreee">

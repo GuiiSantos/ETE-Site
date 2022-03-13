@@ -1,81 +1,71 @@
-// INTRODUÇÃO
-.introuducao {
+.main {
+  margin-top: 80px;
+}
+// INTRODUÇÂO
+.introduction {
   background: url("../img/essadaqui.png") no-repeat fixed center;
   background-size: cover;
-  padding: 6% 0;
-}
+  padding: 80px 0;
 
-.main_cta {
-  padding: 1.7%;
-  width: 100%;
-  margin: 5% 0;
-  text-align: center;
-}
+  .container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 
-.clique-aqui {
-  border-radius: 10px;
-  color: white;
-  background-color: #1e90ff;
-  width: 100px;
-  cursor: pointer;
-  height: 40px;
-}
+  .call-to-action {
+    display: block;
+    width: 300px;
+    margin: 0 auto 80px;
+  }
 
-.rexiteg {
-  margin-left: 35.5%;
-  padding: 0.5%;
-}
+  .differentials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 
-.main_cta button {
-  background-color: #007bff;
-  display: inline-block;
-  padding: 8% 30%;
-  color: white;
-  border-radius: 6%;
-  font-size: 16%;
-  border: 0;
-  cursor: pointer;
-}
+    .differentials-item {
+      border-radius: 16px;
+      background-color: white;
+      padding: 3rem 1.25rem;
+      transition: all 0.5s;
+      cursor: pointer;
 
-.diferenciais {
-  display: flex;
-  flex-wrap: wrap;
-}
+      &:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.1);
+      }
 
-.diferencial-single {
-  border-radius: 5%;
-  background-color: white;
-  width: 23%;
-  margin-right: 2%;
-  padding: 50px 20px;
-}
+      i {
+        color: #124265;
+        font-size: 1.5rem;
+      }
 
-.diferencial-single {
-  transition: all 0.5s;
-  cursor: pointer;
-}
+      h2 {
+        color: #8b0000;
+        margin: 5% 0;
+        font-size: 1.25rem;
+      }
 
-.diferencial-single:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.1);
-}
+      p {
+        color: gray;
+        font-size: 0.9rem;
+        line-height: 2;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    }
 
-.diferencial-single i {
-  color: #124265;
-  font-size: 130%;
-}
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-.diferencial-single h2 {
-  color: #8b0000;
-  margin: 5% 0;
-  font-size: 100%;
-}
-
-.diferencial-single p {
-  color: gray;
-  font-size: 74%;
-  line-height: 200%;
-  text-align: justify;
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 // SOBRE

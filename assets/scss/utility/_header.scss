@@ -2,16 +2,16 @@
   height: 80px;
   width: 100%;
   position: fixed;
+  z-index: 999;
   left: 0;
   top: 0;
   background: #1d1e20;
-  padding: 0 40px;
 
   .container {
     height: 100%;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
     }
 
     .etelogo {
-      width: 125px;
+      width: 100px;
     }
 
     nav {
