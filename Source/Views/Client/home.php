@@ -6,7 +6,7 @@
   <meta name="viewport" content="widht=device=widht, initial-scale=1.0" />
 
   <title>ETE Edson Mororó Moura</title>
-  <link rel="icon" type="image/png" href="img/etelogo.png">
+  <link rel="icon" type="image/png" href="<?=CONF_URL_PATH ?>/img/etelogo.png">
 
   <link href="<?=CONF_URL_PATH ?>/scss/style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,7 +31,7 @@
       <nav aria-label="Principal">
         <ul class="menu">
           <li><a href="#sitedaete">Home</a></li>
-          <li><a href="#sobreee">Sobre</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#contatooo">Contato</a></li>
 
           <label for="chk" class="btn-menu hide">
@@ -45,7 +45,7 @@
   <main class="main">
     <section class="introduction">
       <div class="container">
-        <img class="call-to-action" width="" src="<?=CONF_URL_PATH ?>/img/colocaessadaqui.png">
+        <img id="sitedaete" class="call-to-action" width="" src="<?=CONF_URL_PATH ?>/img/colocaessadaqui.png">
 
         <ul class="differentials">
             <li class="differentials-item">
@@ -79,49 +79,28 @@
       </div>
     </section>
 
-    <a name="sobreee">
-      <!--âncora-->
-      <div class="sobreee">
-        <p>jkvjbvjbdvj</p>
-      </div>
-    </a>
-    <section class="sobre">
-      <div class="center">
-        <div class="chamada-sobre">
-
-          <h2 class="sobre111">Sobre a ETEEMM</h2>
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2>Sobre a ETEEMM</h2>
 
           <p>Venha fazer parte desta história de sucesso!</p>
         </div>
-        <!--chamada-sobre-->
-        <div class="conteudo-sobre">
-          <p>A Escola Técnica Estadual Edson Mororó Moura - ETEEMM foi criada
-            através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01
-            de abril de 2016.
-            O nome da escola foi dado em homenagem ao empreendedor Edson
-            Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande
-            relevância econômica e social no Município, além de destaque Nacional e
-            Internacional.
+        <div class="about-content">
+          <div class="about-content-item creation">
+            <p>A Escola Técnica Estadual Edson Mororó Moura - ETEEMM foi criada através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01 de abril de 2016. O nome da escola foi dado em homenagem ao empreendedor Edson Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande relevância econômica e social no Município, além de destaque Nacional e Internacional.</p>
 
-            <br><br><br>
-            <span><i class="fas fa-check-double"></i> Médio Integrado: Administração e Desenvolvimento de Sistemas<br /></span>
-            <span><i class="fas fa-check-double"></i> Subsequente: Administração, Química e Redes de Computadores<br /></span>
-            <span><i class="fas fa-check-double"></i> EAD: Cursos Técnicos em Administração, Biblioteconomia, Design de Interiores, Design Gráfico, Informática, Logística, Multimídia, Recursos Humanos, Secretaria Escolar, Segurança do Trabalho, Tradução e Interpretação em Libras<br /></span>
-          </p>
-          <p>A ETEEMM tem como Visão ser referência em Educação Profissional e
-            Integral, em Belo Jardim e região, ressaltando os princípios éticos e o pleno
-            exercício da cidadania, assim como a Missão de desenvolver competências,
-            habilidades, atitudes e valores dos nossos estudantes para que tenham um
-            futuro profissional e acadêmico promissor enaltecendo os seguintes valores:
-            ética, disciplina, inovação, integração, justiça, respeito e empatia.
-            Os cursos ofertados pela ETEEMM são na modalidade Médio Integrado,
-            Subsequente e EAD.</p>
+            <span><i class="fas fa-check-double"></i> Médio Integrado: Administração e Desenvolvimento de Sistemas</span>
+            <span><i class="fas fa-check-double"></i> Subsequente: Administração, Química e Redes de Computadores</span>
+            <span><i class="fas fa-check-double"></i> EAD: Cursos Técnicos em Administração, Biblioteconomia, Design de Interiores, Design Gráfico, Informática, Logística, Multimídia, Recursos Humanos, Secretaria Escolar, Segurança do Trabalho, Tradução e Interpretação em Libras</span>
+          </div>
+
+          <div class="about-content-item target">
+            <p>A ETEEMM tem como Visão ser referência em Educação Profissional e Integral, em Belo Jardim e região, ressaltando os princípios éticos e o pleno exercício da cidadania, assim como a Missão de desenvolver competências, habilidades, atitudes e valores dos nossos estudantes para que tenham um futuro profissional e acadêmico promissor enaltecendo os seguintes valores: ética, disciplina, inovação, integração, justiça, respeito e empatia. Os cursos ofertados pela ETEEMM são na modalidade Médio Integrado, Subsequente e EAD.</p>
+          </div>
         </div>
-        <!--conteudo-sobre-->
       </div>
-      <!--center-->
     </section>
-    <!--sobre-->
 
     <section class="conquistas">
       <!--Área das conquistas parte 1-->
@@ -329,7 +308,7 @@
         </a>
         <p>Competições esportivas ETEEMM</p>
       </div>
-      <div class="img04">
+      <div class="img">
         <a href="" target="_blank">
           <img src="<?=CONF_URL_PATH ?>/img/gremio.jpg">
         </a>
@@ -354,118 +333,10 @@
         <p>Galeria de conquistas</p>
       </div>
     </section>
-    <!--flex-->
-
-
-    <a name="contatooo">
-      <div class="sobreee">
-        <p>jkvjbvjbdvj</p>
-        <p>jkvjbvjbdvj</p>
-      </div>
-    </a>
-    <!--âncora-->
-
-    <div class="row">
-      <!--CONTATO-->
-
-      <h2>Contato</h2>
-
-      <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
-        <input type="hidden" name="accessKey" value="0ff031ca-9a6e-450d-9764-80a94d3078ea">
-        <input type="hidden" name="redirectTo" value="https://eteedsonmororomoura.com.br/">
-
-        <label class="nome" for="inputNome">Primeiro nome:</label>
-        <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
-        <span></span>
-
-        <label class="email" for="inputEmail">Email:</label>
-        <input type="text" id="inputEmail" name="email" required maxlength="50">
-        <span></span>
-
-        <label class="menssa" for="textAreaMenssagem">Mensagem:</label>
-        <textarea name="message" id="textAreaMenssagem" required maxlength="100"></textarea>
-        <span></span>
-
-        <button class="env">Enviar mensagem</button>
-
-      </form>
-
-    </div>
-    <!--final do row-->
   </main>
 
-  <footer class="footer-wrapper main-footer">
-    <div class="footer-content">
-
-      <div class="great-place-column"></div>
-
-      <div class="menus-column">
-        <div class="menu-footer-container">
-          <p class="menu-footer-title">Cantatos</p>
-
-          <div class="menu-footer-content">
-            <!-- USUÁRIO DESLOGADO -->
-            <div class="footer-tech-container">
-
-              </a>
-              <div class="footer-tech-content">
-                <div class="sub-columns">
-                  <div class="sub-item1">
-                    <h3>Redes Sociais</h3> <br>
-                  </div>
-                  <div class="sub-item1">
-                    <a href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">
-                      protagonistas_eteemm<br /></a>
-                  </div>
-                  <div class="sub-item1">
-                    <a href="https://www.instagram.com/protagonmidiatico_/" target="_blank">
-                      protagonmidiatico_<br /></a>
-                  </div>
-                  <div class="sub-item1">
-                    <a href="https://www.instagram.com/gremioete/" target="_blank">
-                      gremioete<br /></a>
-                  </div>
-                  <div class="sub-item">
-                    <a title="Java" href="//www.devmedia.com.br/guias/java"></a>
-                  </div>
-                  <div class="sub-item">
-                    <a title="Delphi" href="//www.devmedia.com.br/guias/delphi"></a>
-                  </div> <br>
-                </div>
-              </div>
-              <!--final do footer-tech-content-->
-
-              <div class="footer-info-social">
-                <div class="footer-social-container">
-
-                  <a href="https://www.facebook.com/EscolaTecnica.EMM" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                    <svg class="icon-facebook">
-                      <path d="M18.6,15h-2.4v8.4h-3.5V15H11v-3h1.7v-1.9c-0.1-1.8,1.2-3.4,3-3.5c0.2,0,3.1,0,3.1,0v2.9H17 c-0.4,0-0.7,0.3-0.7,0.7l0,1.8H19L18.6,15z" />
-                    </svg>
-                  </a>
-
-                  <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                    <svg class="icon-instagram">
-                      <path d="M19.9,5H10c-2.8,0-5,2.2-5,5v10c0,2.8,2.2,5,5,5H20c2.8,0,5-2.2,5-5V10C24.9,7.2,22.7,5,19.9,5 z M22.7,20c0,1.6-1.3,2.9-2.9,2.9l0,0H9.9C8.3,22.9,7,21.6,7,20V10C7,8.4,8.3,7.1,10,7.1l0,0h9.9c1.6,0,2.9,1.3,2.9,2.9v0L22.7,20z" />
-                      <circle cx="20.3" cy="9.7" r="1.2" />
-                      <path d="M14.9,9.7c-2.9,0-5.3,2.4-5.3,5.3s2.4,5.3,5.3,5.3c2.9,0,5.3-2.4,5.3-5.3S17.8,9.7,14.9,9.7z M14.9,18 c-1.7,0-3-1.4-3-3s1.4-3,3-3c1.7,0,3,1.4,3,3S16.6,18,14.9,18z" />
-                    </svg>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UC3vq4moLhseuegyZQx1zB9Q" target="_blank" rel="noopener noreferrer" class="footer-icons">
-                    <svg class="icon-youtube">
-                      <path d="M25.3,9.9C25,8.8,24.1,8,23,7.8c-2.7-0.2-5.3-0.3-8-0.3c-2.7-0.1-5.3,0-8,0.3 C5.9,8,5,8.8,4.7,9.9c-0.3,1.7-0.5,3.4-0.4,5.1c-0.1,1.7,0.1,3.4,0.4,5.1C5,21.2,5.9,22,7,22.2c2.7,0.2,5.3,0.3,8,0.3 c2.7,0.1,5.3,0,8-0.3c1.1-0.1,2.1-1,2.3-2.1c0.3-1.7,0.5-3.4,0.4-5.1C25.8,13.3,25.6,11.6,25.3,9.9z M12.2,18.3v-7.1 c2.3,1.2,4.5,2.4,6.8,3.5C16.7,16,14.5,17.1,12.2,18.3z" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="prolearn">
-                  <a href="https://www.instagram.com/prolearncode/" target="_blank">
-                    <p>By: ProLearn Code</p>
-                  </a>
-                </div>
-                <!--final do prolearn-->
-              </div>
-            </div>
+  <footer class="footer">
+    <p>ETE. Todos os Direitos Reservados.</p>
   </footer>
 </body>
 
