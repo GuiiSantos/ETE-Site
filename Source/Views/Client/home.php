@@ -102,145 +102,150 @@
       </div>
     </section>
 
-    <section class="conquistas">
-      <!--Área das conquistas parte 1-->
-      <div class="center">
-        <div class="conquista-single">
-          <h2>+200</h2>
-          <p>Estudantes aprovados em Universidades Públicas</p>
-        </div>
-        <!--conquista-single-->
-        <div class="conquista-single">
-          <h2>980</h2>
-          <p>Redação ENEM 2020</p>
-        </div>
-        <div class="conquista-single">
-          <h2>IDEB 5,90</h2>
-          <p>IDEPE 6,08</p>
-        </div>
-        <div class="conquista-single">
-          <h2>Esporte</h2>
-          <p>Campeão Municipal, Regional e Pernambucano</p>
-        </div>
+    <section class="section-conquests">
+      <div class="container">
+        
+        <ul class="conquests">
+          <li class="conquests-item">
+            <h2>+200</h2>
+            <p>Estudantes aprovados em Universidades Públicas</p>
+          </li>
+          <li class="conquests-item">
+            <h2>980</h2>
+            <p>Redação ENEM 2020</p>
+          </li>
+          <li class="conquests-item">
+            <h2>IDEB 5,90</h2>
+            <p>IDEPE 6,08</p>
+          </li>
+          <li class="conquests-item">
+            <h2>Esporte</h2>
+            <p>Campeão Municipal, Regional e Pernambucano</p>
+          </li>
+        </ul>
       </div>
-      <!--center-->
     </section>
-    <!--conquistas--> <br><br>
 
-    <section class="professores">
-      <div class="center">
-        <img class="professores-img" src="<?=CONF_URL_PATH ?>/img/canalprof.jpg">
-        <div class="professores-content">
+    <section class="teachers">
+      <div class="container">
+        <img class="teachers-img" src="<?=CONF_URL_PATH ?>/img/canalprof.jpg">
+        <div class="teachers-content">
           <h2>Canal no YouTube de Educadores ETEEMM</h2>
-          <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p> <br>
+          <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
 
-          <a class="canalpro" href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">
-            <p>Profª. Ma. Michele Noberta (Matemática)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">
-            <p>Profª. Elaisa Souza (Inglês)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank">
-            <p>Prof. Eduardo Max (Biologia)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank">
-            <p>Prof. Me. Marcos Vier (Matemática)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank">
-            <p>Profª. Iaponira Campos (Química)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank">
-            <p>Prof. Erandi Oliveira (Matemática)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank">
-            <p>Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</p>
-          </a>
-          <a class="canalpro" href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank">
-            <p>Prof. Paulo Jacinto (Administração)</p>
-          </a>
-
+          <a href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">Profª. Ma. Michele Noberta (Matemática)</a>
+          <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">Profª. Elaisa Souza (Inglês)</a>
+          <a href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank">Prof. Eduardo Max (Biologia)</a>
+          <a href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank">Prof. Me. Marcos Vier (Matemática)</a>
+          <a href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank">Profª. Iaponira Campos (Química)</a>
+          <a href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank">Prof. Erandi Oliveira (Matemática)</a>
+          <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank">Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</a>
+          <a href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank">Prof. Paulo Jacinto (Administração)</a>
         </div>
-        <!--sobre-empreendedor-content-->
       </div>
-      <!--center-->
     </section>
-    <!--sobre-empreendedor-->
 
-    <section class="depoimentos">
-      <!--DEPOIMENTOS-->
+    <section class="testimonials">
       <div class="center">
-        <div class="depoimentos-chamada">
+        <div class="testimonials-title">
           <h2>Depoimentos</h2>
           <p>O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
         </div>
-        <!--depoimentos-chamada-->
+
+        <ul class="slide">
+          <li class="slide-item fade">
+            <img src="<?=CONF_URL_PATH ?>/img/nade.jpg">
+          </li>
+
+          <li class="slide-item fade">
+            <img src="<?=CONF_URL_PATH ?>/img/eduarslide.jpg">
+          </li>
+
+          <li class="slide-item fade">
+            <img src="<?=CONF_URL_PATH ?>/img/barbasalide.jpg">
+          </li>
+
+          <li class="slide-item fade">
+            <img src="<?=CONF_URL_PATH ?>/img/anaslide.jpg">
+          </li>
+
+          <!-- SETAS -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </ul>
+
+        <div class="pagination">
+
+          <span class="pagination-page" onclick="currentSlides(1)"></span>
+          <span class="pagination-page" onclick="currentSlides(2)"></span>
+          <span class="pagination-page" onclick="currentSlides(3)"></span>
+          <span class="pagination-page" onclick="currentSlides(4)"></span>
+
+        </div>
       </div>
     </section>
-    <!--depoimentos-->
 
-    <div class="slideshow-container">
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio-title">
+          <h2>Portfolio</h2>
+          <p>A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
+        </div>
 
-      <div class="mySlides fade">
-
-        <div class="numbertext"></div>
-        <img src="<?=CONF_URL_PATH ?>/img/nade.jpg">
-
-        <div class="text"></div>
-
+        <ul class="galeria">
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/primeira.jpg">
+            </figure>
+            <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/projetos.jpg">
+            </figure>
+            <p>Projetos do Médio Integrado e Subsequente</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/esporte.jpg">
+            </figure>
+            <p>Competições esportivas ETEEMM</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/gremio.jpg">
+            </figure>
+            <p>Protagonismo Juvenil e Grêmio Estudantil</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/sarau.jpg">
+            </figure>
+            <p>Sarau Literomusical ETEEMM</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/feras.jpg">
+            </figure>
+            <p>Feras ETEEMM</p>
+          </li>
+          <li>
+            <figure>
+              <img src="<?=CONF_URL_PATH ?>/img/conquistas.jpg">
+            </figure>
+            <p>Galeria de conquistas</p>
+          </li>
+        </ul>
       </div>
-      <!--final do mySlides fade-->
+    </section>
+  </main>
 
-      <div class="mySlides fade">
+  <footer class="footer">
+    <p>ETE. Todos os Direitos Reservados.</p>
+  </footer>
 
-        <div class="numbertext"></div>
-        <img src="<?=CONF_URL_PATH ?>/img/eduarslide.jpg">
-
-        <div class="text"></div>
-
-      </div>
-      <!--final do mySlides fade-->
-
-      <div class="mySlides fade">
-
-        <div class="numbertext"></div>
-        <img src="<?=CONF_URL_PATH ?>/img/barbasalide.jpg">
-
-        <div class="text"></div>
-
-      </div>
-      <!--final do mySlides fade-->
-
-      <div class="mySlides fade">
-
-        <div class="numbertext"></div>
-        <img src="<?=CONF_URL_PATH ?>/img/anaslide.jpg">
-
-        <div class="text"></div>
-
-      </div>
-      <!--final do mySlides fade-->
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <!--isso "&#10094" é o ícone da seta-->
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <!--isso "&#10094" é o ícone da seta-->
-
-    </div>
-    <!--final do slideshow-container-->
-    <br>
-
-    <div style="text-align: center">
-
-      <span class="dot" onclick="currentSlides(1)"></span>
-      <span class="dot" onclick="currentSlides(2)"></span>
-      <span class="dot" onclick="currentSlides(3)"></span>
-      <span class="dot" onclick="currentSlides(4)"></span>
-
-    </div>
-    <!--final do text-align: center-->
-
-    <script>
-
+  <script>
       var slideIndex = 1;
       showSlides(slideIndex);
 
@@ -253,91 +258,25 @@
       }
 
       function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
+        const slides = document.getElementsByClassName("slide-item");
+        const paginationPage = document.getElementsByClassName("pagination-page");
+
+        if (n > slides.length) { slideIndex = 1 } 
         if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
+
+        for (let i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+        
+        for (let i = 0; i < paginationPage.length; i++) {
+          paginationPage[i].classList.remove("active");
         }
+
         slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+        paginationPage[slideIndex - 1].className += " active";
       }
 
-    </script> <br><br>
-
-    <section class="portfolio">
-      <!--PORTIFOLIO-->
-      <div class="center">
-        <div class="portfolio-aqui">
-          <h2>Portfolio</h2>
-          <div class="constru">
-            <h2>(em construção...)</h2>
-          </div>
-          <p>A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
-          <div>
-          </div>
-        </div>
-        <!--portfolio-aqui-->
-      </div>
-      <!--center-->
-    </section>
-    <!--portfolio-->
-
-
-    <section class="flex">
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/primeira.jpg">
-        </a>
-        <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/projetos.jpg">
-        </a>
-        <p>Projetos do Médio Integrado e Subsequente</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/esporte.jpg">
-        </a>
-        <p>Competições esportivas ETEEMM</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/gremio.jpg">
-        </a>
-        <p>Protagonismo Juvenil e Grêmio Estudantil</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/sarau.jpg">
-        </a>
-        <p>Sarau Literomusical ETEEMM</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/feras.jpg">
-        </a>
-        <p>Feras ETEEMM</p>
-      </div>
-      <div class="img">
-        <a href="" target="_blank">
-          <img src="<?=CONF_URL_PATH ?>/img/conquistas.jpg">
-        </a>
-        <p>Galeria de conquistas</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>ETE. Todos os Direitos Reservados.</p>
-  </footer>
+    </script>
 </body>
 
 </html>
