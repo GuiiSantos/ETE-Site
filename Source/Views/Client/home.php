@@ -2,7 +2,7 @@
 
 <section class="introduction">
   <div class="container">
-    <img id="sitedaete" class="call-to-action" width="" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png">
+    <img class="call-to-action" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png" alt="">
 
     <ul class="differentials">
       <li class="differentials-item">
@@ -38,11 +38,12 @@
 
 <section id="sobre" class="about">
   <div class="container">
-    <div class="about-title">
-      <h2>Sobre a ETEEMM</h2>
+    <div class="section-title">
+      <h2 class="title">Sobre a ETEEMM</h2>
 
-      <p>Venha fazer parte desta história de sucesso!</p>
+      <p class="subtitle">Venha fazer parte desta história de sucesso!</p>
     </div>
+
     <div class="about-content">
       <div class="about-content-item creation">
         <p>A Escola Técnica Estadual Edson Mororó Moura - ETEEMM foi criada através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01 de abril de 2016. O nome da escola foi dado em homenagem ao empreendedor Edson Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande relevância econômica e social no Município, além de destaque Nacional e Internacional.</p>
@@ -87,8 +88,11 @@
   <div class="container">
     <img class="teachers-img" src="<?= CONF_URL_PATH ?>/img/canalprof.jpg">
     <div class="teachers-content">
-      <h2>Canal no YouTube de Educadores ETEEMM</h2>
-      <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
+      <div class="section-title">
+        <h2 class="title">Canal no YouTube de Educadores ETEEMM</h2>
+
+        <p class="subtitle">Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
+      </div>
 
       <a href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">Profª. Ma. Michele Noberta (Matemática)</a>
       <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">Profª. Elaisa Souza (Inglês)</a>
@@ -104,9 +108,10 @@
 
 <section class="testimonials">
   <div class="center">
-    <div class="testimonials-title">
-      <h2>Depoimentos</h2>
-      <p>O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
+    <div class="section-title">
+      <h2 class="title">Depoimentos</h2>
+
+      <p class="subtitle">O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
     </div>
 
     <ul class="slide">
@@ -145,9 +150,10 @@
 
 <section class="portfolio" id="portifolio">
   <div class="container">
-    <div class="portfolio-title">
-      <h2>Portfolio</h2>
-      <p>A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
+    <div class="section-title">
+      <h2 class="title">Portfolio</h2>
+
+      <p class="subtitle">A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
     </div>
 
     <ul class="galeria">

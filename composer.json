@@ -27,7 +27,7 @@
     ]
   },
   "require": {
-    "coffeecode/router": "1.0.0",
-    "league/plates": "3.3.0"
+    "coffeecode/router": "1.*.*",
+    "league/plates": "3.*.*"
   }
 }

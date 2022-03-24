@@ -11,16 +11,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5fb103eefc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fb103eefc.js" defer crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <img class="etelogo" src="<?= CONF_URL_PATH ?>/img/etelogo.png" alt="logo">
-
-            <p class="title">Edson Mororó Moura</p>
+            <a class="title" href="/">ETE</a>
 
             <input type="checkbox" id="chk">
 

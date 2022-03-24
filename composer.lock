@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21e1d0a3d70b8b37535671f4f6e6ee6f",
+    "content-hash": "33c26a629c0693879a26c88148e42888",
     "packages": [
         {
             "name": "coffeecode/router",
-            "version": "1.0.0",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robsonvleite/router.git",
-                "reference": "d111b3bb46a6086d16a7c227ed80e2cccd0e7261"
+                "reference": "29f73e12351a116e9bbb3f695595777a09e18077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/router/zipball/d111b3bb46a6086d16a7c227ed80e2cccd0e7261",
-                "reference": "d111b3bb46a6086d16a7c227ed80e2cccd0e7261",
+                "url": "https://api.github.com/repos/robsonvleite/router/zipball/29f73e12351a116e9bbb3f695595777a09e18077",
+                "reference": "29f73e12351a116e9bbb3f695595777a09e18077",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -51,31 +51,31 @@
             ],
             "support": {
                 "issues": "https://github.com/robsonvleite/router/issues",
-                "source": "https://github.com/robsonvleite/router/tree/master"
+                "source": "https://github.com/robsonvleite/router/tree/1.0.8"
             },
-            "time": "2018-10-03T18:18:40+00:00"
+            "time": "2021-03-21T18:45:16+00:00"
         },
         {
             "name": "league/plates",
-            "version": "3.3.0",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/plates.git",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af"
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/plates/zipball/b1684b6f127714497a0ef927ce42c0b44b45a8af",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 | ^7.0"
+                "php": "^7.0|^8.0"
             },
             "require-dev": {
-                "mikey179/vfsstream": "^1.4",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
@@ -97,10 +97,15 @@
                     "name": "Jonathan Reinink",
                     "email": "jonathan@reinink.ca",
                     "role": "Developer"
+                },
+                {
+                    "name": "RJ Garcia",
+                    "email": "ragboyjr@icloud.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
-            "homepage": "http://platesphp.com",
+            "homepage": "https://platesphp.com",
             "keywords": [
                 "league",
                 "package",
@@ -110,9 +115,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/plates/issues",
-                "source": "https://github.com/thephpleague/plates/tree/master"
+                "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
             },
-            "time": "2016-12-28T00:14:17+00:00"
+            "time": "2020-12-25T05:00:37+00:00"
         }
     ],
     "packages-dev": [],
@@ -123,5 +128,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
