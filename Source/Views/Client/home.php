@@ -36,6 +36,30 @@
   </div>
 </section>
 
+<div class="slider">
+
+    <ul>
+
+        <li>
+            <img src="<?= CONF_URL_PATH ?>/img/foto.jpg">
+        </li>
+
+        <li>
+            <img src="<?= CONF_URL_PATH ?>/img/ete05.jpg">
+        </li>
+
+        <li>
+            <img src="<?= CONF_URL_PATH ?>/img/anaslide.jpg">
+        </li>
+
+        <li>
+            <img src="<?= CONF_URL_PATH ?>/img/ete01.jpg">
+        </li>
+
+    </ul>
+
+</div>
+
 <section id="sobre" class="about">
   <div class="container">
     <div class="about-title">
