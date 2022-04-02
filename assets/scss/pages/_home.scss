@@ -4,7 +4,7 @@
   .title {
     color: $text-color;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   .subtitle {
@@ -34,9 +34,11 @@
     gap: 20px;
 
     .differentials-item {
+      display: flex;
+      flex-direction: column;
       border-radius: 16px;
       background-color: white;
-      padding: 3rem 1.25rem;
+      padding: 3rem 1.25rem 2.5rem;
       transition: all 0.5s;
 
       &:hover {
@@ -44,7 +46,7 @@
         transform: scale(1.1);
       }
 
-      div:nth-child(1) {
+      i:nth-child(1) {
         display: none;
       }
 
@@ -56,15 +58,17 @@
       h2 {
         color: $text-color;
         margin-bottom: 10px;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
       }
 
       p {
-        color: gray;
+        color: #525252;
         font-size: 0.9rem;
         line-height: 2;
+
         text-align: justify;
         margin-bottom: 20px;
+        flex: 1;
       }
     }
 

@@ -20,21 +20,18 @@
         <div class="container">
             <a class="title" href="/">ETE</a>
 
-            <input type="checkbox" id="chk">
-
-            <label for="chk" class="btn-menu">
+            <input type="checkbox" id="checkbox-hidden">
+            <label for="checkbox-hidden" class="btn-menu">
                 <i class="fas fa-bars"></i>
+
+                <i class="fas fa-times"></i>
             </label>
 
             <nav aria-label="Principal">
-                <ul class="menu">
-                    <li><a href="/">Home</a></li>
+                <ul class="menu" id="menu">
+                    <li><a href="/#home">Home</a></li>
                     <li><a href="/#sobre">Sobre</a></li>
                     <li><a href="/#portifolio">Portifólio</a></li>
-
-                    <label for="chk" class="btn-menu hide">
-                        <i class="fas fa-times"></i>
-                    </label>
                 </ul>
             </nav>
         </div>
@@ -48,6 +45,16 @@
         <p>ETE. Todos os Direitos Reservados.</p>
     </footer>
 
+    <script type="text/javascript">
+        const checkboxHidden = document.getElementById("checkbox-hidden");
+        const links = document.querySelectorAll("#menu a");
+
+        links.forEach(function(link) {
+            link.addEventListener("click", function() {
+                checkboxHidden.checked = false;
+            })
+        })
+    </script>
     <?= $this->section("js") ?>
 </body>
 

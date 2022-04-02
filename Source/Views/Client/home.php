@@ -1,33 +1,33 @@
 <?php $this->layout("Client/base") ?>
 
-<section class="introduction">
+<section class="introduction" id="home">
   <div class="container">
     <img class="call-to-action" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png" alt="">
 
     <ul class="differentials">
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Processo Seletivo</h2>
         <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
         <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Siepe</h2>
         <p>Sistema de Informações da Educação de Pernambuco.</p>
         <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Secretaria de Educação - PE</h2>
         <p>Acesso ao site com informações atualizadas.</p>
         <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Estrutura Física</h2>
         <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p>
         <a href="/estrutura"><button class="btn-click-here">Clique aqui</button></a>

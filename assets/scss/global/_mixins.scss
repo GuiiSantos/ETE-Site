@@ -1,0 +1,9 @@
+@use "../global/variables" as *;
+
+@mixin gradient {
+  background: linear-gradient(
+    90deg,
+    darken($primary, 30%),
+    darken($primary, 20%)
+  );
+}
