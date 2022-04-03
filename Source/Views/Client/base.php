@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETE Edson Mororó Moura</title>
-    <link rel="icon" type="image/png" href="<?= CONF_URL_PATH ?>/img/etelogo.png">
-
+    <link rel="shortcut icon" href="<?= URLBASE ?>/assets/img/favicon.ico" type="image/x-icon">
     <link href="<?= CONF_URL_PATH ?>/scss/style.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fb103eefc.js" defer crossorigin="anonymous"></script>
 </head>
 

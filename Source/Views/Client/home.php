@@ -2,7 +2,7 @@
 
 <section class="introduction" id="home">
   <div class="container">
-    <img class="call-to-action" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png" alt="">
+    <img class="call-to-action" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png" alt="Juntos Somos Mais Fortes">
 
     <ul class="differentials">
       <li class="differentials-item">
@@ -86,7 +86,7 @@
 
 <section class="teachers">
   <div class="container">
-    <img class="teachers-img" src="<?= CONF_URL_PATH ?>/img/canalprof.jpg">
+    <img class="teachers-img" src="<?= CONF_URL_PATH ?>/img/canalprof.jpg" alt="Canal do Youtube dos Professores">
     <div class="teachers-content">
       <div class="section-title">
         <h2 class="title">Canal no YouTube de Educadores ETEEMM</h2>
@@ -116,19 +116,19 @@
 
     <ul class="slide">
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/nade.jpg">
+        <img src="<?= CONF_URL_PATH ?>/img/nade.jpg" alt="Diretora">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/eduarslide.jpg">
+        <img src="<?= CONF_URL_PATH ?>/img/eduarslide.jpg" alt="Professor de Biologia">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/barbasalide.jpg">
+        <img src="<?= CONF_URL_PATH ?>/img/barbasalide.jpg" alt="Estudante Regressa de DS">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/anaslide.jpg">
+        <img src="<?= CONF_URL_PATH ?>/img/anaslide.jpg"  alt="Estudante Regressa de ADM">
       </li>
 
       <!-- SETAS -->
@@ -159,43 +159,43 @@
     <ul class="galeria">
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/primeira.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/primeira.jpg" alt="Jovens Estudando">
         </figure>
         <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/projetos.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/projetos.jpg" alt="Logo do Protagon">
         </figure>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/esporte.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/esporte.jpg" alt="Jovens Ganhando Prêmio Esportivo">
         </figure>
         <p>Competições esportivas ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/gremio.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/gremio.jpg" alt="Grêmio 2020">
         </figure>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/sarau.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/sarau.jpg" alt="Sarau, Grupo Musical da Escola">
         </figure>
         <p>Sarau Literomusical ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/feras.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/feras.jpg" alt="Alunos Terceirão">
         </figure>
         <p>Feras ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/conquistas.jpg">
+          <img src="<?= CONF_URL_PATH ?>/img/conquistas.jpg" alt="Prêmio da Olimpiada Nacional de Ciências">
         </figure>
         <p>Galeria de conquistas</p>
       </li>

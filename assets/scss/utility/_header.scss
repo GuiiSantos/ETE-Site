@@ -37,6 +37,7 @@
 
   .menu {
     display: flex;
+    transform: translateX(20px);
 
     a {
       color: #fff;
@@ -101,6 +102,7 @@
     }
 
     .menu {
+      transform: translateX(0);
       background: linear-gradient(
         90deg,
         darken(#4169e1, 30%),

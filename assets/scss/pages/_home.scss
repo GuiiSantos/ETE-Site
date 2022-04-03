@@ -94,7 +94,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 0 20px;
 
     .creation {
       p {
@@ -103,7 +102,7 @@
     }
 
     p {
-      color: #444;
+      font-weight: 500;
       text-align: justify;
     }
 
@@ -112,13 +111,14 @@
       display: inline-block;
       margin-bottom: 1rem;
       text-align: justify;
+      color: gray;
     }
 
     i {
       color: #007bff;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 760px) {
       grid-template-columns: 1fr;
     }
   }
@@ -127,7 +127,7 @@
 // CONQUISTAS
 .section-conquests {
   background-color: #f0f8ff;
-  padding: 2% 0;
+  padding: 1rem 0;
 
   .conquests {
     display: grid;
@@ -280,7 +280,7 @@
 
 // PORTIFOLIO
 .portfolio {
-  margin-bottom: 70px;
+  padding: 70px 0;
   text-align: center;
 
   .portfolio-title {
@@ -340,12 +340,24 @@
   }
 }
 
-.img-shadow {
-  transition: all 0.5s;
-  cursor: pointer;
+@media (max-width: 760px) {
+  .introduction {
+    padding: 50px 0;
 
-  &:hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+    .call-to-action {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .teachers {
+    padding: 50px 0;
+  }
+
+  .portfolio {
+    padding: 50px 0;
   }
 }
