@@ -15,7 +15,7 @@ class View {
      * @param string $path
      */
 
-    public function __construct(string $path = CONF_VIEW_PATH) {
+    public function __construct(string $path = CONF_URL_VIEWS) {
         $this->engine = new Engine($path);
     }
 

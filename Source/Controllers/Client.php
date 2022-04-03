@@ -7,7 +7,7 @@ use Source\Core\Controller;
 class Client extends Controller{
 
     public function __construct() {
-        parent::__construct(CONF_VIEW_PATH);
+        parent::__construct(CONF_URL_VIEWS);
     }
 
     public function home($data) {

@@ -2,7 +2,7 @@
 
 <section class="introduction">
   <div class="container">
-    <img id="sitedaete" class="call-to-action" width="" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png">
+    <img id="sitedaete" class="call-to-action" width="" src="<?= url("assets/img/colocaessadaqui.png") ?>">
 
     <ul class="differentials">
       <li class="differentials-item">
@@ -41,19 +41,19 @@
     <ul>
 
         <li>
-            <img src="<?= CONF_URL_PATH ?>/img/foto.jpg">
+            <img src="<?= url("assets/img/foto.jpg") ?>">
         </li>
 
         <li>
-            <img src="<?= CONF_URL_PATH ?>/img/ete05.jpg">
+            <img src="<?= url("assets/img/ete05.jpg") ?>">
         </li>
 
         <li>
-            <img src="<?= CONF_URL_PATH ?>/img/anaslide.jpg">
+            <img src="<?= url("assets/img/anaslide.jpg") ?>">
         </li>
 
         <li>
-            <img src="<?= CONF_URL_PATH ?>/img/ete01.jpg">
+            <img src="<?= url("/img/ete01.jpg") ?>">
         </li>
 
     </ul>
@@ -109,7 +109,7 @@
 
 <section class="teachers">
   <div class="container">
-    <img class="teachers-img" src="<?= CONF_URL_PATH ?>/img/canalprof.jpg">
+    <img class="teachers-img" src="<?= url("assets/img/canalprof.jpg") ?>">
     <div class="teachers-content">
       <h2>Canal no YouTube de Educadores ETEEMM</h2>
       <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
@@ -135,19 +135,19 @@
 
     <ul class="slide">
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/nade.jpg">
+        <img src="<?= url("assets/img/nade.jpg") ?>">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/eduarslide.jpg">
+        <img src="<?= url("assets/img/eduarslide.jpg") ?>">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/barbasalide.jpg">
+        <img src="<?= url("assets/img/barbasalide.jpg") ?>">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= CONF_URL_PATH ?>/img/anaslide.jpg">
+        <img src="<?= url("assets/img/anaslide.jpg") ?>">
       </li>
 
       <!-- SETAS -->
@@ -177,43 +177,43 @@
     <ul class="galeria">
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/primeira.jpg">
+          <img src="<?= url("assets/img/primeira.jpg") ?>">
         </figure>
         <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/projetos.jpg">
+          <img src="<?= url("assets/img/projetos.jpg") ?>">
         </figure>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/esporte.jpg">
+          <img src="<?= url("assets/img/esporte.jpg") ?>">
         </figure>
         <p>Competições esportivas ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/gremio.jpg">
+          <img src="<?= url("assets/img/gremio.jpg") ?>">
         </figure>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/sarau.jpg">
+          <img src="<?= url("assets/img/sarau.jpg") ?>">
         </figure>
         <p>Sarau Literomusical ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/feras.jpg">
+          <img src="<?= url("assets/img/feras.jpg") ?>">
         </figure>
         <p>Feras ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= CONF_URL_PATH ?>/img/conquistas.jpg">
+          <img src="<?= url("assets/img/conquistas.jpg") ?>">
         </figure>
         <p>Galeria de conquistas</p>
       </li>

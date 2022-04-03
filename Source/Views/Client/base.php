@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETE Edson Mororó Moura</title>
-    <link rel="icon" type="image/png" href="<?= CONF_URL_PATH ?>/img/etelogo.png">
+    <link rel="icon" type="image/png" href="<?= url("assets/img/etelogo.png") ?>">
 
-    <link href="<?= CONF_URL_PATH ?>/scss/style.css" rel="stylesheet" />
+    <link href="<?= url("assets/scss/style.css") ?>" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <img class="etelogo" src="<?= CONF_URL_PATH ?>/img/etelogo.png" alt="logo">
+            <img class="etelogo" src="<?= url("assets") ?>/img/etelogo.png" alt="logo">
 
             <p class="title">Edson Mororó Moura</p>
 

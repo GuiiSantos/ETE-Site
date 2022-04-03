@@ -4,14 +4,14 @@ require_once __DIR__ . "/vendor/autoload.php";
 use CoffeeCode\Router\Router ;
 
 /**
- * iniciando a rota
+ * INICIALIZAÇÃO
  */
 
-$router = new  Router(URLBASE);
+$router = new  Router(url());
 $router->namespace("Source\Controllers");
 
 /**
- * rota do client
+ * CLIENT
  */
 $router->group(null);
 $router->get("/", "Client:home");
@@ -21,20 +21,13 @@ $router->group("/error");
 $router->get("/{errcode}","Client:error");
 
 /**
- * executando as rotas
+ * CRIA AS ROTAS
  */
 $router->dispatch();
 
-
-
 /**
- * This method executes the routes
+ * REDIRECIONA ERROS
  */
-
-/**
- * Redirect all errors
- */
-
 if ($router->error()) {
     $router->redirect("/error/{$router->error()}");
 }
