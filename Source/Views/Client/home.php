@@ -1,6 +1,6 @@
 <?php $this->layout("Client/base") ?>
 
-<section class="introduction" id="home">
+<section class="introduction" id="home" aria-label="introdução">
   <div class="container">
     <img class="call-to-action" src="<?= CONF_URL_PATH ?>/img/colocaessadaqui.png" alt="Juntos Somos Mais Fortes">
 
@@ -36,10 +36,10 @@
   </div>
 </section>
 
-<section id="sobre" class="about">
+<section class="about" id="sobre" aria-labelledby="section-about">
   <div class="container">
     <div class="section-title">
-      <h2 class="title">Sobre a ETEEMM</h2>
+      <h2 class="title" id="section-about">Sobre a ETEEMM</h2>
 
       <p class="subtitle">Venha fazer parte desta história de sucesso!</p>
     </div>
@@ -60,7 +60,7 @@
   </div>
 </section>
 
-<section class="section-conquests">
+<section class="section-conquests" aria-label="Conquistas da escola">
   <div class="container">
 
     <ul class="conquests">
@@ -84,7 +84,7 @@
   </div>
 </section>
 
-<section class="teachers">
+<section class="teachers" aria-label="Canal do Youtube dos Professores">
   <div class="container">
     <img class="teachers-img" src="<?= CONF_URL_PATH ?>/img/canalprof.jpg" alt="Canal do Youtube dos Professores">
     <div class="teachers-content">
@@ -106,9 +106,9 @@
   </div>
 </section>
 
-<section class="testimonials">
-  <div class="center">
-    <div class="section-title">
+<section class="testimonials" aria-labelledby="section-testimonials">
+  <div class="container">
+    <div class="section-title" id="section-testimonials">
       <h2 class="title">Depoimentos</h2>
 
       <p class="subtitle">O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
@@ -148,10 +148,10 @@
   </div>
 </section>
 
-<section class="portfolio" id="portifolio">
+<section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
   <div class="container">
     <div class="section-title">
-      <h2 class="title">Portfolio</h2>
+      <h2 class="title" id="section-portifolio">Portfolio</h2>
 
       <p class="subtitle">A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
     </div>
