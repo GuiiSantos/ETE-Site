@@ -17,8 +17,8 @@
 
 <div class="wrapper fadeInDown">
     <div id="formContent">
-<form action="<?= url("admin/login"); ?>" method="POST" enctype="multipart/form-data">
-    <?= csrf_input() ?>
+        <form action="<?= url("admin/login"); ?>" method="POST" enctype="multipart/form-data">
+            <?= csrf_input() ?>
             <?= ($message) ? $message : "" ?>
             <input type="text" id="login" class="fadeIn second" name="username" placeholder="login" required autocomplete="off">
             <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
