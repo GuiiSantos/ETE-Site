@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . "/vendor/autoload.php";
-
 use CoffeeCode\Router\Router ;
 
 /**
@@ -19,6 +18,17 @@ $router->get("/estrutura", "Client:estrutura");
 
 $router->group("/error");
 $router->get("/{errcode}","Client:error");
+
+/**
+ * ADMIN
+ */
+
+$router->group("admin");
+$router->get("/login", "Admin:login");
+$router->post("/login", "Admin:login");
+
+$router->get("/painel", "Admin:painel");
+$router->get("/sair", "Admin:logout");
 
 /**
  * CRIA AS ROTAS

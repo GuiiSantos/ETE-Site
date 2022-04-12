@@ -28,7 +28,9 @@
     ]
   },
   "require": {
-    "coffeecode/router": "1.0.0",
-    "league/plates": "3.3.0"
+    "coffeecode/router": "*",
+    "league/plates": "*",
+    "coffeecode/datalayer": "*",
+    "ext-json": "*"
   }
 }
