@@ -1,11 +1,17 @@
-.main {
-  margin-top: 80px;
-}
+@use "../global/variables" as *;
 
-.container {
-  width: 90%;
-  max-width: 1120px;
-  margin: 0 auto;
+.section-title {
+  .title {
+    color: $text-color;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #525252;
+    margin-bottom: 16px;
+  }
 }
 
 // INTRODUÇÂO
@@ -28,14 +34,20 @@
     gap: 20px;
 
     .differentials-item {
+      display: flex;
+      flex-direction: column;
       border-radius: 16px;
       background-color: white;
-      padding: 3rem 1.25rem;
+      padding: 3rem 1.25rem 2.5rem;
       transition: all 0.5s;
 
       &:hover {
         -webkit-transform: scale(1.5);
         transform: scale(1.1);
+      }
+
+      i:nth-child(1) {
+        display: none;
       }
 
       i {
@@ -44,17 +56,19 @@
       }
 
       h2 {
-        color: #8b0000;
-        margin: 5% 0;
-        font-size: 1.25rem;
+        color: $text-color;
+        margin-bottom: 10px;
+        font-size: 1.125rem;
       }
 
       p {
-        color: gray;
+        color: #525252;
         font-size: 0.9rem;
         line-height: 2;
+
         text-align: justify;
         margin-bottom: 20px;
+        flex: 1;
       }
     }
 
@@ -115,26 +129,14 @@
 .about {
   padding: 70px 0;
 
-  .about-title {
+  .section-title {
     text-align: center;
-
-    h2 {
-      color: #8b0000;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 1rem;
-      color: gray;
-      margin-bottom: 16px;
-    }
   }
 
   .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 0 20px;
 
     .creation {
       p {
@@ -143,7 +145,7 @@
     }
 
     p {
-      color: #444;
+      font-weight: 500;
       text-align: justify;
     }
 
@@ -152,13 +154,14 @@
       display: inline-block;
       margin-bottom: 1rem;
       text-align: justify;
+      color: #525252;
     }
 
     i {
       color: #007bff;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 760px) {
       grid-template-columns: 1fr;
     }
   }
@@ -167,14 +170,14 @@
 // CONQUISTAS
 .section-conquests {
   background-color: #f0f8ff;
-  padding: 2% 0;
+  padding: 1rem 0;
 
   .conquests {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
     .conquests-item {
-      color: #124265;
+      color: $text-color;
       text-align: center;
 
       h2 {
@@ -207,34 +210,19 @@
       transition: all 0.5s;
       cursor: pointer;
 
-      &:hover {
-        :hover {
-          -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-        }
-      }
-
       img {
         max-width: 100%;
       }
     }
 
     .teachers-content {
-      h2 {
-        color: #8b0000;
-        margin-bottom: 0.75rem;
-      }
-
       p {
-        color: #444;
-        margin-bottom: 40px;
         text-align: justify;
       }
 
       a {
         display: block;
-        color: #1e90ff;
-        font-size: 75%;
+        color: $primary;
         font-family: Arial, sans-serif;
         margin-bottom: 12px;
       }
@@ -253,22 +241,12 @@
 
 // DEPOIMENTOS
 .testimonials {
-  .testimonials-title {
+  .section-title {
     text-align: center;
-    margin-bottom: 1.5rem;
-
-    h2 {
-      color: #8b0000;
-      text-transform: uppercase;
-    }
-
-    p {
-      color: black;
-      margin: 2% 0;
-    }
   }
 }
 
+// SLIDE
 .slide {
   max-width: 50%;
   position: relative;
@@ -337,7 +315,8 @@
 
 // PORTIFOLIO
 .portfolio {
-  margin-bottom: 70px;
+  padding: 50px 0 70px;
+  margin-top: -20px;
   text-align: center;
 
   .portfolio-title {
@@ -397,12 +376,28 @@
   }
 }
 
-.img-shadow {
-  transition: all 0.5s;
-  cursor: pointer;
+@media (max-width: 760px) {
+  .introduction {
+    padding: 50px 0;
 
-  &:hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+    .call-to-action {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .teachers {
+    padding: 50px 0;
+  }
+
+  .slide {
+    max-width: 67%;
+  }
+
+  .portfolio {
+    padding: 30px 0 50px;
   }
 }

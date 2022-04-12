@@ -5,38 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETE Edson Mororó Moura</title>
-    <link rel="icon" type="image/png" href="<?= url("assets/img/etelogo.png") ?>">
 
     <link href="<?= url("assets/scss/style.css") ?>" rel="stylesheet" />
+    <link rel="shortcut icon" href="<?= url("assets/img/favicon.ico") ?>" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5fb103eefc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fb103eefc.js" defer crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <img class="etelogo" src="<?= url("assets") ?>/img/etelogo.png" alt="logo">
+            <a class="title" href="/">ETE</a>
 
-            <p class="title">Edson Mororó Moura</p>
-
-            <input type="checkbox" id="chk">
-
-            <label for="chk" class="btn-menu">
+            <input type="checkbox" id="checkbox-hidden">
+            <label for="checkbox-hidden" class="btn-menu">
                 <i class="fas fa-bars"></i>
+
+                <i class="fas fa-times"></i>
             </label>
 
             <nav aria-label="Principal">
-                <ul class="menu">
-                    <li><a href="/">Home</a></li>
+                <ul class="menu" id="menu">
+                    <li><a href="/#home">Home</a></li>
                     <li><a href="/#sobre">Sobre</a></li>
                     <li><a href="/#portifolio">Portifólio</a></li>
-
-                    <label for="chk" class="btn-menu hide">
-                        <i class="fas fa-times"></i>
-                    </label>
                 </ul>
             </nav>
         </div>
@@ -50,6 +45,16 @@
         <p>ETE. Todos os Direitos Reservados.</p>
     </footer>
 
+    <script type="text/javascript">
+        const checkboxHidden = document.getElementById("checkbox-hidden");
+        const links = document.querySelectorAll("#menu a");
+
+        links.forEach(function(link) {
+            link.addEventListener("click", function() {
+                checkboxHidden.checked = false;
+            })
+        })
+    </script>
     <?= $this->section("js") ?>
 </body>
 

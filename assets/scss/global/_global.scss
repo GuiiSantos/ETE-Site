@@ -5,13 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-body,
-ul,
-li,
-p {
+html{scroll-behavior:smooth; scroll-padding-top: 40px;}
+
+ul{
   list-style: none;
-  font-size: 1.2rem;
-  font-family: Arial;
 }
 
 a {
@@ -23,10 +20,12 @@ img {
   display: block;
 }
 
-.center {
-  max-width: 85%;
+.main {
+  margin-top: 80px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 0 2%;
-  display: flex;
-  flex-wrap: wrap;
 }

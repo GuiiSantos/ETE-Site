@@ -1,33 +1,33 @@
 <?php $this->layout("Client/base") ?>
 
-<section class="introduction">
+<section class="introduction" id="home" aria-label="introdução">
   <div class="container">
-    <img id="sitedaete" class="call-to-action" width="" src="<?= url("assets/img/colocaessadaqui.png") ?>">
+    <img class="call-to-action" src="<?= url("assets/img/colocaessadaqui.png") ?>" alt="Juntos Somos Mais Fortes">
 
     <ul class="differentials">
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Processo Seletivo</h2>
         <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
         <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Siepe</h2>
         <p>Sistema de Informações da Educação de Pernambuco.</p>
         <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Secretaria de Educação - PE</h2>
         <p>Acesso ao site com informações atualizadas.</p>
         <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
       </li>
 
       <li class="differentials-item">
-        <div><i class="fas fa-mouse-pointer"></i></div>
+        <i class="fas fa-mouse-pointer"></i>
         <h2>Estrutura Física</h2>
         <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p>
         <a href="/estrutura"><button class="btn-click-here">Clique aqui</button></a>
@@ -36,37 +36,14 @@
   </div>
 </section>
 
-<div class="slider">
-
-    <ul>
-
-        <li>
-            <img src="<?= url("assets/img/foto.jpg") ?>">
-        </li>
-
-        <li>
-            <img src="<?= url("assets/img/ete05.jpg") ?>">
-        </li>
-
-        <li>
-            <img src="<?= url("assets/img/anaslide.jpg") ?>">
-        </li>
-
-        <li>
-            <img src="<?= url("/img/ete01.jpg") ?>">
-        </li>
-
-    </ul>
-
-</div>
-
-<section id="sobre" class="about">
+<section class="about" id="sobre" aria-labelledby="section-about">
   <div class="container">
-    <div class="about-title">
-      <h2>Sobre a ETEEMM</h2>
+    <div class="section-title">
+      <h2 class="title" id="section-about">Sobre a ETEEMM</h2>
 
-      <p>Venha fazer parte desta história de sucesso!</p>
+      <p class="subtitle">Venha fazer parte desta história de sucesso!</p>
     </div>
+
     <div class="about-content">
       <div class="about-content-item creation">
         <p>A Escola Técnica Estadual Edson Mororó Moura - ETEEMM foi criada através do Decreto de Criação: Nº 42.612 de 28/01/2016 e inaugurada em 01 de abril de 2016. O nome da escola foi dado em homenagem ao empreendedor Edson Mororó Moura que fundou a empresa Baterias Moura, a qual tem grande relevância econômica e social no Município, além de destaque Nacional e Internacional.</p>
@@ -83,7 +60,7 @@
   </div>
 </section>
 
-<section class="section-conquests">
+<section class="section-conquests" aria-label="Conquistas da escola">
   <div class="container">
 
     <ul class="conquests">
@@ -107,12 +84,16 @@
   </div>
 </section>
 
-<section class="teachers">
+<section class="teachers" aria-label="Canal do Youtube dos Professores">
   <div class="container">
-    <img class="teachers-img" src="<?= url("assets/img/canalprof.jpg") ?>">
+    <img class="teachers-img" src="<?= url("assets/img/canalprof.jpg") ?>" alt="Canal do Youtube dos Professores">
+
     <div class="teachers-content">
-      <h2>Canal no YouTube de Educadores ETEEMM</h2>
-      <p>Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
+      <div class="section-title">
+        <h2 class="title">Canal no YouTube de Educadores ETEEMM</h2>
+
+        <p class="subtitle">Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
+      </div>
 
       <a href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">Profª. Ma. Michele Noberta (Matemática)</a>
       <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">Profª. Elaisa Souza (Inglês)</a>
@@ -126,28 +107,30 @@
   </div>
 </section>
 
-<section class="testimonials">
-  <div class="center">
-    <div class="testimonials-title">
-      <h2>Depoimentos</h2>
-      <p>O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
+<section class="testimonials" aria-labelledby="section-testimonials">
+  <div class="container">
+    <div class="section-title" id="section-testimonials">
+      <h2 class="title">Depoimentos</h2>
+
+      <p class="subtitle">O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
     </div>
 
     <ul class="slide">
+
       <li class="slide-item fade">
-        <img src="<?= url("assets/img/nade.jpg") ?>">
+        <img src="<?= url("assets/img/nade.jpg") ?>" alt="Diretora">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= url("assets/img/eduarslide.jpg") ?>">
+        <img src="<?= url("assets/img/eduarslide.jpg") ?>" alt="Professor de Biologia">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= url("assets/img/barbasalide.jpg") ?>">
+        <img src="<?= url("assets/img/barbasalide.jpg") ?>" alt="Estudante Regressa de DS">
       </li>
 
       <li class="slide-item fade">
-        <img src="<?= url("assets/img/anaslide.jpg") ?>">
+        <img src="<?= url("assets/img/anaslide.jpg") ?>"  alt="Estudante Regressa de ADM">
       </li>
 
       <!-- SETAS -->
@@ -167,53 +150,55 @@
   </div>
 </section>
 
-<section class="portfolio" id="portifolio">
+<section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
   <div class="container">
-    <div class="portfolio-title">
-      <h2>Portfolio</h2>
-      <p>A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
+    <div class="section-title">
+      <h2 class="title" id="section-portifolio">Portfolio</h2>
+
+      <p class="subtitle">A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural que contribuem para o exercício da cidadania de nossos educandos.</p>
     </div>
 
     <ul class="galeria">
       <li>
         <figure>
-          <img src="<?= url("assets/img/primeira.jpg") ?>">
+          <img src="">
+          <img src="<?= url("assets/img/primeira.jpg") ?>" alt="Jovens Estudando">
         </figure>
         <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/projetos.jpg") ?>">
+          <img src="<?= url("assets/img/projetos.jpg") ?>" alt="Logo do Protagon">
         </figure>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/esporte.jpg") ?>">
+          <img src="<?= url("assets/img/esporte.jpg") ?>" alt="Jovens Ganhando Prêmio Esportivo">
         </figure>
         <p>Competições esportivas ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/gremio.jpg") ?>">
+          <img src="<?= url("assets/img/gremio.jpg") ?>" alt="Grêmio 2020">
         </figure>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/sarau.jpg") ?>">
+          <img src="<?= url("assets/img/sarau.jpg") ?>" alt="Sarau, Grupo Musical da Escola">
         </figure>
         <p>Sarau Literomusical ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/feras.jpg") ?>">
+          <img src="<?= url("assets/img/feras.jpg") ?>" alt="Alunos Terceirão">
         </figure>
         <p>Feras ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/conquistas.jpg") ?>">
+          <img src="<?= url("assets/img/conquistas.jpg") ?>" alt="Prêmio da Olimpiada Nacional de Ciências">
         </figure>
         <p>Galeria de conquistas</p>
       </li>
