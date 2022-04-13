@@ -60,7 +60,11 @@ class Admin extends Controller{
         if(!$session->has("user") || $session->user->access_level === "1") {
             redirect(url());
         }
-        echo $this->view->render("admin/base");
+
+        $this->view->addData(
+            ["user" => $session->user], "admin/base"
+        );
+        echo $this->view->render("admin/dashboard");
     }
 
     public function logout() {

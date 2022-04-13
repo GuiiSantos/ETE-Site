@@ -1,0 +1,298 @@
+@use "../global/variables" as *;
+
+.admin-html,
+.admin-html body {
+  min-height: 100%;
+  background-color: #f1f5f9;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.sidebar {
+  width: 345px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: darken($primary, 20%);
+  z-index: 200;
+  transition: width 300ms;
+
+  .sidebar-brand {
+    height: 90px;
+    padding: 1.5rem 0 0 2.75rem;
+    color: $white;
+    transition: padding 300ms;
+
+    img {
+      display: inline-block;
+      width: 24px;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 2.2rem;
+      line-height: 1;
+      letter-spacing: 2px;
+    }
+  }
+
+  .sidebar-menu {
+    margin-top: 1rem;
+
+    li {
+      width: 100%;
+      margin-bottom: 1.7rem;
+      padding-left: 2rem;
+
+      a {
+        display: block;
+        padding-left: 1rem;
+        color: $white;
+        font-size: 1.1rem;
+        text-decoration: none;
+
+        & span:first-child {
+          font-size: 1.5rem;
+          padding-right: 1rem;
+        }
+
+        &.active {
+          background-color: $white;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          color: $primary;
+          border-radius: 30px 0 0 30px;
+        }
+      }
+    }
+  }
+}
+
+#nav-toggle:checked + .sidebar {
+  width: 70px;
+
+  & .sidebar-brand {
+    padding: 1.5rem 0 0 1.2rem;
+
+    span {
+      display: none;
+    }
+  }
+
+  & li {
+    padding-left: 1rem;
+    text-align: center;
+
+    h2 span:last-child {
+      display: none;
+    }
+
+    a {
+      padding-left: 0;
+
+      & span:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-content {
+  transition: margin-left 300ms;
+  margin-left: 345px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    background-color: $white;
+    z-index: 100;
+    transition: width 300ms, left 300ms;
+
+    h2 {
+      color: #222;
+
+      label {
+        cursor: pointer;
+
+        span {
+          font-size: 1.7rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    .user-wrapper {
+      display: flex;
+      align-items: center;
+
+      img {
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+
+      small {
+        display: inline-block;
+        color: $text-grey;
+        margin-top: -3px !important;
+      }
+    }
+  }
+
+  .main-sidebar {
+    margin-top: 80px;
+    padding: 1.5rem;
+  }
+}
+
+#nav-toggle:checked ~ .main-content {
+  margin-left: 70px;
+
+  header {
+    width: calc(100% - 70px);
+    left: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #nav-toggle + .sidebar {
+    width: 70px;
+
+    .sidebar-brand {
+      padding: 1.5rem 0 0 1.2rem;
+
+      span {
+        display: none;
+      }
+    }
+
+    li {
+      padding-left: 1rem;
+      text-align: center;
+
+      h2 span:last-child {
+        display: none;
+      }
+
+      a {
+        padding-left: 0;
+
+        & span:last-child {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      width: 345px;
+
+      .sidebar-brand,
+      li {
+        padding-left: 2rem;
+        text-align: left;
+
+        h2 span:last-child {
+          display: inline;
+        }
+
+        a {
+          padding-left: 1rem;
+
+          span:last-child {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    margin-left: 70px;
+
+    header {
+      width: calc(100% - 70px);
+      left: 70px;
+
+      h2 label {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sidebar {
+    left: -100% !important;
+  }
+
+  #nav-toggle:checked + .sidebar {
+    left: 0 !important;
+    z-index: 100;
+    width: 345px;
+
+    .sidebar-brand,
+    li {
+      padding-left: 2rem;
+      text-align: left;
+
+      h2 span:last-child {
+        display: inline;
+      }
+
+      a {
+        padding-left: 1rem;
+
+        span:last-child {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+
+    header {
+      width: 100% !important;
+      left: 0 !important;
+
+      h2 {
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        label {
+          display: flex;
+          background: darken($primary, 20%);
+          padding-right: 0;
+          margin-right: 1rem;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          color: $white;
+          align-items: center;
+          justify-content: center !important;
+
+          span {
+            text-align: center;
+            padding-right: 0;
+          }
+        }
+
+        & > span {
+          display: none;
+        }
+      }
+    }
+  }
+}
