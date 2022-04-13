@@ -5,7 +5,7 @@ namespace Source\Controllers;
 use Source\Core\Controller;
 use Source\Core\Session;
 use Source\Models\User;
-use Source\Boot\Message;
+use Source\Support\Message;
 
 class Admin extends Controller{
 
@@ -13,12 +13,11 @@ class Admin extends Controller{
         parent::__construct(CONF_URL_VIEWS);
     }
     public function login() {
-
         $session = new Session();
         if ($session->has("user") && $session->user->access_level !== "1") {
             redirect(url("admin/painel"));
         }
-//      var_dump((new User())->find()->fetch(true));
+
         $filter = [
             "username" => FILTER_SANITIZE_STRING,
             "password" => FILTER_DEFAULT,
@@ -28,7 +27,6 @@ class Admin extends Controller{
         $message = null;
         if ($post) {
             $data = (object)$post;
-            var_dump($data);
 
             if (!csrf_verify($post)) {
                 // previne ataques csrf

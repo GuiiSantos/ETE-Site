@@ -28,6 +28,7 @@
     ]
   },
   "require": {
+    "ext-pdo": "*",
     "ext-json": "*",
     "coffeecode/datalayer": "2.*.*",
     "coffeecode/router": "1.*.*",

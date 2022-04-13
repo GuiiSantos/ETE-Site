@@ -6,7 +6,7 @@ namespace Source\Models;
 
 use CoffeeCode\DataLayer\DataLayer;
 use Source\Core\Session;
-use Source\Boot\Message;
+use Source\Support\Message;
 
 class User extends DataLayer {
     /** @var Message $message */

@@ -22,13 +22,13 @@ const CONF_MESSAGE_WARNING = "warning";
 const CONF_MESSAGE_ERROR = "error";
 
 /**
- * conexão com banco
+ * BANCO DE DADOS
  */
 const DATA_LAYER_CONFIG = [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "jornal",
+    "dbname" => "ete",
     "username" => "root",
     "passwd" => "",
     "options" => [

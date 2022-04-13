@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Source\Boot;
+namespace Source\Support;
 
 use Source\Core\Session;
 
