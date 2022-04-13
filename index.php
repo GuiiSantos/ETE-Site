@@ -1,10 +1,14 @@
 <?php
+
+ob_start();
+
 require_once __DIR__ . "/vendor/autoload.php";
-use CoffeeCode\Router\Router ;
 
 /**
  * INICIALIZAÇÃO
  */
+
+use CoffeeCode\Router\Router ;
 
 $router = new  Router(url());
 $router->namespace("Source\Controllers");
@@ -41,3 +45,5 @@ $router->dispatch();
 if ($router->error()) {
     $router->redirect("/error/{$router->error()}");
 }
+
+ob_end_flush();

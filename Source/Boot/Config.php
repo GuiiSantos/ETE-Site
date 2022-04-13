@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * SITE
+ */
+const CONF_SITE_STATUS = "development"; // production / development
+
+/**
  * URLs
  */
 const CONF_URL_ROOT = "http://eteedsonmororomoura";
@@ -24,18 +29,35 @@ const CONF_MESSAGE_ERROR = "error";
 /**
  * BANCO DE DADOS
  */
-const DATA_LAYER_CONFIG = [
-    "driver" => "mysql",
-    "host" => "localhost",
-    "port" => "3306",
-    "dbname" => "ete",
-    "username" => "root",
-    "passwd" => "",
-    "options" => [
-        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_CASE => PDO::CASE_NATURAL
-    ]
-];
 
+if (CONF_SITE_STATUS === "development") {
+    define("DATA_LAYER_CONFIG", [
+        "driver" => "mysql",
+        "host" => "162.241.203.225",
+        "port" => "3306",
+        "dbname" => "eteeds27_ete",
+        "username" => "eteeds27_ete",
+        "passwd" => "x5Yx2=o@5On.",
+        "options" => [
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+            PDO::ATTR_CASE => PDO::CASE_NATURAL
+        ]
+    ]);
+} else {
+    define("DATA_LAYER_CONFIG", [
+        "driver" => "mysql",
+        "host" => "localhost",
+        "port" => "3306",
+        "dbname" => "ete",
+        "username" => "root",
+        "passwd" => "",
+        "options" => [
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+            PDO::ATTR_CASE => PDO::CASE_NATURAL
+        ]
+    ]);
+}
