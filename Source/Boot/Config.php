@@ -3,6 +3,11 @@
 /**
  * SITE
  */
+const CONF_SITE_NAME = "ETE Edson Mororó Moura - Belo Jardim/PE";
+const CONF_SITE_DESC =
+    "A ETE Edson Mororó Moura é referência de ensino no município de Belo Jardim/PE. Com cursos de Administração e Desenvolvimento de Sistemas.";
+const CONF_SITE_LANG = "pt_BR";
+const CONF_SITE_DOMAIN = "eteedsonmororomoura.com.br";
 const CONF_SITE_STATUS = "development"; // production / development
 
 /**

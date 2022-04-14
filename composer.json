@@ -31,6 +31,7 @@
     "ext-pdo": "*",
     "ext-json": "*",
     "coffeecode/datalayer": "2.*.*",
+    "coffeecode/optimizer": "2.1.*",
     "coffeecode/router": "1.*.*",
     "league/plates": "3.*.*"
   }

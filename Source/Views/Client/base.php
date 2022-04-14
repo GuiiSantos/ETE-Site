@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETE Edson Mororó Moura</title>
+    <?= $seo ?>
 
     <link href="<?= url("assets/scss/style.css") ?>" rel="stylesheet" />
     <link rel="shortcut icon" href="<?= url("assets/img/favicon.ico") ?>" type="image/x-icon">

@@ -45,8 +45,18 @@ class Admin extends Controller{
             }
 
         }
+
+        $seo = $this->seo->render(
+            "Entrar | " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg"),
+            false
+        );
+
         echo $this->view->render("admin/login",
             [
+                "seo" => $seo,
                 "message" => $message,
                 "csrf" => $message,
                 "pageId" => "login"
@@ -59,9 +69,15 @@ class Admin extends Controller{
             redirect(url());
         }
 
-        $this->view->addData(
-            ["user" => $session->user], "admin/base"
+        $seo = $this->seo->render(
+            "Painel de Administração | " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg"),
+            false
         );
+
+        $this->view->addData(["seo" => $seo, "user" => $session->user], "admin/base");
         echo $this->view->render("admin/dashboard");
     }
 
