@@ -18,7 +18,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="title" href="/">ETE</a>
+            <h1>
+                <a class="title" href="/">ETE</a>
+            </h1>
 
             <input type="checkbox" id="checkbox-hidden">
             <label for="checkbox-hidden" class="btn-menu">
@@ -42,7 +44,64 @@
     </main>
 
     <footer class="footer">
-        <p>ETE. Todos os Direitos Reservados.</p>
+        <div class="container">
+            <ul class="links">
+                <li>
+                    <h2>Redes Sociais</h2>
+<!--                    <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i>-->
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/EscolaTecnica.EMM" target="_blank"> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC3vq4moLhseuegyZQx1zB9Q" target="_blank">Youtube</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Projetos</h2>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">Protagonistas ETEEM</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/protagonmidiatico_/" target="_blank">Protagon Midíátivco</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank">Grémio da ETE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Acesso Rápido</h2>
+
+                    <ul>
+                        <li>
+                            <a href="/#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="/#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="/#portifolio">Portifólio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Contato</h2>
+
+                    <ul>
+                        <li>
+                            Telefone: (81) 3726-8901
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <script type="text/javascript">
