@@ -18,10 +18,10 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1>
-                <a class="title" href="/">ETE</a>
-            </h1>
-
+            <a class="title" href="/">
+                <h1>Escola Técnica Estadual</h1>
+                <p>Edson Mororó Moura</p>
+            </a>
             <input type="checkbox" id="checkbox-hidden">
             <label for="checkbox-hidden" class="btn-menu">
                 <i class="fas fa-bars"></i>
