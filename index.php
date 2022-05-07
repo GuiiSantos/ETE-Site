@@ -20,7 +20,7 @@ $router->group(null);
 $router->get("/", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
 
-$router->group("/error");
+$router->group("/oops");
 $router->get("/{errcode}","Client:error");
 
 /**
@@ -43,7 +43,7 @@ $router->dispatch();
  * REDIRECIONA ERROS
  */
 if ($router->error()) {
-    $router->redirect("/error/{$router->error()}");
+    $router->redirect("/oops/{$router->error()}");
 }
 
 ob_end_flush();

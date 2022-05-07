@@ -1,3 +1,8 @@
-<?php
+<?php $this->layout("Client/base"); ?>
 
-echo "<h1>error</h1>";
+<div class="error">
+    <h2><?= $errCode ?></h2>
+    <p>Página não encontrada</p>
+
+    <a class="btn" href="<?= url_back()?>">Continuar Navegando</a>
+</div>

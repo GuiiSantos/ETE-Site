@@ -44,10 +44,21 @@ class Client extends Controller {
         );
     }
     public function error(array $data) {
+        $errCode = filter_var($data["errcode"], FILTER_SANITIZE_STRING);
+        if(!is_numeric($errCode)) $errCode = "404";
+
+        $seo = $this->seo->render(
+            "Oops | " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg")
+        );
+        $this->view->addData(["seo" => $seo], "Client/base");
         echo $this->view->render(
             "Client/error",
             [
-                "tileName" => "ETE"
+                "errCode" => $errCode,
+                "errMessage"
             ]
         );
     }

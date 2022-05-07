@@ -38,6 +38,13 @@ function redirect(string $url): void {
 }
 
 /**
+ * @return string
+ */
+function url_back(): string {
+    return $_SERVER["HTTP_REFERER"] ?? url();
+}
+
+/**
  * ####################
  * ###   VALIDATE   ###
  * ####################
