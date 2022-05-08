@@ -84,25 +84,43 @@
   </div>
 </section>
 
-<section class="teachers" aria-label="Canal do Youtube dos Professores">
+<section class="teachers" aria-labelledby="section-teachers">
   <div class="container">
     <img class="teachers-img" src="<?= url("assets/img/canalprof.jpg") ?>" alt="Canal do Youtube dos Professores">
 
     <div class="teachers-content">
       <div class="section-title">
-        <h2 class="title">Canal no YouTube de Educadores ETEEMM</h2>
+        <h2 class="title" id="section-teachers">Canal no YouTube de Educadores ETEEMM</h2>
 
         <p class="subtitle">Diante do contexto pandemia Covid-19, os Educadores ETEEMM buscaram inovar cada vez mais com o intuito de oportunizar aos estudantes mais possibilidades no desenvolvimento de seu conhecimento, criaram, portanto, canais no YouTube. Seguem os links:</p>
       </div>
 
-      <a href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">Profª. Ma. Michele Noberta (Matemática)</a>
-      <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">Profª. Elaisa Souza (Inglês)</a>
-      <a href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank">Prof. Eduardo Max (Biologia)</a>
-      <a href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank">Prof. Me. Marcos Vier (Matemática)</a>
-      <a href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank">Profª. Iaponira Campos (Química)</a>
-      <a href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank">Prof. Erandi Oliveira (Matemática)</a>
-      <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank">Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</a>
-      <a href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank">Prof. Paulo Jacinto (Administração)</a>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/channel/UCOcN4dBVVYjTgSkK_RGrTbg" target="_blank">Profª. Ma. Michele Noberta (Matemática)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank">Profª. Elaisa Souza (Inglês)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank">Prof. Eduardo Max (Biologia)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank">Prof. Me. Marcos Vier (Matemática)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCydb2qANhJwMxHzuJHXCG-g" target="_blank">Profª. Iaponira Campos (Química)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCkFMdRLNAUDhVFSBxP-UorA" target="_blank">Prof. Erandi Oliveira (Matemática)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank">Prof. Me. Fhelipe (Desenvolvimento de Sistemas)</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCB-eqa9SYduJym3scgCv1Ng" target="_blank">Prof. Paulo Jacinto (Administração)</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -115,38 +133,25 @@
       <p class="subtitle">O maior patrimônio da ETEEMM são as pessoas que constroem sua história! Nossos funcionários, educadores, estudantes, estudantes egressos, empresas parceiras são parte de um construto cheio de grandes conquistas.</p>
     </div>
 
-    <ul class="slide">
 
-      <li class="slide-item fade">
-        <img src="<?= url("assets/img/nade.jpg") ?>" alt="Diretora">
-      </li>
-
-      <li class="slide-item fade">
-        <img src="<?= url("assets/img/eduarslide.jpg") ?>" alt="Professor de Biologia">
-      </li>
-
-      <li class="slide-item fade">
-        <img src="<?= url("assets/img/barbasalide.jpg") ?>" alt="Estudante Regressa de DS">
-      </li>
-
-      <li class="slide-item fade">
-        <img src="<?= url("assets/img/anaslide.jpg") ?>"  alt="Estudante Regressa de ADM">
-      </li>
-
-      <!-- SETAS -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </ul>
-
-    <div class="pagination">
-
-      <span class="pagination-page" onclick="currentSlides(1)"></span>
-      <span class="pagination-page" onclick="currentSlides(2)"></span>
-      <span class="pagination-page" onclick="currentSlides(3)"></span>
-      <span class="pagination-page" onclick="currentSlides(4)"></span>
-
-    </div>
+      <div id="splide-testimonials" class="splide" aria-label="Depoimentos">
+          <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="<?= url("assets/img/nade.jpg") ?>" alt="Diretora">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="<?= url("assets/img/eduarslide.jpg") ?>" alt="Professor de Biologia">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="<?= url("assets/img/barbasalide.jpg") ?>" alt="Estudante Regressa de DS">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="<?= url("assets/img/anaslide.jpg") ?>"  alt="Estudante Regressa de ADM">
+                  </li>
+              </ul>
+          </div>
+      </div>
   </div>
 </section>
 
@@ -207,39 +212,18 @@
 </section>
 
 <?php $this->start("js"); ?>
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlides(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    const slides = document.getElementsByClassName("slide-item");
-    const paginationPage = document.getElementsByClassName("pagination-page");
-
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    for (let i = 0; i < paginationPage.length; i++) {
-      paginationPage[i].classList.remove("active");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    paginationPage[slideIndex - 1].className += " active";
-  }
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+<script type="text/javascript">
+    (new Splide("#splide-testimonials", {
+        rewind: true,
+        rewindSpeed: 1000,
+        perPage: 2,
+        gap: "2rem",
+        breakpoints: {
+            900: {
+                perPage: 1,
+            },
+        }
+    })).mount();
 </script>
 <?php $this->stop(); ?>
