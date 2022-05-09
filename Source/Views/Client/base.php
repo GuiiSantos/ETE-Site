@@ -49,7 +49,6 @@
             <ul class="links">
                 <li>
                     <h2>Redes Sociais</h2>
-<!--                    <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i>-->
                     <ul>
                         <li>
                             <a href="https://www.instagram.com/ete_edson_mororo_moura/" target="_blank">Instagram</a>

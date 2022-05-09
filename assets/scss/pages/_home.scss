@@ -1,5 +1,9 @@
 @use "../global/variables" as *;
 
+.object-fit-fill {
+  object-fit: fill !important;
+}
+
 .section-title {
   .title {
     color: $text-color;

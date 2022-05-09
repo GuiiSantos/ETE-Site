@@ -166,10 +166,21 @@
     <ul class="galeria">
       <li>
         <figure>
-          <img src="">
-          <img src="<?= url("assets/img/primeira.jpg") ?>" alt="Jovens Estudando">
+          <img src="<?= url("assets/img/bfotoete.jpg") ?>" alt="Jovens Estudando" class="object-fit-fill">
         </figure>
-        <p>Semana de Empreendedorismo e Inovação Tecnológica</p>
+        <p>Foto com a equipe da escola, no aniversário da ETEEM</p>
+      </li>
+      <li>
+        <figure>
+          <img src="<?= url("assets/img/bmomentoete.jpg") ?>" alt="Jovens Estudando">
+        </figure>
+        <p>Roda feita com os alunos para uma oração de agradecimento</p>
+      </li>
+      <li>
+        <figure>
+          <img src="<?= url("assets/img/boloete.jpg") ?>" alt="Jovens Estudando">
+        </figure>
+        <p>Bolo de comemoração do aniversário ETEEM</p>
       </li>
       <li>
         <figure>

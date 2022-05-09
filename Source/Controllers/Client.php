@@ -57,7 +57,7 @@ class Client extends Controller {
         echo $this->view->render(
             "Client/error",
             [
-                "errCode" => $errCode,
+                "errCode" => "•" . $errCode . "•",
                 "errMessage"
             ]
         );
