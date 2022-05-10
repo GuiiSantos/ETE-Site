@@ -9,28 +9,28 @@
         <i class="fas fa-mouse-pointer"></i>
         <h2>Processo Seletivo</h2>
         <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
-        <a href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+        <a class="btn" href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank">Clique aqui</a>
       </li>
 
       <li class="differentials-item">
         <i class="fas fa-mouse-pointer"></i>
         <h2>Siepe</h2>
         <p>Sistema de Informações da Educação de Pernambuco.</p>
-        <a href="https://www.siepe.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+        <a class="btn" href="https://www.siepe.educacao.pe.gov.br/" target="_blank">Clique aqui</a>
       </li>
 
       <li class="differentials-item">
         <i class="fas fa-mouse-pointer"></i>
         <h2>Secretaria de Educação - PE</h2>
         <p>Acesso ao site com informações atualizadas.</p>
-        <a href="http://www.educacao.pe.gov.br/" target="_blank"><button class="btn-click-here">Clique aqui</button></a>
+        <a class="btn"  href="http://www.educacao.pe.gov.br/" target="_blank">Clique aqui</a>
       </li>
 
       <li class="differentials-item">
         <i class="fas fa-mouse-pointer"></i>
         <h2>Estrutura Física</h2>
         <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p>
-        <a href="/estrutura"><button class="btn-click-here">Clique aqui</button></a>
+        <a class="btn" href="/estrutura">Clique aqui</a>
       </li>
     </ul>
   </div>

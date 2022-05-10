@@ -74,6 +74,12 @@
         margin-bottom: 20px;
         flex: 1;
       }
+
+      .btn {
+        border-radius: 10px;
+        align-self: start;
+        font-size: 0.82rem;
+      }
     }
 
     @media (max-width: 900px) {

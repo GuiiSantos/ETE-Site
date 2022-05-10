@@ -3,6 +3,7 @@
 
 .btn {
   //@include gradient;
+  display: inline-block;
   color: $white;
   padding: 12px 16px;
   border-radius: 4px;
@@ -15,21 +16,5 @@
 
   &:hover {
     background-position: right;
-  }
-}
-
-.btn-click-here {
-  height: 40px;
-  width: 100px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-color: #1e90ff;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: darken(#1e90ff, 10%);
   }
 }
