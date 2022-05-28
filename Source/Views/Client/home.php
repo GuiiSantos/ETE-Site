@@ -2,7 +2,7 @@
 
 <section class="introduction" id="home" aria-label="introdução">
   <div class="container">
-    <img class="call-to-action" src="<?= url("assets/img/colocaessadaqui.png") ?>" alt="Juntos Somos Mais Fortes">
+    <img class="call-to-action" src="<?= url("assets/img/call-to-action.png") ?>" alt="Juntos Somos Mais Fortes">
 
     <ul class="differentials">
       <li class="differentials-item">
@@ -138,16 +138,16 @@
           <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide">
-                      <img src="<?= url("assets/img/nade.jpg") ?>" alt="Diretora">
+                      <img src="<?= url("assets/img/slide/nadejane-slide.jpg") ?>" alt="Diretora">
                   </li>
                   <li class="splide__slide">
-                      <img src="<?= url("assets/img/eduarslide.jpg") ?>" alt="Professor de Biologia">
+                      <img src="<?= url("assets/img/slide/eduardo-slide.jpg") ?>" alt="Professor de Biologia">
                   </li>
                   <li class="splide__slide">
-                      <img src="<?= url("assets/img/barbasalide.jpg") ?>" alt="Estudante Regressa de DS">
+                      <img src="<?= url("assets/img/slide/barbara-slide.jpg") ?>" alt="Estudante Regressa de DS">
                   </li>
                   <li class="splide__slide">
-                      <img src="<?= url("assets/img/anaslide.jpg") ?>"  alt="Estudante Regressa de ADM">
+                      <img src="<?= url("assets/img/slide/ana-slide.jpg") ?>"  alt="Estudante Regressa de ADM">
                   </li>
               </ul>
           </div>
@@ -166,55 +166,55 @@
     <ul class="galeria">
       <li>
         <figure>
-          <img src="<?= url("assets/img/bfotoete.jpg") ?>" alt="Jovens Estudando" class="object-fit-fill">
+          <img src="<?= url("assets/img/portifolio/aniversario-ete-equipe.jpg") ?>" alt="Jovens Estudando" class="object-fit-fill">
         </figure>
         <p>Foto com a equipe da escola, no aniversário da ETEEM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/bmomentoete.jpg") ?>" alt="Jovens Estudando">
+          <img src="<?= url("assets/img/portifolio/aniversario-ete-oracao.jpg") ?>" alt="Jovens Estudando">
         </figure>
         <p>Roda feita com os alunos para uma oração de agradecimento</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/boloete.jpg") ?>" alt="Jovens Estudando">
+          <img src="<?= url("assets/img/portifolio/aniversario-ete-bolo.jpg") ?>" alt="Jovens Estudando">
         </figure>
         <p>Bolo de comemoração do aniversário ETEEM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/projetos.jpg") ?>" alt="Logo do Protagon">
+          <img src="<?= url("assets/img/portifolio/protagonismo-news.jpg") ?>" alt="Logo do Protagon">
         </figure>
         <p>Projetos do Médio Integrado e Subsequente</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/esporte.jpg") ?>" alt="Jovens Ganhando Prêmio Esportivo">
+          <img src="<?= url("assets/img/portifolio/esporte.jpg") ?>" alt="Jovens Ganhando Prêmio Esportivo">
         </figure>
         <p>Competições esportivas ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/gremio.jpg") ?>" alt="Grêmio 2020">
+          <img src="<?= url("assets/img/portifolio/gremio.jpg") ?>" alt="Grêmio 2020">
         </figure>
         <p>Protagonismo Juvenil e Grêmio Estudantil</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/sarau.jpg") ?>" alt="Sarau, Grupo Musical da Escola">
+          <img src="<?= url("assets/img/portifolio/sarau.jpg") ?>" alt="Sarau, Grupo Musical da Escola">
         </figure>
         <p>Sarau Literomusical ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/feras.jpg") ?>" alt="Alunos Terceirão">
+          <img src="<?= url("assets/img/portifolio/terceirao-2021.jpg") ?>" alt="Alunos Terceirão">
         </figure>
         <p>Feras ETEEMM</p>
       </li>
       <li>
         <figure>
-          <img src="<?= url("assets/img/conquistas.jpg") ?>" alt="Prêmio da Olimpiada Nacional de Ciências">
+          <img src="<?= url("assets/img/portifolio/olimpiadas-ciencia.jpg") ?>" alt="Prêmio da Olimpiada Nacional de Ciências">
         </figure>
         <p>Galeria de conquistas</p>
       </li>

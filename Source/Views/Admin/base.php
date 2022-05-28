@@ -16,7 +16,7 @@
   <div class="sidebar">
     <div class="sidebar-brand">
       <h2>
-          <img src="<?= url("assets/img/logo_E.png") ?>" alt=""> <span>TE</span>
+          <img src="<?= url("assets/img/logo-e.png") ?>" alt=""> <span>TE</span>
       </h2>
     </div>
     <div class="sidebar-menu">
