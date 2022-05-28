@@ -34,7 +34,7 @@
                 <ul class="menu" id="menu">
                     <li><a href="/#home">Home</a></li>
                     <li><a href="/#sobre">Sobre</a></li>
-                    <li><a href="/#portifolio">Portifólio</a></li>
+                    <li><a href="<?= url("/equipe") ?>">Equipe</a></li>
                 </ul>
             </nav>
         </div>

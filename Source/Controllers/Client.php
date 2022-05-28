@@ -27,6 +27,18 @@ class Client extends Controller {
         );
     }
 
+    public function equipe() {
+        $seo = $this->seo->render(
+            "Equipe | " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg")
+        );
+
+        $this->view->addData(["seo" => $seo], "Client/base");
+        echo $this->view->render("Client/equipe");
+    }
+
     public function estrutura($data) {
         $seo = $this->seo->render(
             "Estruturas | " . CONF_SITE_NAME,
@@ -36,12 +48,7 @@ class Client extends Controller {
         );
 
         $this->view->addData(["seo" => $seo], "Client/base");
-        echo $this->view->render(
-            "Client/estruturaEscola",
-            [
-                "page" => "estruta"
-            ]
-        );
+        echo $this->view->render("Client/estruturaEscola");
     }
     public function error(array $data) {
         $errCode = filter_var($data["errcode"], FILTER_SANITIZE_STRING);

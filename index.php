@@ -19,6 +19,7 @@ $router->namespace("Source\Controllers");
 $router->group(null);
 $router->get("/", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
+$router->get("/equipe", "Client:equipe");
 
 $router->group("/oops");
 $router->get("/{errcode}","Client:error");
