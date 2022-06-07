@@ -33,6 +33,8 @@ $router->get("/login", "Admin:login");
 $router->post("/login", "Admin:login");
 
 $router->get("/painel", "Admin:dashboard");
+$router->get("/criar", "Admin:editor");
+$router->get("/editar/{id}", "Admin:editor");
 $router->get("/sair", "Admin:logout");
 
 /**
@@ -40,6 +42,9 @@ $router->get("/sair", "Admin:logout");
  */
 $router->group("/api");
 
+$router->post("/posts/criar", "Api:createPost");
+$router->post("/posts/atualizar/{id}", "Api:updatePost");
+$router->post("/posts/imagem/{id}", "Api:uploadPostImage");
 $router->post("/posts/alternar/ativo/{id}", "Api:toggleActive");
 $router->post("/posts/alternar/fixado/{id}", "Api:togglePinned");
 $router->delete("/posts/apagar/{id}", "Api:deletePost");

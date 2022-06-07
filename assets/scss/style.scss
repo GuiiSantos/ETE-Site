@@ -10,13 +10,15 @@
 @use "pages/error";
 @use "pages/login";
 @use "pages/dashboard";
-
+@use "pages/editor";
 
 // UTILITY
 @use "utility/header";
 @use "utility/footer";
 @use "utility/sidebar";
 
-// VENDORS
+//vendors
 @use "vendors/custom-alert.css";
+@use "vendors/cropper.min.css";
+@use "vendors/cropper-page";
 @use "vendors/fontawesome-all.css";

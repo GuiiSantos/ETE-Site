@@ -24,15 +24,17 @@
     },
     "files": [
       "Source/Boot/Config.php",
-      "Source/Boot/Helpers.php"
+      "Source/Boot/Helpers.php",
+      "Source/Boot/MinifyJs.php"
     ]
   },
   "require": {
     "ext-pdo": "*",
     "ext-json": "*",
-    "coffeecode/datalayer": "2.*.*",
-    "coffeecode/optimizer": "2.1.*",
+    "coffeecode/datalayer": "1.*.*",
+    "coffeecode/optimizer": "2.*.*",
     "coffeecode/router": "1.*.*",
-    "league/plates": "3.*.*"
+    "league/plates": "3.*.*",
+    "matthiasmullie/minify": "1.*.*"
   }
 }

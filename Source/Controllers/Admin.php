@@ -91,6 +91,40 @@ class Admin extends Controller{
             ]);
     }
 
+    public function editor(array $data) {
+        $session = new Session();
+        if(!$session->has("user") || $session->user->access_level === "1") {
+            redirect(url());
+        }
+
+        $posts = null;
+        if(!empty($data["id"]) && $id = filter_var($data["id"], FILTER_VALIDATE_INT)) {
+            $posts = (new Posts())->findById($id);
+        }
+
+        // SEO da pagina
+        $seo = $this->seo->render(
+            "Painel de criar",
+            "Gerencie os posts do site, criando, excluindo ou desativando seus posts",
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg")
+        );
+
+        $this->view->addData(
+            [
+                "seo" => $seo,
+                "pageId" => "editor",
+                "user" => $session->user
+
+            ], "admin/base");
+        echo $this->view->render(
+            "Admin/editor",
+            [
+                "posts" => $posts
+            ]
+        );
+    }
+
     public function logout() {
         (new Session())->destroy();
         redirect(url("admin/login"));

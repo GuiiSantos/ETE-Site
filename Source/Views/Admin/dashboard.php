@@ -45,7 +45,7 @@
                     </td>
                 </tr>
             <?php endforeach; ?>
-        <?php endif; ?>
+        <?php else: echo "<h1>não tem nenhum conteúdo postado!:(</h1>"; endif; ?>
         </tbody>
     </table>
 </div>

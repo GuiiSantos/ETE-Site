@@ -14,7 +14,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<div class="wrapper fadeInDown">
+<div class="wrapper-login fadeInDown">
     <div id="formContent">
         <form action="<?= url("admin/login"); ?>" method="POST" enctype="multipart/form-data">
             <?= csrf_input() ?>

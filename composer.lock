@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "232ea095cd69c0f197e30ff198cb4108",
+    "content-hash": "a7ae4261dbc28472b22adb08aada0e43",
     "packages": [
         {
             "name": "coffeecode/datalayer",
-            "version": "2.0.6",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robsonvleite/datalayer.git",
-                "reference": "acd0282698a9a16846c0bee72dcec0284fdc6600"
+                "reference": "52e209190752eccc0bfd8ff3abcdd607ed4c01c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/datalayer/zipball/acd0282698a9a16846c0bee72dcec0284fdc6600",
-                "reference": "acd0282698a9a16846c0bee72dcec0284fdc6600",
+                "url": "https://api.github.com/repos/robsonvleite/datalayer/zipball/52e209190752eccc0bfd8ff3abcdd607ed4c01c1",
+                "reference": "52e209190752eccc0bfd8ff3abcdd607ed4c01c1",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
-                "php": ">=8.0"
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "The data layer is a persistent abstraction component of your database that PDO",
-            "homepage": "https://www.upinside.com.br",
+            "homepage": "http://www.upinside.com.br",
             "keywords": [
                 "Coffeecode",
                 "crud",
@@ -55,27 +55,27 @@
             ],
             "support": {
                 "issues": "https://github.com/robsonvleite/datalayer/issues",
-                "source": "https://github.com/robsonvleite/datalayer/tree/2.0.6"
+                "source": "https://github.com/robsonvleite/datalayer/tree/1.1.8"
             },
-            "time": "2022-04-13T23:41:55+00:00"
+            "time": "2021-03-21T14:00:57+00:00"
         },
         {
             "name": "coffeecode/optimizer",
-            "version": "2.1.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robsonvleite/optimizer.git",
-                "reference": "c4c9e979a97e3ca46f2fd55c1aad53f707ddbead"
+                "reference": "53c00844e3316a74f8f076b0b325ceb140d41b70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/optimizer/zipball/c4c9e979a97e3ca46f2fd55c1aad53f707ddbead",
-                "reference": "c4c9e979a97e3ca46f2fd55c1aad53f707ddbead",
+                "url": "https://api.github.com/repos/robsonvleite/optimizer/zipball/53c00844e3316a74f8f076b0b325ceb140d41b70",
+                "reference": "53c00844e3316a74f8f076b0b325ceb140d41b70",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
-                "php": ">=8.0"
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -108,9 +108,9 @@
             ],
             "support": {
                 "issues": "https://github.com/robsonvleite/optimizer/issues",
-                "source": "https://github.com/robsonvleite/optimizer/tree/2.1.1"
+                "source": "https://github.com/robsonvleite/optimizer/tree/2.0.2"
             },
-            "time": "2022-04-07T14:43:46+00:00"
+            "time": "2021-03-21T14:08:00+00:00"
         },
         {
             "name": "coffeecode/router",
@@ -224,6 +224,129 @@
                 "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
             },
             "time": "2020-12-25T05:00:37+00:00"
+        },
+        {
+            "name": "matthiasmullie/minify",
+            "version": "1.3.68",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/minify.git",
+                "reference": "c00fb02f71b2ef0a5f53fe18c5a8b9aa30f48297"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/c00fb02f71b2ef0a5f53fe18c5a8b9aa30f48297",
+                "reference": "c00fb02f71b2ef0a5f53fe18c5a8b9aa30f48297",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "matthiasmullie/path-converter": "~1.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.0",
+                "matthiasmullie/scrapbook": "dev-master",
+                "phpunit/phpunit": ">=4.8"
+            },
+            "suggest": {
+                "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+            },
+            "bin": [
+                "bin/minifycss",
+                "bin/minifyjs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\Minify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "minify@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+            "homepage": "http://www.minifier.org",
+            "keywords": [
+                "JS",
+                "css",
+                "javascript",
+                "minifier",
+                "minify"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/minify/issues",
+                "source": "https://github.com/matthiasmullie/minify/tree/1.3.68"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/matthiasmullie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-04-19T08:28:56+00:00"
+        },
+        {
+            "name": "matthiasmullie/path-converter",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/path-converter.git",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\PathConverter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "pathconverter@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Relative path converter",
+            "homepage": "http://github.com/matthiasmullie/path-converter",
+            "keywords": [
+                "converter",
+                "path",
+                "paths",
+                "relative"
+            ],
+            "support": {
+                "issues": "https://github.com/matthiasmullie/path-converter/issues",
+                "source": "https://github.com/matthiasmullie/path-converter/tree/1.1.3"
+            },
+            "time": "2019-02-05T23:41:09+00:00"
         }
     ],
     "packages-dev": [],

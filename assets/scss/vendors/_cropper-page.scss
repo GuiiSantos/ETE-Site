@@ -1,0 +1,122 @@
+@use "../global/global" as *;
+@use "../global/variables" as *;
+
+#cropper-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 824px;
+    height: 95%;
+    background: $white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 20px rgba(56,125,255,.17);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: -999;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.5);
+    transition: all 500ms ease-in;
+
+    &.active {
+        z-index: 999;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .cropper-image {
+        position: relative;
+        width: 100%;
+        height: 400px;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .btn-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 0;
+
+        .btn-group {
+            display: flex;
+            margin: 6px;
+
+            button {
+                position: relative;
+                display: inline-block;
+                background-color: #007bff;
+                padding: .5rem .75rem;
+                border: 2px solid transparent;
+                outline: none;
+                cursor: pointer;
+                transition: all 150ms ease-in-out;
+
+                .tooltip {
+                    position: absolute;
+                    top: -35px;
+                    left: 50%;
+                    font-size: 1rem;
+                    transform: translateX(-50%);
+                    background-color: rgba($black, .7);
+                    color: $white;
+                    padding: 4px 6px;
+                    border-radius: 6px;
+                    pointer-events: none;
+                    opacity: 0;
+                    white-space: nowrap;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        width: 10px;
+                        height: 10px;
+                        background: linear-gradient(135deg, transparent 50%, rgba($black, .7) 51%, rgba($black, .7) 100%);
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translateX(-50%) rotate(45deg);
+                    }
+                }
+
+
+                &:hover {
+                    .tooltip {
+                        opacity: 1;
+                    }
+                }
+
+                i {
+                    font-size: 1rem;
+                    color: $white;
+                }
+
+                &:first-child {
+                    border-top-left-radius: 0.25rem;
+                    border-bottom-left-radius: 0.25rem;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 0.25rem;
+                    border-bottom-right-radius: 0.25rem;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 .2rem rgba(38,143,255,.5)
+                }
+
+                &:hover {
+                    background-color: #0069d9;
+                    border-color: #0062cc;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 886px){
+        width: 95%;
+    }
+}
