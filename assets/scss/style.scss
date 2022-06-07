@@ -9,10 +9,14 @@
 @use "pages/structure";
 @use "pages/error";
 @use "pages/login";
+@use "pages/dashboard";
 
-// COMPONENTS
 
 // UTILITY
 @use "utility/header";
 @use "utility/footer";
 @use "utility/sidebar";
+
+// VENDORS
+@use "vendors/custom-alert.css";
+@use "vendors/fontawesome-all.css";

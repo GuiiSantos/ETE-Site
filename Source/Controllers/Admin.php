@@ -5,7 +5,9 @@ namespace Source\Controllers;
 use Source\Core\Controller;
 use Source\Core\Session;
 use Source\Models\User;
+use Source\Models\Posts;
 use Source\Support\Message;
+
 
 class Admin extends Controller{
 
@@ -63,7 +65,7 @@ class Admin extends Controller{
             ]
         );
     }
-    public function painel() {
+    public function dashboard() {
         $session = new Session();
         if(!$session->has("user") || $session->user->access_level === "1") {
             redirect(url());
@@ -77,8 +79,16 @@ class Admin extends Controller{
             false
         );
 
-        $this->view->addData(["seo" => $seo, "user" => $session->user], "admin/base");
-        echo $this->view->render("admin/dashboard");
+        $this->view->addData([
+            "seo" => $seo,
+            "user" => $session->user,
+            "pageId" => "dashboard"
+        ],
+            "admin/base");
+        echo $this->view->render("admin/dashboard",
+            [
+                "posts" => (new Posts())->find()->fetch(true)
+            ]);
     }
 
     public function logout() {

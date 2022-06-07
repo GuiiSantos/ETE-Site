@@ -32,8 +32,17 @@ $router->group("admin");
 $router->get("/login", "Admin:login");
 $router->post("/login", "Admin:login");
 
-$router->get("/painel", "Admin:painel");
+$router->get("/painel", "Admin:dashboard");
 $router->get("/sair", "Admin:logout");
+
+/**
+ * API
+ */
+$router->group("/api");
+
+$router->post("/posts/alternar/ativo/{id}", "Api:toggleActive");
+$router->post("/posts/alternar/fixado/{id}", "Api:togglePinned");
+$router->delete("/posts/apagar/{id}", "Api:deletePost");
 
 /**
  * CRIA AS ROTAS
