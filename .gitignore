@@ -3,3 +3,4 @@ composer.phar
 /vendor/
 assets/img/post/
 teste.php
+assets/js/main.js

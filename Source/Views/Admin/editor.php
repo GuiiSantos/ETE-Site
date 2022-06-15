@@ -6,16 +6,6 @@
     </div>
 
     <div class="btn-options">
-        <div class="btn-group">
-            <button onclick="cropperMove()">
-                <span class="tooltip">Mover</span>
-                <i class="fa fa-arrows-alt"></i>
-            </button>
-            <button onclick="cropperCrop()">
-                <span class="tooltip">Cortar</span>
-                <i class="fa fa-crop-alt"></i>
-            </button>
-        </div>
 
         <div class="btn-group">
             <button onclick="rotateUndo()">
@@ -53,15 +43,16 @@
 </div>
 
 <div class="notice-creator">
-    <form   action="<?= $posts ? url("api/posts/atualizar/{$posts->id}") : url("api/posts/criar"); ?>"
-            method="post"
-            onsubmit="<?php if($posts): ?> updatePost(event);
-                    <?php else: ?>createPost(event);
-                    <?php endif; ?>" autocomplete="off">
+    <form action="<?= $posts ? url("api/posts/atualizar/{$posts->id}") : url("api/posts/criar"); ?>"
+          method="post"
+          onsubmit="<?php if ($posts): ?> updatePost(event);
+          <?php else: ?>createPost(event);
+          <?php endif; ?>" autocomplete="off">
 
         <div class="input-data">
             <div class="wrapper">
-                <input name="title" type="text" maxlength="100" required value="<?= $posts ? htmlspecialchars($posts->title) : "" ?>">
+                <input name="title" type="text" maxlength="100" required
+                       value="<?= $posts ? htmlspecialchars($posts->title) : "" ?>">
                 <div class="underline"></div>
                 <label>Título</label>
             </div>
@@ -80,7 +71,7 @@
                 <?= $posts ? "Atualizar" : "Criar"; ?> Post
             </button>
 
-            <?php if($posts): ?>
+            <?php if ($posts): ?>
                 <button type="button" class="btn-ckeditor" onclick="deleteNotice(<?= $posts->id ?>)">
                     <i class="las la-trash"></i> &nbsp;
                     Apagar Post
@@ -110,12 +101,12 @@
     </div>
 </div>
 
-<?php if($posts): ?>
+<?php if ($posts): ?>
     <?php $this->start("js") ?>
-        <script src="<?= url("assets/js/ckeditor.js")?>"></script>
-        <script type="text/javascript">
-            const id = "<?= $posts->id; ?>";
-            const ckeditorContent = "<?= addslashes($posts->posts); ?>";
-        </script>
+    <script src="<?= url("assets/js/ckeditor.js") ?>"></script>
+    <script type="text/javascript">
+        const id = "<?= $posts->id; ?>";
+        const ckeditorContent = "<?= addslashes($posts->posts); ?>";
+    </script>
     <?php $this->stop() ?>
 <?php endif; ?>

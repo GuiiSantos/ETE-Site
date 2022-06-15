@@ -34,6 +34,10 @@ class Api extends Controller {
         }
         $id = $posts->id;
 
+        if(!is_dir(url_image("post"))) {
+            mkdir(url_image("post"));
+        }
+
         if($canvas) {
             $path = url_image("post/{$id}");
 
@@ -116,8 +120,7 @@ class Api extends Controller {
             if(!is_dir($path)) {
                 mkdir($path);
             }
-
-            if(in_array($file["type"], $typesAllowed)) {
+            if(in_array($file["type"], $typesAllowed))
                 if(move_uploaded_file($file["tmp_name"], $path . "/" . $fileName)) {
                     emit_json(["success" => true, "message" => "Imagem salva com sucesso",
                         "url" => url("assets/img/post/{$id}/$fileName")]);
@@ -128,7 +131,7 @@ class Api extends Controller {
                 emit_json(["success" => false, "message" => "Selecione uma imagem (png, jpg, jpeg)"]);
             }
         }
-    }
+
 
     /**
      * Alterna se o Post esta ou não ativa

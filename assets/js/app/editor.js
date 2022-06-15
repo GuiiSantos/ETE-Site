@@ -66,9 +66,6 @@ if(App.pageId === "editor")
             }
         });
     }
-
-    function cropperMove() {cropper.setDragMode("move");}
-    function cropperCrop() {cropper.setDragMode("crop");}
     function rotateUndo() {cropper.rotate(-45)}
     function rotateRedo() {cropper.rotate(45)}
 
