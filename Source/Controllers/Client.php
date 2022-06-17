@@ -2,7 +2,10 @@
 
 namespace Source\Controllers;
 
+use http\Url;
 use Source\Core\Controller;
+use Source\Models\Posts;
+use CoffeeCode\Paginator\Paginator;
 
 class Client extends Controller {
 
@@ -18,13 +21,24 @@ class Client extends Controller {
             url("assets/img/ete-belo-jardim-shared.jpg")
         );
 
+        $data = filter_input(INPUT_GET, "page", FILTER_VALIDATE_INT);
+
+
+        $paginator = new Paginator(url("/?page="));
+        $paginator->pager((new Posts())->find()->count(), 2, $data, 9);
+
+        $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetch(true) ;
+
+
         $this->view->addData(["seo" => $seo], "Client/base");
         echo $this->view->render(
             "Client/home",
             [
+                "posts" => $posts,
                 "page" => "page"
             ]
         );
+        echo $paginator->render();
     }
 
     public function equipe() {
