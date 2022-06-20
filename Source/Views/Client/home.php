@@ -177,7 +177,7 @@
             </div>
         </div>
     </section>
-<?php if ($posts): ?>
+<?php if ($posts && $paginator): ?>
     <section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
         <div class="container">
             <div class="section-title">
@@ -196,13 +196,30 @@
                             <img src="<?= url("assets/img/post/{$post->id}/cape.png") ?>"
                                  alt="Jovens Estudando" class="object-fit-fill">
                         </figure>
-                        <p><?= $post->title?></p>
+                        <p><?= $post->title ?></p>
                     </li>
                 <?php endforeach; ?>
             </ul>
         </div>
+        <div>
+            <?= $paginator;?>
+        </div>
     </section>
-<?php endif; ?>
+    <?php else:?>
+    <section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title" id="section-portifolio">Portfolio</h2>
+
+                <p class="subtitle">nenhum post achado! Lançaremos posts em breve</p>
+            </div>
+        </div>
+    </section>
+    <?php ;endif;
+
+
+?>
+
 
 <?php $this->start("js"); ?>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>

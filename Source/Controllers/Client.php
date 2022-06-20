@@ -25,7 +25,7 @@ class Client extends Controller {
 
 
         $paginator = new Paginator(url("/?page="));
-        $paginator->pager((new Posts())->find()->count(), 2, $data, 9);
+        $paginator->pager((new Posts())->find()->count(), 6, $data, 3);
 
         $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetch(true) ;
 
@@ -35,10 +35,11 @@ class Client extends Controller {
             "Client/home",
             [
                 "posts" => $posts,
+                "paginator" =>  $paginator->render(),
                 "page" => "page"
             ]
         );
-        echo $paginator->render();
+
     }
 
     public function equipe() {
