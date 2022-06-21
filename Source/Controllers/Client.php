@@ -24,7 +24,7 @@ class Client extends Controller {
         $data = filter_input(INPUT_GET, "page", FILTER_VALIDATE_INT);
 
 
-        $paginator = new Paginator(url("/?page="));
+        $paginator = new Paginator(url("/#portifolio&&?page="));
         $paginator->pager((new Posts())->find()->count(), 6, $data, 3);
 
         $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetch(true) ;
