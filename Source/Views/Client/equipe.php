@@ -16,11 +16,24 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
-        </li> <!-- Iara -->
+        </li> <!-- Nadjane -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/marcio.jpeg") ?>" alt="Márcio Silva" />
+            </div>
+          </header>
+
+          <h3>Márcio Silva</h3>
+          <div class="desc">
+            Administrador da ETEEM
+          </div>
+
+          <div class="contacts">
+          </div>
+        </li> <!-- Márcio -->
 
         <li class="professores-item">
           <header>
@@ -35,9 +48,6 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Iara -->
 
@@ -54,9 +64,7 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCIMUN2nB84lEleQZGz5wtgw" target="_blank"><i class="fa fa-youtube"></i></a>
           </div>
         </li> <!-- Eduardo -->
 
@@ -73,11 +81,59 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCXJPdWOwuXxtHF7rEQe3_pQ" target="_blank"><i class="fa fa-youtube"></i></a>
           </div>
         </li> <!-- Marcos -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/joyce.jpeg") ?>" alt="Joyce Yngrid" />
+            </div>
+          </header>
+
+          <h3>Joyce Yngrid</h3>
+          <div class="desc">
+            Prof(a) de Língua Portuguesa
+          </div>
+
+          <div class="contacts">
+          </div>
+        </li> <!-- Joyce -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/elaisa.jfif") ?>" alt="Elaisa Souza" />
+            </div>
+          </header>
+
+          <h3>Elaisa Souza</h3>
+          <div class="desc">
+            Prof(a) de Inglês
+          </div>
+
+          <div class="contacts">
+            <a href="https://www.youtube.com/channel/UCj5ezwgCNW9aQhLlfPEyRLQ" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </li> <!-- Elaisa -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/fhelipe.jfif") ?>" alt="Fhelipe Freitas" />
+            </div>
+          </header>
+
+          <h3>Fhelipe Freitas</h3>
+          <div class="desc">
+            Prof(a) e Coord(a) da base técnica de DS
+          </div>
+
+          <div class="contacts">
+            <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </li> <!-- Fhelipe -->
 
         <li class="professores-item">
           <header>
@@ -92,9 +148,6 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Elias -->
 
@@ -111,9 +164,6 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Edryelle -->
 
@@ -130,30 +180,8 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Lucia -->
-
-        <li class="professores-item">
-          <header>
-            <div class="avatar">
-              <img src="<?= url("assets/img/equipe/elaisa.jfif") ?>" alt="Elaisa Souza" />
-            </div>
-          </header>
-
-          <h3>Elaisa Souza</h3>
-          <div class="desc">
-            Prof(a) de Inglês
-          </div>
-
-          <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-          </div>
-        </li> <!-- Elaisa -->
 
         <li class="professores-item">
           <header>
@@ -168,9 +196,6 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Ana -->
 
@@ -187,30 +212,8 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Giordane -->
-
-        <li class="professores-item">
-          <header>
-            <div class="avatar">
-              <img src="<?= url("assets/img/equipe/fhelipe.jfif") ?>" alt="Fhelipe Freitas" />
-            </div>
-          </header>
-
-          <h3>Fhelipe Freitas</h3>
-          <div class="desc">
-            Prof(a) e Coord(a) da base técnica de DS
-          </div>
-
-          <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-          </div>
-        </li> <!-- Fhelipe -->
 
         <li class="professores-item">
           <header>
@@ -225,11 +228,56 @@
           </div>
 
           <div class="contacts">
-            <a href=""><i class="fa fa-youtube"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
           </div>
         </li> <!-- Valter -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/islla.jpeg") ?>" alt="Islla Soares" />
+            </div>
+          </header>
+
+          <h3>Islla Soares</h3>
+          <div class="desc">
+            Prof(a) da base técnica de ADM
+          </div>
+
+          <div class="contacts">
+          </div>
+        </li> <!-- Islla -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/gildo.jpeg") ?>" alt="Gildo Nascimento" />
+            </div>
+          </header>
+
+          <h3>Gildo Nascimento</h3>
+          <div class="desc">
+            Prof(a) da base técnica de ADM
+          </div>
+
+          <div class="contacts">
+          </div>
+        </li> <!-- Gildo -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
+              <img src="<?= url("assets/img/equipe/silvania.jpeg") ?>" alt="Silvania Pereira" />
+            </div>
+          </header>
+
+          <h3>Silvania Pereira</h3>
+          <div class="desc">
+            Coordenadora da EAD
+          </div>
+
+          <div class="contacts">
+          </div>
+        </li> <!-- Silvania -->
       </ul>
     </div>
 </div>

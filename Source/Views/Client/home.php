@@ -7,16 +7,9 @@
     <ul class="differentials">
       <li class="differentials-item">
         <i class="fas fa-mouse-pointer"></i>
-        <h2>Processo Seletivo</h2>
-        <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
-        <a class="btn" href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank">Clique aqui</a>
-      </li>
-
-      <li class="differentials-item">
-        <i class="fas fa-mouse-pointer"></i>
-        <h2>Siepe</h2>
-        <p>Sistema de Informações da Educação de Pernambuco.</p>
-        <a class="btn" href="https://www.siepe.educacao.pe.gov.br/" target="_blank">Clique aqui</a>
+        <h2>ENEM - Página do Participante</h2>
+        <p>O ENEM é a principal forma de ingresso nas faculdades.</p>
+        <a class="btn" href="https://enem.inep.gov.br/participante">Clique aqui</a>
       </li>
 
       <li class="differentials-item">
@@ -28,9 +21,16 @@
 
       <li class="differentials-item">
         <i class="fas fa-mouse-pointer"></i>
-        <h2>Estrutura Física</h2>
-        <p>Imagens do espaço da ETEEMM que contribuem com conhecimento.</p>
-        <a class="btn" href="/estrutura">Clique aqui</a>
+        <h2>Processo Seletivo</h2>
+        <p>Ingresso no Médio Integrado, Subsequente e EAD.</p>
+        <a class="btn" href="https://sisacad.educacao.pe.gov.br/sissel/" target="_blank">Clique aqui</a>
+      </li>
+
+      <li class="differentials-item">
+        <i class="fas fa-mouse-pointer"></i>
+        <h2>Siepe</h2>
+        <p>Sistema de Informações da Educação de Pernambuco.</p>
+        <a class="btn" href="https://www.siepe.educacao.pe.gov.br/" target="_blank">Clique aqui</a>
       </li>
     </ul>
   </div>

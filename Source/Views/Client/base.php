@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= $seo ?>
 
-    <link href="<?= url("assets/scss/style.css") ?>" rel="stylesheet" />
+    <link href="<?= url("assets/scss/style.css?001") ?>" rel="stylesheet" />
     <link rel="shortcut icon" href="<?= url("assets/img/favicon.ico") ?>" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +32,9 @@
 
             <nav aria-label="Principal">
                 <ul class="menu" id="menu">
-                    <li><a href="/#home">Home</a></li>
-                    <li><a href="/#sobre">Sobre</a></li>
+                    <li><a href="<?= url() ?>">Home</a></li>
                     <li><a href="<?= url("/equipe") ?>">Equipe</a></li>
+                    <li><a href="<?= url("/estrutura") ?>">Estruturas</a></li>
                 </ul>
             </nav>
         </div>
