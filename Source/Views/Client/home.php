@@ -168,7 +168,7 @@
         <figure>
           <img src="<?= url("assets/img/portifolio/aniversario-ete-equipe.jpg") ?>" alt="Jovens Estudando" class="object-fit-fill">
         </figure>
-        <p>Foto com a equipe da escola, no aniversário da ETEEM</p>
+        <p>Foto com a equipe da escola, no aniversário da ETEEMM</p>
       </li>
       <li>
         <figure>
@@ -180,7 +180,7 @@
         <figure>
           <img src="<?= url("assets/img/portifolio/aniversario-ete-bolo.jpg") ?>" alt="Jovens Estudando">
         </figure>
-        <p>Bolo de comemoração do aniversário ETEEM</p>
+        <p>Bolo de comemoração do aniversário ETEEMM</p>
       </li>
       <li>
         <figure>

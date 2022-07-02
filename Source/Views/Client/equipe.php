@@ -12,7 +12,7 @@
 
           <h3>Nadjane Araújo</h3>
           <div class="desc">
-            Diretora da ETEEM
+            Gestora Escolar
           </div>
 
           <div class="contacts">
@@ -28,7 +28,7 @@
 
           <h3>Márcio Silva</h3>
           <div class="desc">
-            Administrador da ETEEM
+            Assistente Administrativo
           </div>
 
           <div class="contacts">
@@ -44,7 +44,7 @@
 
           <h3>Iara Suselly</h3>
           <div class="desc">
-            Coord(a) da ETEEM
+            Coord(a) da ETEEMM
           </div>
 
           <div class="contacts">
@@ -88,22 +88,6 @@
         <li class="professores-item">
           <header>
             <div class="avatar">
-              <img src="<?= url("assets/img/equipe/joyce.jpeg") ?>" alt="Joyce Yngrid" />
-            </div>
-          </header>
-
-          <h3>Joyce Yngrid</h3>
-          <div class="desc">
-            Prof(a) de Língua Portuguesa
-          </div>
-
-          <div class="contacts">
-          </div>
-        </li> <!-- Joyce -->
-
-        <li class="professores-item">
-          <header>
-            <div class="avatar">
               <img src="<?= url("assets/img/equipe/elaisa.jfif") ?>" alt="Elaisa Souza" />
             </div>
           </header>
@@ -121,19 +105,18 @@
         <li class="professores-item">
           <header>
             <div class="avatar">
-              <img src="<?= url("assets/img/equipe/fhelipe.jfif") ?>" alt="Fhelipe Freitas" />
+              <img src="<?= url("assets/img/equipe/joyce.jpeg") ?>" alt="Joyce Yngrid" />
             </div>
           </header>
 
-          <h3>Fhelipe Freitas</h3>
+          <h3>Joyce Yngrid</h3>
           <div class="desc">
-            Prof(a) e Coord(a) da base técnica de DS
+            Prof(a) de Língua Portuguesa
           </div>
 
           <div class="contacts">
-            <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank"><i class="fa fa-youtube"></i></a>
           </div>
-        </li> <!-- Fhelipe -->
+        </li> <!-- Joyce -->
 
         <li class="professores-item">
           <header>
@@ -218,13 +201,30 @@
         <li class="professores-item">
           <header>
             <div class="avatar">
+              <img src="<?= url("assets/img/equipe/fhelipe.jfif") ?>" alt="Fhelipe Freitas" />
+            </div>
+          </header>
+
+          <h3>Fhelipe Freitas</h3>
+          <div class="desc">
+            Prof(a) e Coord(a) da Base Técnica de DS
+          </div>
+
+          <div class="contacts">
+            <a href="https://www.youtube.com/channel/UCCRmPuoD-pc_uFomr6koSSw" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </li> <!-- Fhelipe -->
+
+        <li class="professores-item">
+          <header>
+            <div class="avatar">
               <img src="<?= url("assets/img/equipe/valter.jfif") ?>" alt="Valter Santos" />
             </div>
           </header>
 
           <h3>Valter Santos</h3>
           <div class="desc">
-            Prof(a) da base técnica de DS
+            Prof(a) da Base Técnica de DS
           </div>
 
           <div class="contacts">
@@ -240,7 +240,7 @@
 
           <h3>Islla Soares</h3>
           <div class="desc">
-            Prof(a) da base técnica de ADM
+            Prof(a) da Base Técnica de ADM
           </div>
 
           <div class="contacts">
@@ -256,7 +256,7 @@
 
           <h3>Gildo Nascimento</h3>
           <div class="desc">
-            Prof(a) da base técnica de ADM
+            Prof(a) da Base Técnica de ADM
           </div>
 
           <div class="contacts">

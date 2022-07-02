@@ -66,7 +66,7 @@
 
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">Protagonistas ETEEM</a>
+                            <a href="https://www.instagram.com/protagonistas_eteemm/" target="_blank">Protagonistas ETEEMM</a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/protagonmidiatico_/" target="_blank">Protagon Midíátivco</a>
@@ -81,13 +81,13 @@
 
                     <ul>
                         <li>
-                            <a href="/#home">Home</a>
+                            <a href="<?= url() ?>">Home</a>
                         </li>
                         <li>
-                            <a href="/#sobre">Sobre</a>
+                            <a href="<?= url("/equipe") ?>">Equipe</a>
                         </li>
                         <li>
-                            <a href="/#portifolio">Portifólio</a>
+                            <a href="<?= url("/estrutura") ?>">Estruturas</a>
                         </li>
                     </ul>
                 </li>
