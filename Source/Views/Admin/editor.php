@@ -6,7 +6,6 @@
     </div>
 
     <div class="btn-options">
-
         <div class="btn-group">
             <button onclick="rotateUndo()">
                 <span class="tooltip">Girar -45deg</span>

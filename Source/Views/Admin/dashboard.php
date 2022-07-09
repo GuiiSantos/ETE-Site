@@ -15,7 +15,6 @@
         <tbody>
 
             <?php foreach($posts as $post):
-//                $title = str_limit_chars($notice->title, 40);
                 $title = $post->title;
 
                 $id = $post->id;

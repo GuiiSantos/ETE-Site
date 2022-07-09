@@ -302,34 +302,27 @@
 }
 //PAGINAÇÃO
 .paginator {
-  list-style: none;
-  padding: 0;
   margin-top: 30px;
 }
 
 .paginator_item {
   display: inline-block;
   margin: 0 5px;
-  padding: 4px 12px;
-  background: $text-color;
-  color: $text-grey;
+  padding: 6px 14px;
+  background: darken($primary, 8%);
+  color: $white;
   text-decoration: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
 .paginator_active {
-  border: 2px solid $text-color;
+  background: darken($primary, 20%);
 }
 
 .paginator_item:hover {
-  background: $white;
-  border: 2px solid $text-color;
+  background: darken($primary, 20%);
 }
 
-.paginator_active, .paginator_active:hover {
-  background: $white;
-}
 @media (max-width: 760px) {
   .introduction {
     padding: 50px 0;

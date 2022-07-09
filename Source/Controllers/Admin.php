@@ -14,7 +14,8 @@ class Admin extends Controller{
     public function __construct() {
         parent::__construct(CONF_URL_VIEWS);
     }
-    public function login() {
+
+    public function entrar() {
         $session = new Session();
         if ($session->has("user") && $session->user->access_level !== "1") {
             redirect(url("admin/painel"));
@@ -56,7 +57,7 @@ class Admin extends Controller{
             false
         );
 
-        echo $this->view->render("admin/login",
+        echo $this->view->render("admin/entrar",
             [
                 "seo" => $seo,
                 "message" => $message,
@@ -104,10 +105,11 @@ class Admin extends Controller{
 
         // SEO da pagina
         $seo = $this->seo->render(
-            "Painel de criar",
+            "Criar/Editar | " . CONF_SITE_NAME,
             "Gerencie os posts do site, criando, excluindo ou desativando seus posts",
             url(),
-            url("assets/img/ete-belo-jardim-shared.jpg")
+            url("assets/img/ete-belo-jardim-shared.jpg"),
+            false
         );
 
         $this->view->addData(
@@ -127,6 +129,6 @@ class Admin extends Controller{
 
     public function logout() {
         (new Session())->destroy();
-        redirect(url("admin/login"));
+        redirect(url("admin/entrar"));
     }
 }
