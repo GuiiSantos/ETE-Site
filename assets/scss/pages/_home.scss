@@ -300,6 +300,28 @@
     }
   }
 }
+//PAGINAÇÃO
+.paginator {
+  margin-top: 30px;
+}
+
+.paginator_item {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 6px 14px;
+  background: darken($primary, 8%);
+  color: $white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.paginator_active {
+  background: darken($primary, 20%);
+}
+
+.paginator_item:hover {
+  background: darken($primary, 20%);
+}
 
 @media (max-width: 760px) {
   .introduction {

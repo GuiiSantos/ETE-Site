@@ -18,6 +18,7 @@ $router->namespace("Source\Controllers");
  */
 $router->group(null);
 $router->get("/", "Client:home");
+$router->get("/{page}", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
 $router->get("/equipe", "Client:equipe");
 
@@ -29,8 +30,8 @@ $router->get("/{errcode}","Client:error");
  */
 
 $router->group("admin");
-$router->get("/login", "Admin:login");
-$router->post("/login", "Admin:login");
+$router->get("/entrar", "Admin:entrar");
+$router->post("/entrar", "Admin:entrar");
 
 $router->get("/painel", "Admin:dashboard");
 $router->get("/criar", "Admin:editor");

@@ -35,6 +35,7 @@
     "coffeecode/optimizer": "2.*.*",
     "coffeecode/router": "1.*.*",
     "league/plates": "3.*.*",
-    "matthiasmullie/minify": "1.*.*"
+    "matthiasmullie/minify": "1.*.*",
+    "coffeecode/paginator": "1.*.*"
   }
 }
