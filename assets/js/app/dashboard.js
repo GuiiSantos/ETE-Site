@@ -1,7 +1,5 @@
 if(App.pageId === "dashboard")
 {
-    const customAlert = new CustomAlert(document.getElementById("custom-alert"));
-
     // ORDENA A TABELA de noticias
     document.querySelectorAll(".table-sortable th").forEach(headerCell => {
         if(headerCell.dataset.sort) {

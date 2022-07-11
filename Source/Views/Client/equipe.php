@@ -1,10 +1,10 @@
 <?php $this->layout("Client/base") ?>
 
-<div class="equipe">
+<div class="equipe-wrapper">
     <div class="container">
-      <ul class="professores">
-        <li class="professores-item">
-          <header>
+      <ul class="equipe">
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/nadjane.png") ?>" alt="Nadjane Araújo" />
             </div>
@@ -19,8 +19,8 @@
           </div>
         </li> <!-- Nadjane -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/marcio.jpeg") ?>" alt="Márcio Silva" />
             </div>
@@ -35,8 +35,8 @@
           </div>
         </li> <!-- Márcio -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/iara.jfif") ?>" alt="Iara Suselly" />
             </div>
@@ -51,8 +51,8 @@
           </div>
         </li> <!-- Iara -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/eduardo.jpg") ?>" alt="Eduardo Max" />
             </div>
@@ -68,8 +68,8 @@
           </div>
         </li> <!-- Eduardo -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/marcos.jfif") ?>" alt="Marcos Vier" />
             </div>
@@ -85,8 +85,8 @@
           </div>
         </li> <!-- Marcos -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/elaisa.jfif") ?>" alt="Elaisa Souza" />
             </div>
@@ -102,8 +102,8 @@
           </div>
         </li> <!-- Elaisa -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/joyce.jpeg") ?>" alt="Joyce Yngrid" />
             </div>
@@ -118,8 +118,8 @@
           </div>
         </li> <!-- Joyce -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/elias.jfif") ?>" alt="Elias Januario" />
             </div>
@@ -134,8 +134,8 @@
           </div>
         </li> <!-- Elias -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/edryelle.jfif") ?>" alt="Edryelle Maria" />
             </div>
@@ -150,8 +150,8 @@
           </div>
         </li> <!-- Edryelle -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/lucia.jfif") ?>" alt="Lucia da Silva" />
             </div>
@@ -166,8 +166,8 @@
           </div>
         </li> <!-- Lucia -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/ana.jfif") ?>" alt="Ana Burgos" />
             </div>
@@ -182,8 +182,8 @@
           </div>
         </li> <!-- Ana -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/giordane.jfif") ?>" alt="Giordane Patriota" />
             </div>
@@ -198,8 +198,8 @@
           </div>
         </li> <!-- Giordane -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/fhelipe.jfif") ?>" alt="Fhelipe Freitas" />
             </div>
@@ -215,8 +215,8 @@
           </div>
         </li> <!-- Fhelipe -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/valter.jfif") ?>" alt="Valter Santos" />
             </div>
@@ -231,8 +231,8 @@
           </div>
         </li> <!-- Valter -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/islla.jpeg") ?>" alt="Islla Soares" />
             </div>
@@ -247,8 +247,8 @@
           </div>
         </li> <!-- Islla -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/gildo.jpeg") ?>" alt="Gildo Nascimento" />
             </div>
@@ -263,8 +263,8 @@
           </div>
         </li> <!-- Gildo -->
 
-        <li class="professores-item">
-          <header>
+        <li class="equipe-item">
+          <header class="avatar-wrapper">
             <div class="avatar">
               <img src="<?= url("assets/img/equipe/silvania.jpeg") ?>" alt="Silvania Pereira" />
             </div>

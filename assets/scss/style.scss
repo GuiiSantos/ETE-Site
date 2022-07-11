@@ -8,14 +8,19 @@
 @use "pages/equipe";
 @use "pages/structure";
 @use "pages/error";
-@use "pages/entrar";
-@use "pages/dashboard";
-@use "pages/editor";
 
 // UTILITY
 @use "utility/header";
 @use "utility/footer";
-@use "utility/sidebar";
+
+// ADMIN PAGES
+@use "admin/pages/entrar";
+@use "admin/pages/dashboard";
+@use "admin/pages/editor";
+@use "admin/pages/admin_equipe";
+
+// ADMIN ULTILITY
+@use "admin/ultility/sidebar";
 
 //vendors
 @use "vendors/custom-alert.css";

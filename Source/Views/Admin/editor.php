@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="notice-creator">
+<div class="admin-paper">
     <form action="<?= $posts ? url("api/posts/atualizar/{$posts->id}") : url("api/posts/criar"); ?>"
           method="post"
           onsubmit="<?php if ($posts): ?> updatePost(event);

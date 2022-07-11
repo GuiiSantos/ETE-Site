@@ -1,12 +1,13 @@
-@use "../global/global" as *;
-@use "../global/mixins" as *;
-@use "../global/variables" as *;
+@use "../../global/global" as *;
+@use "../../global/mixins" as *;
+@use "../../global/variables" as *;
 
-.notice-creator {
+.admin-paper {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
   max-width: 1480px;
+  background-color: $white;
 
   input[type="file"] {
     display: none;
@@ -26,10 +27,6 @@
       }
     }
   }
-}
-
-.notice-creator {
-  background-color: $white;
 }
 
 .btn-ckeditor {

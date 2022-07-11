@@ -16,11 +16,13 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.5);
     transition: all 500ms ease-in;
+    pointer-events: none;
 
     &.active {
         z-index: 999;
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+        pointer-events: all;
     }
 
     .cropper-image {

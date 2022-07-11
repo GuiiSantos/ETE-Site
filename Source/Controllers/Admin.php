@@ -4,6 +4,8 @@ namespace Source\Controllers;
 
 use Source\Core\Controller;
 use Source\Core\Session;
+use Source\Models\Equipe;
+use Source\Models\JobCategory;
 use Source\Models\User;
 use Source\Models\Posts;
 use Source\Support\Message;
@@ -66,6 +68,7 @@ class Admin extends Controller{
             ]
         );
     }
+
     public function dashboard() {
         $session = new Session();
         if(!$session->has("user") || $session->user->access_level === "1") {
@@ -125,6 +128,31 @@ class Admin extends Controller{
                 "posts" => $posts
             ]
         );
+    }
+
+    public function equipe() {
+        $session = new Session();
+        if(!$session->has("user") || $session->user->access_level === "1") {
+            redirect(url());
+        }
+
+        $equipe = (new Equipe())->find()->order("id DESC")->fetch(true);
+        $jobsCategory = (new JobCategory())->find()->fetch(true);;
+
+        $seo = $this->seo->render(
+            "Equipe | " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url(),
+            url("assets/img/ete-belo-jardim-shared.jpg"),
+            false
+        );
+        $this->view->addData([
+            "seo" => $seo,
+            "user" => $session->user,
+            "pageId" => "equipe"
+        ],
+            "admin/base");
+        echo $this->view->render("admin/equipe", ["equipe" => $equipe, "jobsCategory" => $jobsCategory]);
     }
 
     public function logout() {

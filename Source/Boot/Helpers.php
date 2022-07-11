@@ -269,3 +269,29 @@ function emit_json($value): void {
     echo json_encode($value, JSON_UNESCAPED_UNICODE);
     die();
 }
+
+/**
+ * ################
+ * ###   FILE   ###
+ * ################
+ */
+
+/**
+ * Retorna se o arquivo canvas foi salva com sucesso
+ *
+ * @param string $canvas
+ * @param string $path
+ * @return bool
+ */
+function saveCanvas(string $canvas, string $path): bool {
+    if(!file_exists($path) || !is_dir($path)) {
+        mkdir($path);
+    }
+    $img = str_replace("data:image/png;base64,", "", $canvas);
+    $img = str_replace(" ", "+", $img);
+
+    $fileData = base64_decode($img);
+    $fileName = "cape.png";
+
+    return (bool) file_put_contents("{$path}/{$fileName}", $fileData);
+}

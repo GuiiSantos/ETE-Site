@@ -8,9 +8,9 @@
     <link rel="shortcut icon" href="<?= url("assets/img/favicon.ico") ?>" type="image/x-icon">
     <link href="<?= url("assets/scss/style.css") ?>" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet"
-<!--          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">-->
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5fb103eefc.js" defer crossorigin="anonymous"></script>
 </head>
 
 <body data-page-id="<?= $pageId ?>">
@@ -34,6 +34,12 @@
                 <a href="<?= url("admin/criar") ?>" <?= ($pageId === "editor") ? "class='active'" : "" ?>>
                     <span class="las la-pen"></span>
                     <span>Criar</span>
+                </a>
+            </li>
+            <li>
+                <a href="<?= url("admin/equipe") ?>" <?= ($pageId === "equipe") ? "class='active'" : "" ?>>
+                    <span class="las la-users"></span>
+                    <span>Equipe</span>
                 </a>
             </li>
             <li>

@@ -1,12 +1,12 @@
 <?php
 
-namespace Source\Controllers;
+namespace Source\Controllers\Api;
 
 use Source\Core\Controller;
 use Source\Core\Session;
 use Source\Models\Posts;
 
-class Api extends Controller {
+class ApiPosts extends Controller {
 
     public function __construct() {
         parent::__construct(CONF_URL_VIEWS);
@@ -25,29 +25,28 @@ class Api extends Controller {
 
         $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
         $canvas = filter_input(INPUT_POST, "canvas", FILTER_DEFAULT);
-        
+
         $posts = new Posts();
         $posts->title = $title;
         $posts->title_id = str_slug($posts->title);
         if(!$posts->save()) {
             emit_json(["success" => false, "message" => $posts->fail()->getMessage()]);
         }
-        $id = $posts->id;
 
         if(!is_dir(url_image("post"))) {
             mkdir(url_image("post"));
         }
 
         if($canvas) {
-            $path = url_image("post/{$id}");
+            $path = url_image("post/{$posts->id}");
 
-            if(!$this->saveCanvas($canvas, $path)) {
+            if(!saveCanvas($canvas, $path)) {
                 $posts->destroy();
                 emit_json(["success" => false, "message" => "Não foi possivel salvar a capa"]);
             }
         }
 
-        emit_json(["success" => true, "message" => "Post criada com sucesso", "id" => $id]);
+        emit_json(["success" => true, "message" => "Post criada com sucesso", "id" => $posts->id]);
     }
 
     /**
@@ -83,7 +82,7 @@ class Api extends Controller {
         if($canvas) {
             $path = url_image("post/{$id}");
 
-            if(!$this->saveCanvas($canvas, $path)) {
+            if(!saveCanvas($canvas, $path)) {
                 emit_json(["success" => false, "message" => "Não foi possivel salvar a capa"]);
             }
         }
@@ -131,7 +130,6 @@ class Api extends Controller {
                 emit_json(["success" => false, "message" => "Selecione uma imagem (png, jpg, jpeg)"]);
             }
         }
-
 
     /**
      * Alterna se o Post esta ou não ativa
@@ -185,7 +183,6 @@ class Api extends Controller {
         emit_json(["success" => false]);
     }
 
-
     /**
      * Apaga uma Post
      *
@@ -225,25 +222,5 @@ class Api extends Controller {
         }
 
         emit_json(["success" => false, "message" => "Post não encontrada"]);
-    }
-
-    /**
-     * Retorna se o arquivo canvas foi salva com sucesso
-     *
-     * @param string $canvas
-     * @param string $path
-     * @return bool
-     */
-    public function saveCanvas(string $canvas, string $path): bool {
-        if(!file_exists($path) || !is_dir($path)) {
-            mkdir($path);
-        }
-        $img = str_replace("data:image/png;base64,", "", $canvas);
-        $img = str_replace(" ", "+", $img);
-
-        $fileData = base64_decode($img);
-        $fileName = "cape.png";
-
-        return (bool) file_put_contents("{$path}/{$fileName}", $fileData);
     }
 }

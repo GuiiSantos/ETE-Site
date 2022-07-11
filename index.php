@@ -36,19 +36,25 @@ $router->post("/entrar", "Admin:entrar");
 $router->get("/painel", "Admin:dashboard");
 $router->get("/criar", "Admin:editor");
 $router->get("/editar/{id}", "Admin:editor");
+$router->get("/equipe", "Admin:equipe");
 $router->get("/sair", "Admin:logout");
 
 /**
  * API
  */
 $router->group("/api");
+$router->namespace("Source\Controllers\Api");
 
-$router->post("/posts/criar", "Api:createPost");
-$router->post("/posts/atualizar/{id}", "Api:updatePost");
-$router->post("/posts/imagem/{id}", "Api:uploadPostImage");
-$router->post("/posts/alternar/ativo/{id}", "Api:toggleActive");
-$router->post("/posts/alternar/fixado/{id}", "Api:togglePinned");
-$router->delete("/posts/apagar/{id}", "Api:deletePost");
+// POSTS
+$router->post("/posts/criar", "ApiPosts:createPost");
+$router->post("/posts/atualizar/{id}", "ApiPosts:updatePost");
+$router->post("/posts/imagem/{id}", "ApiPosts:uploadPostImage");
+$router->post("/posts/alternar/ativo/{id}", "ApiPosts:toggleActive");
+$router->post("/posts/alternar/fixado/{id}", "ApiPosts:togglePinned");
+$router->delete("/posts/apagar/{id}", "ApiPosts:deletePost");
+
+// EQUIPE
+$router->post("/equipe/adicionar", "ApiEquipe:addMember");
 
 /**
  * CRIA AS ROTAS

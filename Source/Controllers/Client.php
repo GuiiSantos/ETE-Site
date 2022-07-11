@@ -2,7 +2,6 @@
 
 namespace Source\Controllers;
 
-use http\Url;
 use Source\Core\Controller;
 use Source\Models\Posts;
 use CoffeeCode\Paginator\Paginator;
@@ -26,7 +25,7 @@ class Client extends Controller {
             $page = filter_var($data["page"], FILTER_VALIDATE_INT);
         }
         $paginator = new Paginator(url("/"));
-        $paginator->pager((new Posts())->find()->count(), 6, $page, 3);
+        $paginator->pager((new Posts())->find()->count(), 9, $page, 3);
 
         $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetch(true);
 

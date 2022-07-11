@@ -5,12 +5,6 @@ if(CONF_SITE_STATUS === "development")
     $minJS = new \MatthiasMullie\Minify\JS();
 
     /**
-     * FILES
-     */
-    $minJS->add(__DIR__ . "/../../assets/js/base.js");
-
-
-    /**
      * LIBS
      */
     $libDir = scandir(__DIR__ . "/../../assets/js/lib");
@@ -21,6 +15,11 @@ if(CONF_SITE_STATUS === "development")
         }
     }
 
+    /**
+     * FILES
+     */
+    $minJS->add(__DIR__ . "/../../assets/js/base.js");
+    $minJS->add(__DIR__ . "/../../assets/js/global.js");
 
     /**
      * APP
