@@ -50,7 +50,7 @@
 
         <div class="input-data">
             <div class="wrapper">
-                <input name="title" type="text" maxlength="100" required
+                <input name="title" type="text" maxlength="100" required placeholder=" "
                        value="<?= $posts ? htmlspecialchars($posts->title) : "" ?>">
                 <div class="underline"></div>
                 <label>Título</label>

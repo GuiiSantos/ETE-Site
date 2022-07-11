@@ -18,14 +18,18 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 2rem;
     max-width: 900px;
-    margin: 0 auto 32px;
+    margin: 0 auto;
 
     .input-data {
-      padding: 16px 0;
     }
 
-    @media (max-width: 624px) {
+    @media (max-width: 724px) {
       grid-template-columns: 1fr;
+      margin: 0 auto;
+
+      #custom-select {
+        margin-bottom: 32px;
+      }
     }
   }
 }
@@ -33,7 +37,7 @@
 #custom-select {
   position: relative;
   width: 400px;
-  margin: 0 auto 32px;
+  margin: 0 auto;
 
   .btn-custom-select {
     position: relative;

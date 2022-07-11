@@ -4,7 +4,10 @@ function addMember() {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
+    const youtube = formData.get("youtube");
+
     if(canvas) formData.append("canvas", canvas);
+    if(youtube.trim() && !validateYoutubeURL(youtube)) return;
 
     fetch(form.action, {method: form.method, body: formData})
         .then(function(response) {
@@ -21,4 +24,25 @@ function addMember() {
         .catch(function(err) {
             customAlert.showAlert("Ocorreu um erro, tente mais tarde", 4);
         });
+}
+
+function validateYoutubeURL(string) {
+    let url;
+
+    try {
+        url = new URL(string);
+    } catch(e) {
+        customAlert.showAlert("O link é inválido", 3);
+        return false;
+    }
+
+    if(url.protocol !== "https:") {
+        customAlert.showAlert("O link deve ser HTTPS", 3);
+    }
+
+    if(url.host !== "www.youtube.com") {
+        customAlert.showAlert("O link deve ser do Youtube", 3);
+    }
+
+    return true;
 }

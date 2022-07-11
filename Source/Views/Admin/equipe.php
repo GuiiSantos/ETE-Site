@@ -47,7 +47,7 @@
         <div class="input-wrapper">
             <div class="input-data">
                 <div class="wrapper">
-                    <input name="name" type="text" maxlength="100" value="">
+                    <input name="name" type="text" maxlength="100" placeholder=" " value="" required>
                     <div class="underline"></div>
                     <label>Nome</label>
                 </div>
@@ -55,22 +55,32 @@
 
             <div class="input-data">
                 <div class="wrapper">
-                    <input name="job" type="text" maxlength="100" value="">
+                    <input name="job" type="text" maxlength="100" placeholder=" " value="" required>
                     <div class="underline"></div>
                     <label>Função</label>
                 </div>
             </div>
         </div>
+        <div class="input-wrapper">
+            <div class="input-data">
+                <div class="wrapper">
+                    <input name="youtube" type="text" maxlength="50" placeholder=" " value="">
+                    <div class="underline"></div>
+                    <label>Youtube (opcional)</label>
+                </div>
+            </div>
 
-        <input id="custom-select-result" type="text" style="display: none" name="job-category" value>
-        <div id="custom-select">
-            <button type="button" class="btn-custom-select" name="select"></button>
-            <div class="options-custom-select">
-                <?php foreach($jobsCategory as $jobCategory):?>
-                    <p data-value="<?= $jobCategory->job_category_id ?>" class="item"><?= $jobCategory->name ?></p>
-                <?php endforeach;?>
+            <input id="custom-select-result" type="text" style="display: none" name="job-category" value>
+            <div id="custom-select">
+                <button type="button" class="btn-custom-select" name="select"></button>
+                <div class="options-custom-select">
+                    <?php foreach($jobsCategory as $jobCategory):?>
+                        <p data-value="<?= $jobCategory->job_category_id ?>" class="item"><?= $jobCategory->name ?></p>
+                    <?php endforeach;?>
+                </div>
             </div>
         </div>
+
 
         <div class="btn-options">
             <input type="file" accept="image/*" id="cape-input">
@@ -95,6 +105,7 @@
         $equipeFinalArray = array_filter($equipe, function($equipeItem) use ($jobCategoryId) {
             return ($equipeItem->job_category_id == $jobCategoryId);
         });
+        if(count($equipeFinalArray) === 0) continue;
         ?>
 
         <h2><?= $jobCategory->name ?></h2>

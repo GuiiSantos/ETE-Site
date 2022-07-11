@@ -19,9 +19,10 @@ class ApiEquipe extends Controller {
     }
 
     public function addMember() {
-        $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-        $job = filter_input(INPUT_POST, "job", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-        $jobCategoryId = filter_input(INPUT_POST, "job-category", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+        $name = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $job = trim(filter_input(INPUT_POST, "job", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $jobCategoryId = trim(filter_input(INPUT_POST, "job-category", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $youtube = trim(filter_input(INPUT_POST, "youtube", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
         $canvas = filter_input(INPUT_POST, "canvas", FILTER_DEFAULT);
 
         $equipeModel = new Equipe();
@@ -42,6 +43,7 @@ class ApiEquipe extends Controller {
         $equipeModel->name = $name;
         $equipeModel->job = $job;
         $equipeModel->job_category_id = $jobCategoryId;
+        $equipeModel->youtube = $youtube;
         if(!$equipeModel->save()) {
             emit_json(["success" => false, "message" => "Tente novamente mais tarde"]);
         }
