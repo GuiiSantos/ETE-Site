@@ -24,7 +24,9 @@ $main-col: #4169e1;
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: space-between;
-  gap: 60px 0;
+  gap: 60px;
+
+  &.justify-start {justify-content: start}
 
   .equipe-item {
     position: relative;
@@ -164,7 +166,6 @@ $main-col: #4169e1;
 
   @media (max-width: 1260px) {
     justify-content: center;
-    gap: 60px;
   }
 
   @media (max-width: 340px) {

@@ -1,6 +1,7 @@
 .idea
 composer.phar
 /vendor/
-assets/img/post/
+assets/img/post/*
+assets/img/equipe/*
 teste.php
 assets/js/main.js

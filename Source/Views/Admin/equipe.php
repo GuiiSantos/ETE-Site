@@ -64,7 +64,7 @@
         <div class="input-wrapper">
             <div class="input-data">
                 <div class="wrapper">
-                    <input name="youtube" type="text" maxlength="50" placeholder=" " value="">
+                    <input name="youtube" type="text" maxlength="80" placeholder=" " value="">
                     <div class="underline"></div>
                     <label>Youtube (opcional)</label>
                 </div>
@@ -105,11 +105,13 @@
         $equipeFinalArray = array_filter($equipe, function($equipeItem) use ($jobCategoryId) {
             return ($equipeItem->job_category_id == $jobCategoryId);
         });
-        if(count($equipeFinalArray) === 0) continue;
+        $arrayFinalCount = count($equipeFinalArray);
+
+        if($arrayFinalCount === 0) continue;
         ?>
 
         <h2><?= $jobCategory->name ?></h2>
-        <ul class="equipe">
+        <ul class="equipe <?= ($arrayFinalCount < 3) ? "justify-start" : ""?>">
 
             <?php foreach($equipeFinalArray as $equipeItem):?>
                 <li class="equipe-item">

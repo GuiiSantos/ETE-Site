@@ -3,6 +3,7 @@
 namespace Source\Controllers;
 
 use Source\Core\Controller;
+use Source\Models\Equipe;
 use Source\Models\Posts;
 use CoffeeCode\Paginator\Paginator;
 
@@ -49,8 +50,10 @@ class Client extends Controller {
             url("assets/img/ete-belo-jardim-shared.jpg")
         );
 
+        $equipe = (new Equipe())->find()->order("id DESC")->fetch(true);
+
         $this->view->addData(["seo" => $seo], "Client/base");
-        echo $this->view->render("Client/equipe");
+        echo $this->view->render("Client/equipe", ["equipe" => $equipe]);
     }
 
     public function estrutura($data) {
