@@ -56,4 +56,36 @@ class ApiEquipe extends Controller {
 
         emit_json(["success" => true, "message" => "Salvo com sucesso"]);
     }
+
+    public function deleteMember($data) {
+
+        $id = filter_var($data["id"], FILTER_VALIDATE_INT);
+        if(!$id) {
+            emit_json(["success" => false, "message" => "Post não encontrada"]);
+        }
+
+        $equipe = (new Equipe())->findById($id);
+        if(!$equipe) {
+            emit_json(["success" => false, "message" => "Post não encontrada"]);
+        }
+
+        $imagesPath = url_image("equipe/{$id}");
+        if(file_exists($imagesPath) && is_dir($imagesPath)) {
+            $images = array_diff(scandir($imagesPath), ["..", "."]);
+
+            foreach($images as $image) {
+                $imagePath = $imagesPath . "/" . $image;
+
+                if(file_exists($imagePath) && is_file($imagePath)) {
+                    unlink($imagePath);
+                }
+            }
+
+            rmdir($imagesPath);
+        }
+
+        if($equipe->destroy()) {
+            emit_json(["success" => true]);
+        }
+    }
 }

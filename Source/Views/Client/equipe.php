@@ -18,7 +18,7 @@
 
                 <div class="contacts">
                     <?php if(!empty($equipeItem->youtube)): ?>
-                        <a href="<?= $equipeItem->youtube ?>" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a class="btn-icon" href="<?= $equipeItem->youtube ?>" target="_blank"><i class="fa fa-youtube"></i></a>
                     <?php endif; ?>
                 </div>
             </li>

@@ -127,8 +127,8 @@
                     </div>
 
                     <div class="contacts">
-                        <a href="/" target="_blank"><i class="fa fa-solid fa-pen"></i></a>
-                        <a href="/" target="_blank"><i class="fa fa-solid fa-xmark"></i></a>
+                        <button class="btn-icon"><i class="fa fa-solid fa-pen"></i></button>
+                        <button class="btn-icon remove" onclick="deleteMember('<?= $equipeItem->id ?>')"><i class="fa fa-solid fa-xmark"></i></button>
                     </div>
                 </li>
             <?php endforeach;?>

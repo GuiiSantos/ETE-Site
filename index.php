@@ -55,6 +55,7 @@ $router->delete("/posts/apagar/{id}", "ApiPosts:deletePost");
 
 // EQUIPE
 $router->post("/equipe/adicionar", "ApiEquipe:addMember");
+$router->delete("/equipe/apagar/{id}", "ApiEquipe:deleteMember");
 
 /**
  * CRIA AS ROTAS

@@ -26,6 +26,24 @@ function addMember() {
         });
 }
 
+function deleteMember(id) {
+    const link = App.URLROOT + "/api/equipe/apagar/" + id;
+
+    fetch(link, {method: "DELETE"})
+        .then(function (response) {
+            return response.text();
+        })
+        .then(function(data) {
+            console.log(data)
+            // if(data.success) {
+            //     window.location.href = App.URLROOT + "/admin/equipe";
+            // }
+        })
+        .catch(function(e) {
+            console.log(e.message);
+        });
+}
+
 function validateYoutubeURL(string) {
     let url;
 

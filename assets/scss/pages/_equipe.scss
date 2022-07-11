@@ -48,8 +48,8 @@ $main-col: #4169e1;
       }
 
       &::before {
-        transform: skewY(-8deg);
-        transform-origin: 100% 100%;
+        transform: skewY(0deg);
+        transform-origin: 0;
       }
 
       &::after {
@@ -114,11 +114,26 @@ $main-col: #4169e1;
       max-width: 100%;
       margin: 0 auto 3rem;
 
-      a {
+      .btn-icon {
         display: block;
         width: 33.333333%;
         text-align: center;
         color: $main-col;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &.remove:hover {
+          color: #ed4a65;
+
+          .fa {
+            border: 2px solid #ed4a65;
+
+            &::after {
+              background: #ed4a65;
+            }
+          }
+        }
 
         &:hover {
           color: #333;
@@ -130,6 +145,7 @@ $main-col: #4169e1;
             &::after {
               width: 100%;
               height: 100%;
+              top: 0;
             }
           }
         }
@@ -141,8 +157,9 @@ $main-col: #4169e1;
           line-height: 39px;
           overflow: hidden;
           text-align: center;
-          font-size: 1.3rem;
-
+          border: 2px solid $main-col;
+          border-radius: 50%;
+          font-size: 1rem;
           &:before {
             position: relative;
             z-index: 1;
@@ -151,11 +168,11 @@ $main-col: #4169e1;
           &::after {
             content: '';
             position: absolute;
-            top: 50%; left: 50%;
-            width: 0; height: 0;
-            transform: translate(-50%, -50%);
             background: $main-col;
-            transition: width .3s, height .3s;
+            top: -50px; left: 0;
+            width: 100%; height: 100%;
+            transform: translate(0, 0);
+            transition: top .3s, width 0s, height 0s;
           }
         }
 
@@ -177,36 +194,3 @@ $main-col: #4169e1;
   }
 }
 
-.equipe-item:nth-child(odd),.equipe-item:nth-child(even) {
-  .avatar-wrapper {
-    &::before {
-      transform: skewY(0deg);
-      transform-origin: 0;
-    }
-  }
-
-  .contacts{
-    a{
-      &:hover{
-        .fa{
-          &::after{
-            top: 0;
-          }
-        }
-      }
-
-      .fa{
-        border: 2px solid $main-col;
-        border-radius: 50%;
-        font-size: 1rem;
-
-        &::after{
-          top: -50px; left: 0;
-          width: 100%; height: 100%;
-          transform: translate(0, 0);
-          transition: top .3s, width 0s, height 0s;
-        }
-      }
-    }
-  }
-}
