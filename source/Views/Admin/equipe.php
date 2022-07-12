@@ -70,8 +70,8 @@
                 </div>
             </div>
 
-            <input id="custom-select-result" type="text" style="display: none" name="job-category" value>
-            <div id="custom-select">
+            <input id="custom-select-result" type="text" style="display: none" name="job-category" value="dsadsa">
+            <div id="custom-select" class="custom-select">
                 <button type="button" class="btn-custom-select" name="select"></button>
                 <div class="options-custom-select">
                     <?php foreach($jobsCategory as $jobCategory):?>
