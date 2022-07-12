@@ -20,23 +20,23 @@
   },
   "autoload": {
     "psr-4": {
-      "Source\\": "Source/"
+      "Source\\": "source/"
     },
     "files": [
-      "Source/Boot/Config.php",
-      "Source/Boot/Helpers.php",
-      "Source/Boot/MinifyJs.php"
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php",
+      "source/Boot/MinifyJs.php"
     ]
   },
   "require": {
     "ext-pdo": "*",
     "ext-json": "*",
+    "ext-mbstring": "*",
     "coffeecode/datalayer": "1.*.*",
     "coffeecode/optimizer": "2.*.*",
     "coffeecode/router": "1.*.*",
     "league/plates": "3.*.*",
     "matthiasmullie/minify": "1.*.*",
-    "coffeecode/paginator": "1.*.*",
-    "ext-mbstring": "*"
+    "coffeecode/paginator": "1.*.*"
   }
 }

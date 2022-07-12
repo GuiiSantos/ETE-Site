@@ -1,4 +1,4 @@
-<?php $this->layout("admin/base") ?>
+<?php $this->layout("Admin/base") ?>
 
 
 <div id="cropper-page">

@@ -59,7 +59,7 @@ class Admin extends Controller{
             false
         );
 
-        echo $this->view->render("admin/entrar",
+        echo $this->view->render("Admin/entrar",
             [
                 "seo" => $seo,
                 "message" => $message,
@@ -87,9 +87,8 @@ class Admin extends Controller{
             "seo" => $seo,
             "user" => $session->user,
             "pageId" => "dashboard"
-        ],
-            "admin/base");
-        echo $this->view->render("admin/dashboard",
+        ], "Admin/base");
+        echo $this->view->render("Admin/dashboard",
             [
                 "posts" => (new Posts())->find()->fetch(true)
             ]);
@@ -121,7 +120,7 @@ class Admin extends Controller{
                 "pageId" => "editor",
                 "user" => $session->user
 
-            ], "admin/base");
+            ], "Admin/base");
         echo $this->view->render(
             "Admin/editor",
             [
@@ -150,9 +149,8 @@ class Admin extends Controller{
             "seo" => $seo,
             "user" => $session->user,
             "pageId" => "equipe"
-        ],
-            "admin/base");
-        echo $this->view->render("admin/equipe", ["equipe" => $equipe, "jobsCategory" => $jobsCategory]);
+        ], "Admin/base");
+        echo $this->view->render("Admin/equipe", ["equipe" => $equipe, "jobsCategory" => $jobsCategory]);
     }
 
     public function logout() {

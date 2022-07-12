@@ -55,9 +55,9 @@ if (CONF_SITE_STATUS === "development") {
         "driver" => "mysql",
         "host" => "localhost",
         "port" => "3306",
-        "dbname" => "ete",
-        "username" => "root",
-        "passwd" => "",
+        "dbname" => "eteeds27_ete",
+        "username" => "eteeds27_ete",
+        "passwd" => "x5Yx2=o@5On.",
         "options" => [
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
