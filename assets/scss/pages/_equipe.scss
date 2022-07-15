@@ -194,3 +194,32 @@ $main-col: #4169e1;
   }
 }
 
+.popup-page .admin-paper {
+  padding-top: 50px;
+}
+
+.close-update-member-page {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: $primary;
+  color: $white;
+  border: none;
+  outline: none;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+
+  i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}

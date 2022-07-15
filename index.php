@@ -55,6 +55,7 @@ $router->delete("/posts/apagar/{id}", "ApiPosts:deletePost");
 
 // EQUIPE
 $router->post("/equipe/adicionar", "ApiEquipe:addMember");
+$router->post("/equipe/atualizar", "ApiEquipe:updateMember");
 $router->delete("/equipe/apagar/{id}", "ApiEquipe:deleteMember");
 
 /**

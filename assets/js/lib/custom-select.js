@@ -69,6 +69,7 @@ class CustomSelect {
 
     setValue(i = null) {
         if(i) {
+            this.options[this.activeOption].classList.remove("active");
             this.activeOption = i;
         }
 

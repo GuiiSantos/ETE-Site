@@ -67,12 +67,3 @@ if(cropperPage && capeInput) {
     }
     function cancel() {cropperPage.classList.remove("active");}
 }
-
-/**
- * #########################
- * ###   CUSTOM SELECT   ###
- * #########################
- */
-const customSelect = document.getElementById("custom-select");
-const customSelectResult = document.getElementById("custom-select-result");
-const customSelectClass = new CustomSelect(customSelect, 0, customSelectResult);

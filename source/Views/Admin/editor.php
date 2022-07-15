@@ -1,6 +1,6 @@
 <?php $this->layout("Admin/base", ["posts" => $posts]) ?>
 
-<div id="cropper-page">
+<div id="cropper-page" class="popup-page">
     <div class="cropper-image">
         <img alt="Editor de Imagem" id="cropper-editor">
     </div>

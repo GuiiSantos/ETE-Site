@@ -28,6 +28,10 @@ class ApiEquipe extends Controller {
         $equipeModel = new Equipe();
         $jobCategoryModel = new JobCategory();
 
+        if(!is_dir(url_image("equipe"))) {
+            mkdir(url_image("equipe"));
+        }
+
         if(!$name || !$job) {
             emit_json(["success" => false, "message" => "Selecione o nome e a função"]);
         }
@@ -52,6 +56,58 @@ class ApiEquipe extends Controller {
         if(!saveCanvas($canvas, $path)) {
             $equipeModel->destroy();
             emit_json(["success" => false, "message" => "Tente novamente mais tarde"]);
+        }
+
+        emit_json(["success" => true, "message" => "Salvo com sucesso"]);
+    }
+
+    public function updateMember() {
+        $id = trim(filter_input(INPUT_POST, "id", FILTER_VALIDATE_INT, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $name = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $job = trim(filter_input(INPUT_POST, "job", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $jobCategoryId = trim(filter_input(INPUT_POST, "job-category", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $youtube = trim(filter_input(INPUT_POST, "youtube", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
+        $canvas = filter_input(INPUT_POST, "canvas", FILTER_DEFAULT);
+
+        $equipeModel = new Equipe();
+        $jobCategoryModel = new JobCategory();
+
+        if(!is_dir(url_image("equipe"))) {
+            mkdir(url_image("equipe"));
+        }
+
+        if(!$id) {
+            emit_json(["success" => false, "message" => "Membro da equipe não encontrado"]);
+        }
+
+        $equipeModel = $equipeModel->findById($id);
+        if(!$equipeModel) {
+            emit_json(["success" => false, "message" => "Membro da equipe não encontrado"]);
+        }
+
+        if(!$name || !$job) {
+            emit_json(["success" => false, "message" => "Selecione o nome e a função"]);
+        }
+
+        if(!$jobCategoryModel->findById($jobCategoryId)) {
+            emit_json(["success" => false, "message" => "Selecione uma categoria"]);
+        }
+
+        if(!$canvas) {
+            emit_json(["success" => false, "message" => "Selecione uma imagem"]);
+        }
+
+        $equipeModel->name = $name;
+        $equipeModel->job = $job;
+        $equipeModel->job_category_id = $jobCategoryId;
+        $equipeModel->youtube = $youtube;
+        if(!$equipeModel->save()) {
+            emit_json(["success" => false, "message" => "Tente novamente mais tarde"]);
+        }
+
+        $path = url_image("equipe/{$equipeModel->id}");
+        if(!saveCanvas($canvas, $path)) {
+            emit_json(["success" => false, "message" => "Não foi possivel salvar a foto"]);
         }
 
         emit_json(["success" => true, "message" => "Salvo com sucesso"]);
