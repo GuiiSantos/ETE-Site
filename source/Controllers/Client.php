@@ -21,12 +21,10 @@ class Client extends Controller {
             url("assets/img/ete-belo-jardim-shared.jpg")
         );
 
-        $page = false;
-        if(isset($data["page"])) {
-            $page = filter_var($data["page"], FILTER_VALIDATE_INT);
-        }
-        $paginator = new Paginator(url("/"));
-        $paginator->pager((new Posts())->find()->count(), 9, $page, 3);
+
+        $data = filter_input(INPUT_GET, "page", FILTER_VALIDATE_INT);
+        $paginator = new Paginator(url("/?page="));
+        $paginator->pager((new Posts())->find("active = TRUE")->count(), 9, $data, 3, "portifolio");
 
         $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetch(true);
 
