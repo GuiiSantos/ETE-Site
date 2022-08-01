@@ -18,7 +18,6 @@ $router->namespace("Source\Controllers");
  */
 $router->group(null);
 $router->get("/", "Client:home");
-$router->get("/{page}", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
 $router->get("/equipe", "Client:equipe");
 
