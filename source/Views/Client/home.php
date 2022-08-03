@@ -179,10 +179,10 @@
 </section>
 
 <?php if ($posts): ?>
-<section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
+<section class="portfolio" id="posts" aria-labelledby="section-posts">
     <div class="container">
         <div class="section-title">
-            <h2 class="title" id="section-portifolio">Portfolio</h2>
+            <h2 class="title" id="section-posts">posts</h2>
 
             <p class="subtitle">A ETEEMM é uma escola que vivencia experiências ricas em conhecimento sociocultural
                 que contribuem para o exercício da cidadania de nossos educandos.</p>
@@ -207,10 +207,10 @@
     </div>
 </section>
 <?php else:?>
-<section class="portfolio" id="portifolio" aria-labelledby="section-portifolio">
+<section class="portfolio" id="posts" aria-labelledby="section-posts">
     <div class="container">
         <div class="section-title">
-            <h2 class="title" id="section-portifolio">Portfolio</h2>
+            <h2 class="title" id="section-posts">posts</h2>
 
             <p class="subtitle">Nenhum post encontrado! Lançaremos posts em breve</p>
         </div>

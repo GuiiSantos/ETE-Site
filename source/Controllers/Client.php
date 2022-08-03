@@ -21,7 +21,6 @@ class Client extends Controller {
             url("assets/img/ete-belo-jardim-shared.jpg")
         );
 
-
         $data = filter_input(INPUT_GET, "page", FILTER_VALIDATE_INT);
         $paginator = new Paginator(url("/?page="));
         $paginator->pager((new Posts())->find("active = TRUE")->count(), 9, $data, 3, "portifolio");
