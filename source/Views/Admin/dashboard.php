@@ -7,7 +7,7 @@
             <th data-sort="true">Titúlo</th>
             <th>Editar</th>
             <th>Apagar</th>
-            <th data-sort="true">Data</th>
+            <th data-sort="true" data-date="true">Data</th>
             <th>Ativo</th>
             <th>Fixados</th>
         </tr>

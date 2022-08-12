@@ -2,6 +2,7 @@
 
 namespace Source\Controllers\Api;
 
+use CoffeeCode\Paginator\Paginator;
 use Source\Core\Controller;
 use Source\Core\Session;
 use Source\Models\Posts;
@@ -10,6 +11,24 @@ class ApiPosts extends Controller {
 
     public function __construct() {
         parent::__construct(CONF_URL_VIEWS);
+    }
+
+    /**
+     * Retorna os posts e o paginator da página
+     *
+     * Method createPost
+     */
+    public function getPosts($data) {
+        $page = filter_var($data["page"], FILTER_VALIDATE_INT);
+
+        if(!$page) emit_json(["success" => false, "message" => "Página inválida"]);
+
+
+        $paginator = new Paginator("");
+        $paginator->pager((new Posts())->find("active = TRUE")->count(), 9, $page, 3);
+        $posts = (new Posts())->find("active = TRUE")->order("created_at DESC")->limit($paginator->limit())->offset($paginator->offset())->fetchArray();
+
+        emit_json(["success" => true, "posts" => $posts, "paginator" => $paginator->render()]);
     }
 
     /**
@@ -96,7 +115,6 @@ class ApiPosts extends Controller {
      * Method uploadPostImage
      * @param array $data
      */
-
     public function uploadPostImage(array $data) {
         $session = new Session();
         if(!$session->has("user") || $session->user->access_level === "1") {

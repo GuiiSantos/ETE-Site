@@ -178,8 +178,7 @@
     </div>
 </section>
 
-<?php if ($posts): ?>
-<section class="portfolio" id="posts" aria-labelledby="section-posts">
+<section class="portfolio" aria-labelledby="section-posts">
     <div class="container">
         <div class="section-title">
             <h2 class="title" id="section-posts">posts</h2>
@@ -188,35 +187,12 @@
                 que contribuem para o exercício da cidadania de nossos educandos.</p>
         </div>
 
-        <ul class="galeria">
-            <?php foreach ($posts as $post):
-                $date = new DateTime($post->created_at);
-                ?>
-                <li>
-                    <figure>
-                        <img src="<?= url("assets/img/post/{$post->id}/cape.png") ?>"
-                             alt="<?= $post->title ?>">
-                    </figure>
-                    <p><?= $post->title ?></p>
-                </li>
-            <?php endforeach; ?>
+        <ul id="posts" class="galeria">
+
         </ul>
     </div>
-    <div>
-        <?= $paginator;?>
-    </div>
+    <div id="paginator"></div>
 </section>
-<?php else:?>
-<section class="portfolio" id="posts" aria-labelledby="section-posts">
-    <div class="container">
-        <div class="section-title">
-            <h2 class="title" id="section-posts">posts</h2>
-
-            <p class="subtitle">Nenhum post encontrado! Lançaremos posts em breve</p>
-        </div>
-    </div>
-</section>
-<?php ;endif; ?>
 
 <?php $this->start("js"); ?>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
@@ -233,11 +209,76 @@
         }
     })).mount();
 
-    // Checa se a url possui o número de uma pagina no portifolio
-    const URLHREF = window.location.href;
-    const portifolio = document.getElementById("portifolio");
-    if(/^\d+$/.test(URLHREF.substr(URLHREF.lastIndexOf("/") + 1))) {
-      window.scrollTo(0, portifolio.offsetTop, {duration:0});
+    const posts = document.getElementById("posts");
+    const paginator = document.getElementById("paginator");
+
+    loadPage(<?= $page ?>);
+    function loadPage(page) {
+        let pageInformed = true;
+        if(!page) {
+            page = 1;
+            pageInformed = false;
+        }
+
+        const origin = window.location.origin;
+        const link = origin + "/api/posts/pegar/" + page;
+        
+        fetch(link, {method: "GET"})
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                // EVITA QUE A URL SEJA MUDADA NO LOADING DA PÁGINA
+                if(pageInformed) {
+                    window.history.pushState({}, "Página de Posts", page);
+                }
+
+                // CONFIGURA O PAGINATOR
+                paginator.innerHTML = data.paginator;
+                const paginatorLinks = paginator.querySelectorAll("a");
+                paginatorLinks.forEach(item => {
+                    item.addEventListener("click", (e) => {
+                        e.preventDefault();
+
+                        const href = e.target.href;
+                        const page = href.slice(href.lastIndexOf("/") + 1);
+                        loadPage(page);
+                    })
+                });
+
+                // RENDERIZA OS POSTS
+                posts.innerHTML = "";
+                data.posts.forEach((item) => {
+                    const li = document.createElement("li");
+                    const figure = document.createElement("figure");
+                    const img = document.createElement("img");
+                    img.src = origin + `/assets/img/post/${item.id}/cape.png`
+                    img.alt = item.title;
+                    figure.appendChild(img);
+
+                    const p = document.createElement("p");
+                    p.textContent = item.title;
+
+                    li.appendChild(figure);
+                    li.appendChild(p);
+                    posts.appendChild(li);
+                })
+
+                // EVITA QUE AJAM MENOS DE 3 LIs
+                if(data.posts.length === 2) {
+                    const li = document.createElement("li");
+                    posts.appendChild(li);
+                }
+                if(data.posts.length === 1) {
+                    const li = document.createElement("li");
+                    const li2 = document.createElement("li");
+                    posts.appendChild(li);
+                    posts.appendChild(li2);
+                }
+            })
+            .catch(function(err) {
+                console.error(err);
+            });
     }
 </script>
 <?php $this->stop(); ?>

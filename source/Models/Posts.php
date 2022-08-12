@@ -4,12 +4,35 @@
 namespace Source\Models;
 
 
+use CoffeeCode\DataLayer\Connect;
 use CoffeeCode\DataLayer\DataLayer;
 use \Exception;
+use PDO;
+use PDOException;
 
 class Posts extends DataLayer {
     public function __construct() {
         parent::__construct("posts", ["title"]);
+    }
+
+    /**
+     * @param bool $all
+     * @return array|mixed|null
+     */
+    public function fetchArray() {
+        try {
+            $stmt = Connect::getInstance()->prepare($this->statement . $this->group . $this->order . $this->limit . $this->offset);
+            $stmt->execute($this->params);
+
+            if (!$stmt->rowCount()) {
+                return null;
+            }
+
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $exception) {
+            $this->fail = $exception;
+            return null;
+        }
     }
 
     public function save(): bool {

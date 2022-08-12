@@ -18,6 +18,7 @@ $router->namespace("Source\Controllers");
  */
 $router->group(null);
 $router->get("/", "Client:home");
+$router->get("/{page}", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
 $router->get("/equipe", "Client:equipe");
 
@@ -45,6 +46,7 @@ $router->group("/api");
 $router->namespace("Source\Controllers\Api");
 
 // POSTS
+$router->get("/posts/pegar/{page}", "ApiPosts:getPosts");
 $router->post("/posts/criar", "ApiPosts:createPost");
 $router->post("/posts/atualizar/{id}", "ApiPosts:updatePost");
 $router->post("/posts/imagem/{id}", "ApiPosts:uploadPostImage");
