@@ -238,12 +238,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  justify-items: center;
 
   li {
-    // box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 0 6px 20px rgb(56 125 255 / 17%);
     border-radius: 10px;
     overflow: hidden;
+    max-width: 360px;
+    width: 100%;
 
     figure {
       position: relative;

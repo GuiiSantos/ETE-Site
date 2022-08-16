@@ -63,7 +63,7 @@ if(App.pageId === "editor")
             .then(function(data) {
                 if(data.success) {
                     customAlert.showAlert("post atualizado com sucesso", 1);
-                    updatePreviewImg();
+                    if(canvas) updatePreviewImg();
                 } else {
                     customAlert.showAlert(data.message, 3);
                 }

@@ -263,18 +263,6 @@
                     li.appendChild(p);
                     posts.appendChild(li);
                 })
-
-                // EVITA QUE AJAM MENOS DE 3 LIs
-                if(data.posts.length === 2) {
-                    const li = document.createElement("li");
-                    posts.appendChild(li);
-                }
-                if(data.posts.length === 1) {
-                    const li = document.createElement("li");
-                    const li2 = document.createElement("li");
-                    posts.appendChild(li);
-                    posts.appendChild(li2);
-                }
             })
             .catch(function(err) {
                 console.error(err);
