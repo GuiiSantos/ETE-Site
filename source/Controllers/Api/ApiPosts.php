@@ -47,7 +47,7 @@ class ApiPosts extends Controller {
 
         $posts = new Posts();
         $posts->title = $title;
-        $posts->title_id = str_slug($posts->title);
+        $posts->title_url = str_slug($posts->title);
         if(!$posts->save()) {
             emit_json(["success" => false, "message" => $posts->fail()->getMessage()]);
         }
@@ -92,7 +92,7 @@ class ApiPosts extends Controller {
         if(!$posts) emit_json(["success" => false, "message" => "Post não encontrada"]);
 
         $posts->title = $title;
-        $posts->title_id = str_slug($posts->title);
+        $posts->title_url = str_slug($posts->title);
         $posts->posts = $ckeditor;
         if(!$posts->save()) {
             emit_json(["success" => false, "message" => $posts->fail()->getMessage()]);

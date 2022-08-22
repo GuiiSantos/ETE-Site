@@ -16,9 +16,10 @@
 
             <?php foreach($posts as $post):
                 $title = $post->title;
+                $titleUrl = $post->title_url;
 
                 $id = $post->id;
-                $view = url("post/{$id}");
+                $view = url("posts/{$titleUrl}");
                 $editar = url("admin/editar/{$id}");
                 $date = new DateTime($post->created_at);
                 $active = ($post->active) ? "checked" : "";
@@ -27,7 +28,7 @@
                 ?>
                 <tr>
                     <td>
-                        <a href="<?= $view ?>"><?= $title ?></a>
+                        <a href="<?= $view ?>" target="_blank"><?= $title ?></a>
                     </td>
                     <td class="active"><a href="<?= $editar ?>">Editar</a></td>
                     <td class="active" onclick="deleteNotice(<?= $id ?>)">Apagar</td>

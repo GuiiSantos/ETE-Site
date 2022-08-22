@@ -21,7 +21,8 @@ $router->get("/", "Client:home");
 $router->get("/{page}", "Client:home");
 $router->get("/estrutura", "Client:estrutura");
 $router->get("/equipe", "Client:equipe");
-
+$router->get("/posts", "Client:posts");
+$router->get("/posts/{title_url}", "Client:posts");
 $router->group("/oops");
 $router->get("/{errcode}","Client:error");
 

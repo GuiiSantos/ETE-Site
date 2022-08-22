@@ -46,7 +46,7 @@ class Posts extends DataLayer {
                 throw new Exception("Título muito longos");
             }
 
-            $posts = (new Posts())->find("title_id = :title_id", "title_id={$this->title_id}")->fetch();
+            $posts = (new Posts())->find("title_id = :title_url", "title_url={$this->title_url}")->fetch();
             if(empty($this->id) && $posts) {
                 throw new Exception("Título já esta sendo usado");
             }

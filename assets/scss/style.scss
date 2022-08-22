@@ -7,6 +7,7 @@
 @use "pages/home";
 @use "pages/equipe";
 @use "pages/structure";
+@use "pages/posts";
 @use "pages/error";
 
 // UTILITY
@@ -24,5 +25,6 @@
 
 //vendors
 @use "vendors/custom-alert.css";
+@use "vendors/ckeditor-base.css";
 @use "vendors/cropper.min.css";
 @use "vendors/cropper-page";

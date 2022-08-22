@@ -255,9 +255,12 @@
                     img.src = origin + `/assets/img/post/${item.id}/cape.png`
                     img.alt = item.title;
                     figure.appendChild(img);
-
                     const p = document.createElement("p");
-                    p.textContent = item.title;
+                    if (item.posts){
+                        p.innerHTML = `<a class="link" href="posts/${item.title_url}">${item.title}</a>`;
+                    }else {
+                        p.textContent = item.title;
+                    }
 
                     li.appendChild(figure);
                     li.appendChild(p);
