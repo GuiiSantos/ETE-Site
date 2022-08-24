@@ -1,3 +1,5 @@
+@use "../global/global" as *;
+@use "../global/variables" as *;
 .custom-select {
   position: relative;
   width: 400px;

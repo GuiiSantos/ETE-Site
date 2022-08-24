@@ -24,7 +24,8 @@
 @use "admin/ultility/sidebar";
 
 //vendors
-@use "vendors/custom-alert.css";
+@use "vendors/cropper-page";
+@use "vendors/custom-select";
 @use "vendors/ckeditor-base.css";
 @use "vendors/cropper.min.css";
-@use "vendors/cropper-page";
+@use "vendors/custom-alert.css";
