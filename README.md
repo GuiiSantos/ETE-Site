@@ -1,3 +1,7 @@
+# Site ETE
+
+Esse Projeto foi feito com intuito para postar notícias, boletim e eventos da escola.
+
 ## Conteúdos
 
 - [Como iniciar o Composer](#como-iniciar-o-composer)
