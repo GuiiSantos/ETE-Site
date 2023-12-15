@@ -12,7 +12,7 @@ Esse Projeto foi feito com intuito para postar notícias, boletim e eventos da e
 
 - Instale o Composer no [SITE OFICIAL](https://getcomposer.org/)
 - Utilize o comando `composer update` na raiz do projeto
-- E voilà, será criada a pasta vendor com todas as dependências, e seu PHP estará funcionando
+- E voilà, será criada a pasta vendor com todas as dependências, e seu PHP estará funcionando.
 
 ## Como compilar o CSS com o SASS
 
